@@ -102,6 +102,44 @@ As we learned in Chapter 12, harvested produce continues to respire and lose qua
     <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Zyme pondering with goggles">
     A strawberry picked yesterday from a local farm and a strawberry shipped from California 10 days ago are the same species. But the local one was allowed to ripen fully on the plant — accumulating sugar, aromatic compounds, and vitamin C for weeks before picking. The California one was picked partially ripe to survive the journey, then ripened in transit with ethylene. The chemistry is different. The flavor is unmistakably different. And the nutritional profile likely is too.
 
+## Why Do Store-Bought Tomatoes Taste So Bad?
+
+If you have ever bitten into a supermarket tomato in January and felt disappointed, you were not imagining it. That tomato likely traveled 1,500 miles, was picked green weeks before you ate it, and was never bred to taste good in the first place.
+
+The modern industrial tomato is an engineering achievement — just not one optimized for your palate. Plant breeders and agricultural corporations select tomato varieties for traits that survive a long supply chain and maximize profit. Flavor is conspicuously absent from that list.
+
+### What Industrial Tomatoes Are Actually Bred For
+
+| Trait | Why It Matters to Industry | Flavor Impact |
+|---|---|---|
+| **High yield** | More pounds per acre = lower cost per unit | None; high-yield varieties often produce more watery, less concentrated fruit |
+| **Uniform size and shape** | Fits standard packaging; easier to sort and price | None directly, but uniformity selects against heirloom varieties that tend to have complex flavor |
+| **Firm flesh** | Survives mechanical harvesting, packing, and stacking without bruising | Negative — firmness requires lower water content and thicker cell walls, reducing juiciness |
+| **Bruise resistance** | Reduces spoilage losses during transit | Negative — the same genetics that resist bruising produce harder, less flavorful fruit |
+| **Thick skin** | Protects against cracking during shipping | Negative — thick skin creates a tough texture and is associated with blander flavor |
+| **Ability to ripen off the vine** | Can be picked green and "ripened" with ethylene gas in transit | Strongly negative — vine ripening is when a tomato accumulates sugars, acids, and aromatic volatiles; ethylene-gassed tomatoes develop color without developing flavor |
+| **Long shelf life** | Reduces retailer losses from spoilage | Negative — the same cell-wall and metabolic properties that slow spoilage reduce flavor compound production |
+| **Disease resistance** | Reduces crop losses and pesticide costs | Neutral to slightly positive |
+
+**Flavor is not on this list.** No major industrial tomato breeding program optimizes for taste. In fact, a 2012 study published in *Science* identified that a genetic mutation found in virtually all commercial tomato varieties — selected because it produces uniform ripening (no green shoulders) — simultaneously disables a gene responsible for producing sugars and aromatic volatiles. The very thing that made commercial tomatoes look better made them taste worse, and the industry chose appearance.
+
+### The Ethylene Gas Problem
+
+When a tomato ripens naturally on the vine, it goes through a coordinated biochemical process over several weeks: starch converts to sugar, acids mellow, the cell walls soften, and hundreds of aromatic volatile compounds develop. This process is triggered and regulated by the plant's own ethylene production, but it requires the tomato to remain connected to the plant throughout.
+
+Industrial tomatoes are picked at the "mature green" stage — fully sized but completely unripe — to survive mechanical harvesting and long transit. At the destination warehouse, they are exposed to ethylene gas to trigger color development. The tomato turns red. But the weeks of sugar accumulation, acid balancing, and volatile compound synthesis never happened. The result looks like a tomato and technically is a tomato, but its chemistry is closer to a raw green tomato painted red than to a vine-ripened fruit.
+
+### What a Good Tomato Actually Requires
+
+For a tomato to taste like a tomato, it needs:
+
+- **Time on the vine** — sugars (primarily glucose and fructose) accumulate over weeks of vine ripening
+- **Warm temperatures during ripening** — cold breaks down the enzymes responsible for aromatic volatile production; refrigerating tomatoes destroys flavor permanently
+- **The right variety** — heirloom and specialty varieties are typically not selected for uniformity or shelf life, so they retain flavor genetics that have been bred out of commercial varieties
+- **Short post-harvest time** — the aromatic volatile compounds responsible for "tomato flavor" are unstable and degrade within days of harvest
+
+None of these requirements are compatible with a supply chain that moves tomatoes 1,500 miles over 10–14 days at refrigerated temperatures. The bad taste of a supermarket tomato is not a quality control failure — it is the system working exactly as designed.
+
 ## The Structural Barriers: Why Local Food Doesn't Automatically Reach Local Consumers
 
 Here is one of the most surprising and important insights in this chapter: a small farm growing tomatoes ten miles from a city may be structurally unable to sell those tomatoes to the local school cafeteria or hospital — even though both parties would benefit from a direct relationship.
