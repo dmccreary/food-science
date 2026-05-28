@@ -8,7 +8,7 @@ Project instructions and conventions for AI-assisted content generation.
 - **Audience:** 14–15 year old high school students (9th grade)
 - **Site URL:** https://dmccreary.github.io/food-science/
 - **Color palette:** Primary green (`#2e7d32`), accent orange (`#f57c00`)
-- **Tone:** Engaging, scientifically rigorous, hands-on lab-forward
+- **Tone:** Engaging, fun, playful, curious, scientifically rigorous, hands-on lab-forward, positive, optimistic
 
 ---
 
