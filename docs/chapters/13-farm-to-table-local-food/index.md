@@ -121,7 +121,9 @@ The modern industrial tomato is an engineering achievement — just not one opti
 | **Long shelf life** | Reduces retailer losses from spoilage | Negative — the same cell-wall and metabolic properties that slow spoilage reduce flavor compound production |
 | **Disease resistance** | Reduces crop losses and pesticide costs | Neutral to slightly positive |
 
-**Flavor is not on this list.** No major industrial tomato breeding program optimizes for taste. In fact, a 2012 study published in *Science* identified that a genetic mutation found in virtually all commercial tomato varieties — selected because it produces uniform ripening (no green shoulders) — simultaneously disables a gene responsible for producing sugars and aromatic volatiles. The very thing that made commercial tomatoes look better made them taste worse, and the industry chose appearance.
+**Flavor is not on this list.** No major industrial tomato breeding program optimizes for taste. In fact, a 2012 study published in *Science* identified that a genetic mutation found in virtually all commercial tomato varieties — selected because it produces uniform ripening (no green shoulders) — simultaneously disables a gene responsible for producing sugars and aromatic volatiles. The very thing that made commercial tomatoes look better made them taste worse, and the industry chose appearance.[^powell2012]
+
+[^powell2012]: Powell, A.L.T., Nguyen, C.V., Hill, T., Cheng, Y.L., Figueroa-Balderas, R., Aktas, H., … Giovannoni, J.J. (2012). Uniform ripening encodes a Golden 2-like transcription factor regulating tomato fruit chloroplast development. *Science*, 336(6089), 1711–1715. [https://doi.org/10.1126/science.1222218](https://doi.org/10.1126/science.1222218)
 
 ### The Ethylene Gas Problem
 
