@@ -120,6 +120,78 @@ There are two pathways for aroma compounds to reach the olfactory receptors:
 
 Pinch your nose and eat a piece of apple. You'll taste sweet and sour (from taste receptors), but the complex apple flavor — all those volatile compounds — will be absent. Release your nose while swallowing and the full flavor floods in through retronasal olfaction. Try it!
 
+## The Science of Smell
+
+Smell is the most underestimated of our senses. We tend to think of vision and hearing as the senses that connect us to the world, but smell is the sense that connects us most directly to *memory* and *emotion*. The food writer **Harold McGee** — author of the classic reference *On Food and Cooking* (Scribner, revised edition 2004) and the dedicated aroma encyclopedia *Nose Dive: A Field Guide to the World's Smells* (Penguin Press, 2020) — has spent his career arguing that learning to pay attention to smells is one of the great unused pleasures available to a curious person. He treats aromas the way a musician treats sounds: as a vocabulary worth learning.
+
+### How the Nose Actually Works
+
+Your olfactory system is wired into your brain differently than any other sense. Light, sound, taste, and touch all pass through a relay station called the **thalamus** before reaching the parts of the brain that produce conscious perception. Smell does not. Aroma molecules bind to receptors in the **olfactory epithelium** high in the nasal cavity, and those receptors send signals almost directly into the **limbic system** — the ancient set of brain structures that handle emotion and memory.
+
+This shortcut explains a familiar experience: a single whiff of something — a grandmother's perfume, the inside of a school cafeteria, fresh-cut grass — can instantly drop you into a vivid memory from years ago, often with the emotion attached. Psychologists call this the **Proust effect**, after the French novelist Marcel Proust, who wrote a famous passage about a madeleine cake dipped in tea triggering a flood of childhood memory. McGee himself, in a 2023 interview with the *Harvard Gazette*, notes that modern humans tend to associate smells with **childhood, travel, and family** — three categories that are unmistakably emotional.
+
+There are roughly **400 different types of olfactory receptors** in the human nose. That sounds like a small number until you realize they work in combination — each aroma molecule activates a unique *pattern* of receptors, like a chord rather than a single note. That combinatorial code is how the human olfactory system can distinguish an estimated **one trillion different odors** (Bushdid et al., *Science*, 2014) — a number McGee uses as a starting point in *Nose Dive* to argue that smell deserves the same careful attention we give to color or music.
+
+### The Chemistry of Garlic in the Air
+
+When you sauté garlic in oil, you are running a small chemistry experiment whose products fill the room. McGee explains in *On Food and Cooking* that an intact garlic clove is almost odorless. The dramatic smell only appears once the cells are crushed or cut — that damage releases an enzyme called **alliinase**, which converts a stored compound (alliin) into **allicin**, the molecule responsible for the sharp, pungent aroma of fresh garlic. When that garlic hits warm oil, allicin and its breakdown products (diallyl disulfide, diallyl trisulfide, and other volatile sulfur compounds) evaporate into the air. Garlic carries roughly **a hundred times the sulfur content of other alliums** — which is why one clove can perfume an entire room.
+
+Those airborne sulfur compounds are doing more than just signaling "dinner is coming." Because of the limbic shortcut described above, they reach the **amygdala** (emotion) and **hippocampus** (memory) before the conscious brain has even named the smell. By the time you think *"someone is cooking garlic,"* your mood has already shifted.
+
+### A Story: Aromas at the Table
+
+Imagine two identical family dinners. Same people, same table, same food on the plates. In one version, garlic is gently sizzling in olive oil on the stove as everyone sits down, and a loaf of bread is finishing in the oven. In the other version, the cooking is finished, the kitchen is aired out, and the room smells of nothing in particular.
+
+Are these the same dinner? Common experience says no — and a growing body of research in **environmental psychology** agrees. Studies of ambient aroma in restaurants and public spaces have shown measurable effects on social behavior:
+
+- Diners in restaurants infused with pleasant ambient aromas stay longer, spend more, and tip more generously than diners in unscented control conditions (Guéguen & Petr, *International Journal of Hospitality Management*, 2006).
+- People in public spaces near bakeries and coffee shops are significantly more likely to help a stranger than people standing in odor-neutral zones (Baron, *Personality and Social Psychology Bulletin*, 1997).
+- Ambient food and floral aromas have been shown to improve self-reported mood and prosocial behavior in controlled experiments (see the review by de Groot et al., *Behavioral and Neurobiological Convergence of Odor, Mood and Emotion*, 2020).
+
+McGee does not, to my knowledge, cite a specific study claiming "garlic in the air produces N% more positive comments at the table." That precise claim is folk wisdom, not a published finding. What McGee *does* argue — across both *Nose Dive* and his *Splendid Table* interview — is that the aromas of cooking are part of the meal, not a side effect of it, and that paying attention to them changes the experience of eating.
+
+The takeaway for a home cook is still powerful: *the aroma you create while cooking is part of the meal*. Sautéing garlic with the kitchen door open, simmering a tomato sauce slowly instead of quickly, toasting spices in a dry pan before adding them — these aren't just culinary techniques. They're ways of seasoning the *room*.
+
+!!! mascot-thinking "Zyme's Big Idea"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Zyme thinking">
+    Smell is the only sense that talks directly to the parts of your brain that handle feelings and memories. That's why a single whiff of cookies baking can make a whole room feel like home — before anyone has even taken a bite. When you cook, you're not just feeding people. You're filling the air with chemistry that changes how everyone in the room feels about being there. Science is delicious!
+
+### A Vocabulary for Smells
+
+One of McGee's main projects in *Nose Dive* is giving readers a vocabulary for aromas. Most people can name a few hundred colors but only a handful of smells. Building a smell vocabulary is a learnable skill — and it dramatically improves your ability to cook, eat, and remember food experiences.
+
+A starter framework for describing food aromas:
+
+| Aroma Family | Source Compounds | Examples |
+|--------------|------------------|----------|
+| Fruity / floral | Esters, terpenes | Ripe banana, jasmine, citrus zest |
+| Green / fresh | Aldehydes from leaves | Cut grass, cucumber, raw bell pepper |
+| Roasted / nutty | Maillard pyrazines | Coffee, toasted bread, roasted peanuts |
+| Caramel / sweet | Sugar breakdown products | Crème brûlée, dulce de leche, brown butter |
+| Sulfurous / savory | Sulfur compounds (allicin, diallyl disulfide) | Garlic, onion, cooked egg, mustard |
+| Earthy / mushroom | Geosmin, octenol | Beets, mushrooms, freshly turned soil |
+| Smoky | Phenols, guaiacol | Bacon, scotch, smoked paprika |
+| Spicy / pungent | Capsaicin, piperine, eugenol | Chili, black pepper, clove |
+
+A useful classroom exercise: open the spice cabinet, smell each jar with eyes closed, and try to describe the aroma in *two ways* — first by what it reminds you of (memory), then by what aroma family it belongs to (chemistry). The gap between those two descriptions is exactly the gap McGee is trying to close.
+
+!!! note "Sources, Further Reading, and a Note on Evidence"
+    **By Harold McGee:**
+
+    - *On Food and Cooking: The Science and Lore of the Kitchen* (Scribner, revised edition 2004) — chapters on alliums detail the allicin/sulfur chemistry of garlic.
+    - *Nose Dive: A Field Guide to the World's Smells* (Penguin Press, 2020) — McGee's encyclopedia of aroma, including extended treatments of cooking smells, memory, and the vocabulary of odor.
+    - *The Curious Cook* (New York Times column, 2006–2011) — McGee's archive at [curiouscook.com](https://www.curiouscook.com/).
+    - Episode: ["The Power of Smell with Harold McGee," *The Splendid Table*, December 4, 2020](https://www.splendidtable.org/episode/2020/12/04/the-power-of-smell-with-harold-mcgee).
+    - Interview: ["What smells can tell us about the world," *Harvard Gazette*, March 2023](https://news.harvard.edu/gazette/story/2023/03/what-smells-can-tell-us-about-the-world/).
+
+    **Supporting research from other authors** (since McGee is primarily a science writer, the empirical claims about smell, mood, and social behavior come from these sources):
+
+    - Bushdid, C., et al. (2014). "Humans can discriminate more than 1 trillion olfactory stimuli." *Science*, 343(6177), 1370–1372.
+    - Guéguen, N., & Petr, C. (2006). "Odors and consumer behavior in a restaurant." *International Journal of Hospitality Management*, 25(2), 335–339.
+    - Baron, R. A. (1997). "The sweet smell of helping: Effects of pleasant ambient fragrance on prosocial behavior in shopping malls." *Personality and Social Psychology Bulletin*, 23(5), 498–503.
+
+    **A note on the "garlic at the table" story:** the specific claim that the smell of garlic in the room increases positive comments at dinner is folk wisdom rather than a peer-reviewed finding. The *mechanism* — olfactory input reaching the limbic system before conscious recognition, and pleasant ambient aromas measurably improving mood and prosocial behavior — is well documented (see sources above). Where this section says "studies show," it is citing those broader findings, not a specific garlic-and-dinner-conversation study.
+
 ## Texture and Mouthfeel
 
 **Texture and mouthfeel** refer to the physical sensations food creates in the mouth — detected by mechanoreceptors and thermoreceptors in the tongue, gums, cheeks, and throat. Texture is often the deciding factor in whether people enjoy a food.
