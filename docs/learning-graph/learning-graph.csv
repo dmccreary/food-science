@@ -1,0 +1,242 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Scientific Method,,FOUND
+2,Lab Measurement Units,1,FOUND
+3,Laboratory Safety,1,FOUND
+4,Data Recording and Analysis,1|2,FOUND
+5,Controlled Experiment Design,1|3,FOUND
+6,Variables in Experiments,1|5,FOUND
+7,Hypothesis Formation,1,FOUND
+8,Graph and Data Interpretation,2|4,FOUND
+9,Metric System in Science,1|2,FOUND
+10,Scientific Communication,1|4,FOUND
+11,Atoms and Molecules in Food,,CHEM
+12,Chemical Bonds in Food,11,CHEM
+13,Water Molecule Structure,,CHEM
+14,Hydrogen Bonding in Food,12|13,CHEM
+15,Water as Universal Solvent,13|14,CHEM
+16,Water Activity (aw),15|17,CHEM
+17,pH Scale,,CHEM
+18,Acids in Food,11|17,CHEM
+19,Bases in Food,11|17,CHEM
+20,Buffers in Food Chemistry,18|19,CHEM
+21,Carbohydrates Overview,,CHEM
+22,Monosaccharides,21,CHEM
+23,Disaccharides,22,CHEM
+24,Polysaccharides,23,CHEM
+25,Proteins in Food Chemistry,,CHEM
+26,Amino Acids,25,CHEM
+27,Peptide Bonds,26,CHEM
+28,Lipids Overview,,CHEM
+29,Fatty Acids,28,CHEM
+30,Saturated vs Unsaturated Fats,29,CHEM
+31,Heat Transfer Fundamentals,,COOK
+32,Conduction in Cooking,31,COOK
+33,Convection in Cooking,31,COOK
+34,Radiation in Cooking,31,COOK
+35,Protein Denaturation by Heat,25|31,COOK
+36,Starch Gelatinization,24|31,COOK
+37,Maillard Reaction,22|25|31,COOK
+38,Caramelization,22|31,COOK
+39,Boiling Point and Altitude,31,COOK
+40,Specific Heat Capacity of Food,11|31,COOK
+41,Thermal Conductivity of Foods,11|31,COOK
+42,Internal Cooking Temperature,31|35,COOK
+43,Enzymatic Browning,25|31|44,COOK
+44,Oxidation in Food,11|28,COOK
+45,Smoke Point of Cooking Fats,29|31,COOK
+46,Pressure Cooking Science,31|39,COOK
+47,Microwave Heating Mechanism,31,COOK
+48,Emulsification in Cooking,15|28,COOK
+49,Wheat Flour Protein Content,25,BAKE
+50,Gluten Structure,26|49,BAKE
+51,Gluten Formation,49|50,BAKE
+52,Kneading and Gluten Development,31|51,BAKE
+53,Yeast Biology in Baking,76|82,BAKE
+54,Yeast Fermentation in Baking,22|53,BAKE
+55,CO2 Production in Dough Rising,54|85,BAKE
+56,Baking Soda Chemistry,11|18|19,BAKE
+57,Baking Powder Chemistry,20|56,BAKE
+58,Chemical Leavening Reactions,56|57,BAKE
+59,Physical Leavening by Steam,31|39,BAKE
+60,Egg Function in Baking,25|35|51,BAKE
+61,Fat Function in Baking,28|51,BAKE
+62,Sugar Function in Baking,22|51,BAKE
+63,Salt Function in Baking,51,BAKE
+64,Oven Spring,36|55,BAKE
+65,Crust Formation,37|31,BAKE
+66,Foam Formation in Baking,25|35,BAKE
+67,Wild Yeast Capture,15|85,BAKE
+68,Sourdough Starter Ecosystem,67|76|82|86,BAKE
+69,Sourdough Lactic Acid Bacteria,68|86,BAKE
+70,Sourdough Feeding Ratio,22|68,BAKE
+71,Sourdough Starter Float Test,16|68|70,BAKE
+72,Sourdough Temperature Effects,31|68,BAKE
+73,Lactic Acid Production,69|86,BAKE
+74,Acetic Acid Production,69|88,BAKE
+75,Bulk Fermentation,54|67|68,BAKE
+76,Bacteria Cell Structure,,MICR
+77,Bacterial Growth Curve,76,MICR
+78,Lag Phase of Growth,77,MICR
+79,Log Phase of Growth,77|78,MICR
+80,Stationary Phase of Growth,79,MICR
+81,Death Phase of Growth,80,MICR
+82,Yeast Cell Structure,,MICR
+83,Mold in Food,76,MICR
+84,Viruses in Food,76,MICR
+85,Fermentation Overview,,MICR
+86,Lactic Acid Fermentation,22|76|85,MICR
+87,Alcoholic Fermentation,22|82|85,MICR
+88,Acetic Acid Fermentation,22|76|85,MICR
+89,Beneficial Microorganisms,76|85,MICR
+90,Microbial Food Spoilage,16|76,MICR
+91,Biofilm Formation,76,MICR
+92,Microbial Ecology of Food,76|89,MICR
+93,Kombucha Science,22|87|88|89,MICR
+94,Yogurt Production Science,86|89,MICR
+95,Cheese Making Microbiology,25|86|89,MICR
+96,Temperature Danger Zone,,SAFE
+97,Foodborne Illness Overview,,SAFE
+98,Foodborne Illness Types,97,SAFE
+99,Salmonella in Food,76|97,SAFE
+100,E. Coli O157:H7 in Food,76|97,SAFE
+101,Listeria in Food,76|97,SAFE
+102,Campylobacter in Food,76|97,SAFE
+103,Norovirus in Food,84|97,SAFE
+104,Cross-Contamination Prevention,90|97,SAFE
+105,HACCP Principles,96|97,SAFE
+106,Critical Control Points,105,SAFE
+107,Handwashing Science,97,SAFE
+108,Safe Food Storage,16|96,SAFE
+109,FDA Food Safety Regulation,97,SAFE
+110,USDA Meat Inspection,97,SAFE
+111,Food Recall Process,105|109,SAFE
+112,Personal Hygiene in Food Prep,97|107,SAFE
+113,Macronutrients Overview,,NUTR
+114,Carbohydrates as Energy,21|113,NUTR
+115,Proteins in Human Nutrition,25|113,NUTR
+116,Dietary Fats and Health,28|113,NUTR
+117,Micronutrients Overview,,NUTR
+118,Fat-Soluble Vitamins,28|117,NUTR
+119,Water-Soluble Vitamins,15|117,NUTR
+120,Essential Minerals,117,NUTR
+121,Dietary Fiber and Gut Health,24|117,NUTR
+122,Digestion Process,113|117,NUTR
+123,Nutrient Absorption,122,NUTR
+124,Energy Balance and Metabolism,113|114,NUTR
+125,Caloric Density of Foods,113|114|116,NUTR
+126,USDA MyPlate Guidelines,113|117,NUTR
+127,Dietary Reference Intakes,113|117,NUTR
+128,Nutrition Facts Label,113|117,NUTR
+129,Added Sugars in Diet,22|114,NUTR
+130,Nutritional Myths Analysis,113|117,NUTR
+131,Antioxidants in Food,28|117,NUTR
+132,Phytonutrients,117|131,NUTR
+133,Food Preservation Principles,,PRES
+134,Canning Science,16|133,PRES
+135,High-Acid vs Low-Acid Canning,18|134,PRES
+136,Botulism Risk in Canning,99|134,PRES
+137,Pickling and Brining,18|16|133,PRES
+138,Fermentation as Preservation,85|133,PRES
+139,Freezing and Ice Crystals,16|133,PRES
+140,Freeze-Drying Process,139,PRES
+141,Dehydration and Drying,16|133,PRES
+142,Salt Curing Science,16|133,PRES
+143,Smoking Food Science,133,PRES
+144,Modified Atmosphere Packaging,90|133,PRES
+145,Vacuum Sealing Technology,133|144,PRES
+146,Food Irradiation,133,PRES
+147,Antimicrobial Packaging,144|146,PRES
+148,Hurdle Technology,16|96|133,PRES
+149,Five Basic Tastes,,SENS
+150,Sweetness and Sugar Receptors,22|149,SENS
+151,Sourness and Acid Detection,17|18|149,SENS
+152,Saltiness Perception,149,SENS
+153,Bitterness and Taste Aversion,149,SENS
+154,Umami and Savory Taste,25|149,SENS
+155,Olfactory System and Flavor,149,SENS
+156,Flavor vs Taste Distinction,149|155,SENS
+157,Food Texture and Mouthfeel,149,SENS
+158,Color and Food Perception,149,SENS
+159,Sensory Panel Design,5|149,SENS
+160,Triangle Test Method,5|159,SENS
+161,Hedonic Scale Scoring,159,SENS
+162,Detection Threshold Testing,149|159,SENS
+163,Sensory Bias and Expectation,149|155,SENS
+164,Cross-Modal Sensory Interaction,149|155|157,SENS
+165,Industrial Food Production,,PROC
+166,Pasteurization Science,76|96|165,PROC
+167,Ultra-High Temperature (UHT),166,PROC
+168,Homogenization Process,28|165,PROC
+169,Food Fortification,117|165,PROC
+170,Food Additives Overview,,PROC
+171,Preservatives in Food,133|170,PROC
+172,Emulsifiers in Food Products,48|170,PROC
+173,Food Colorants,170,PROC
+174,Artificial vs Natural Flavors,170,PROC
+175,Food Packaging Materials,165,PROC
+176,Active Packaging Technology,170|175,PROC
+177,GRAS Designation,170,PROC
+178,Food Traceability Systems,105|165,PROC
+179,Food Bar Coding Systems,178,PROC
+180,Nanotechnology in Food,11|165,PROC
+181,Farm-to-Table Concept,,AGRI
+182,Food System Components,,AGRI
+183,Soil Health and Nutrients,11|182,AGRI
+184,Crop Rotation Principles,182|183,AGRI
+185,Composting Process,183,AGRI
+186,Organic vs Conventional Farming,182|183,AGRI
+187,Integrated Pest Management,182|183,AGRI
+188,Pollinator Health and Food,182|187,AGRI
+189,Food Waste Causes and Effects,181|182,AGRI
+190,Carbon Footprint of Agriculture,181|182,AGRI
+191,Water Use in Food Production,182,AGRI
+192,Greenhouse Gas in Farming,190|191,AGRI
+193,Seed Saving and Biodiversity,182,AGRI
+194,Animal Welfare and Food Quality,182,AGRI
+195,Biofortification of Crops,117|182,AGRI
+196,Post-Harvest Plant Physiology,,LOCL
+197,Plant Cellular Respiration,21|196,LOCL
+198,Ethylene Gas in Ripening,196,LOCL
+199,Controlled Atmosphere Storage,90|196,LOCL
+200,Nutrient Loss During Transit,117|196|197,LOCL
+201,Food Supply Chain Stages,181|182,LOCL
+202,Industrial Distribution Barriers,165|201,LOCL
+203,Minimum Order Volume Barrier,202,LOCL
+204,Food Desert Definition,182|201,LOCL
+205,Food Shed Mapping,181|204,LOCL
+206,Food Hub Aggregation Model,201|205,LOCL
+207,Community Supported Agriculture,181|205,LOCL
+208,Farmers Market Economics,181|205,LOCL
+209,Urban Farming Methods,182|181,LOCL
+210,Vertical and Rooftop Farming,209,LOCL
+211,School Garden Programs,181|182,LOCL
+212,Gleaning Network Operations,181|189,LOCL
+213,NOVA Classification System,,LOCL
+214,UPF Health Consequences,113|117|213,LOCL
+215,Local Sourcing in Schools,206|207,LOCL
+216,Food Culture and Climate,,GLOB
+217,Staple Crops by Region,182|216,GLOB
+218,Traditional Fermented Foods,86|216,GLOB
+219,Spice Trade and Food History,181|216,GLOB
+220,Mediterranean Diet Patterns,113|117|216,GLOB
+221,Indigenous Food Systems,182|216,GLOB
+222,Food Taboos and Religion,216,GLOB
+223,Food Globalization Effects,181|216,GLOB
+224,Climate Change and Food Supply,182|190|216,GLOB
+225,Heirloom Crop Varieties,182|193,GLOB
+226,Food Engineering Principles,,INNO
+227,Lab-Grown Meat Science,25|76|226,INNO
+228,Plant-Based Meat Substitutes,25|113|226,INNO
+229,Extrusion Processing,165|226,INNO
+230,Precision Fermentation,85|226,INNO
+231,3D Food Printing,165|226,INNO
+232,Hydroponic Growing Systems,182|183|226,INNO
+233,Aquaponics Systems,85|232,INNO
+234,Functional Food Design,113|117|226,INNO
+235,Food Science Career Paths,226,INNO
+236,Hydroponic Nutrient Solutions,11|17|232,INNO
+237,Hydroponic System Types,232,INNO
+238,Low-Cost Hydroponic Build,232|237,INNO
+239,Growing Media for Hydroponics,232|237,INNO
+240,Hydroponic Plant Monitoring,4|17|238,INNO
+241,LED Grow Lights for Hydroponics,232|238,INNO

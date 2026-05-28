@@ -1,0 +1,10 @@
+{
+  "title": "Food Science for 9th Grade",
+  "description": "An interactive intelligent textbook for 9th grade students exploring food science through virtual MicroSim labs and hands-on kitchen experiments. Covers food chemistry, microbiology, baking science (including sourdough), nutrition, food safety, preservation, sensory science, food technology, agricultural systems, and the farm-to-table movement.",
+  "creator": "Dan Mccreary",
+  "date": "2026-05-27",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

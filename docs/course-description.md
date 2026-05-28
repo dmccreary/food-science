@@ -92,6 +92,16 @@ about what they eat every day — skills that serve them for a lifetime.
 14. **Food Engineering and Innovation** — 3D-printed food, lab-grown meat,
     plant-based protein substitutes, precision fermentation, and careers in
     food science and food engineering
+15. **Hydroponics as a Class Project** — hands-on construction of low-cost
+    hydroponic garden systems using accessible materials (5-gallon buckets,
+    pool noodles, PVC pipe, net cups); the chemistry of nutrient solutions
+    (nitrogen, phosphorus, potassium, and micronutrient ratios; pH and
+    electrical conductivity management); comparison of system types
+    (deep water culture, nutrient film technique, Kratky passive method,
+    wick systems); selection of growing media (clay pellets, rockwool,
+    perlite, coconut coir); grow light science (LED spectrum, photoperiod,
+    lumens vs. PAR); and quantitative monitoring of plant growth across
+    the semester using the scientific method
 
 ## Topics Not Covered
 
@@ -150,6 +160,12 @@ After completing this course, students will be able to:
 - State the three main post-harvest processes that cause fresh produce to lose
   nutritional value during long-distance shipping (cellular respiration,
   moisture loss, and ethylene-driven ripening)
+- Name the four primary hydroponic system types (deep water culture, nutrient
+  film technique, Kratky passive method, wick system) and identify one
+  advantage of each
+- List the three primary macronutrients in a hydroponic nutrient solution
+  (nitrogen, phosphorus, potassium) and state the role each plays in
+  plant growth
 - Name the most common foodborne pathogens (Salmonella, E. coli O157:H7,
   Listeria, Campylobacter, Norovirus) and their typical food sources
 
@@ -178,6 +194,16 @@ and graphic communication.*
   acid production: warmer temperatures and wetter starters favor lactic acid
   (mild flavor); cooler temperatures and stiffer starters favor acetic acid
   (sharp, vinegary flavor)
+- Explain how a hydroponic nutrient solution replaces soil: describe how
+  dissolved mineral salts supply the same ions (NO₃⁻, H₂PO₄⁻, K⁺, Ca²⁺,
+  Mg²⁺) that plant roots extract from soil water, why pH must be maintained
+  in the 5.5–6.5 range for optimal ion uptake, and how electrical conductivity
+  (EC) is used as a proxy for nutrient concentration
+- Describe how the Kratky passive hydroponic method works without pumps or
+  electricity: explain the air-gap mechanism between the nutrient solution
+  surface and the net cup, why roots develop both submerged feeding roots and
+  aerial oxygen-absorbing roots, and why this makes it ideal for low-cost
+  classroom or home growing
 - Explain how emulsifiers (such as lecithin in egg yolk) allow oil and water to
   mix and stay mixed in a mayonnaise or salad dressing
 - Summarize how pasteurization reduces pathogen load without sterilizing food
@@ -256,6 +282,18 @@ and graphic communication.*
   percentage of daily calories coming from ultra-processed foods (Group 4),
   and identify three realistic substitutions that would shift the diet toward
   minimally processed alternatives without increasing cost
+- **Class Project Lab (semester-long):** Build a low-cost hydroponic garden
+  using a 5-gallon bucket or storage tote, net cups, an air pump, and a
+  prepared nutrient solution; plant at least two leafy green crops (e.g.,
+  lettuce, basil, spinach); measure and record pH and EC of the nutrient
+  solution weekly; photograph plant growth at regular intervals; harvest and
+  weigh the final yield; and compare yield, cost per gram, and water usage
+  to conventionally grown supermarket equivalents
+- **Lab:** Mix a hydroponic nutrient solution from a two-part or three-part
+  concentrate, measure the resulting pH using a digital meter, adjust with pH-up
+  (potassium hydroxide) or pH-down (phosphoric acid) solutions to reach the
+  5.5–6.5 target range, and measure electrical conductivity (EC) to verify
+  nutrient concentration; record all measurements and discuss sources of error
 - Apply safe food handling practices (handwashing, preventing cross-contamination,
   proper storage temperatures) consistently during all kitchen labs
 
@@ -308,6 +346,11 @@ to one another and to an overall structure or purpose.*
   transportation, refrigeration, retail, waste) of a locally grown seasonal
   vegetable versus the same vegetable shipped out of season from another
   continent, accounting for controlled atmosphere storage time
+- Analyze the semester-long hydroponic growth data from the class project:
+  plot growth rate curves for each crop, identify the effect of pH or EC
+  deviations on growth rate, compare yield across different system configurations
+  within the class, and determine the cost per gram of food produced versus
+  the supermarket price for the same crop
 
 ### Evaluate
 
@@ -350,12 +393,28 @@ to one another and to an overall structure or purpose.*
   farmers, and barriers small farms face in meeting institutional procurement
   requirements; identify which stakeholders benefit and which bear the costs
   under each scenario
+- Evaluate three different hydroponic growing media (clay pellets, rockwool,
+  coconut coir) by comparing their cost, water retention, reusability,
+  environmental impact, and root anchoring performance; recommend the best
+  choice for a low-budget school classroom project and justify the selection
+  with evidence from the class project data
 
 ### Create
 
 *Putting elements together to form a coherent or functional whole; reorganizing
 elements into a new pattern or structure.*
 
+- **Capstone Project Option G — Hydroponic System Design and Build:**
+  Design and build a low-cost hydroponic system entirely from repurposed or
+  inexpensive materials (budget: under $25). Document the engineering design
+  process: identify constraints (space, light, budget, crop choice), sketch
+  three alternative system designs, select one with a written rationale, build
+  it, and grow a crop from seed to harvest. Keep a full scientific lab journal
+  throughout — tracking pH, EC, plant height, leaf count, and any problems
+  encountered — and write a final report connecting every observation to the
+  underlying plant biology, chemistry (nutrient uptake, pH effects on ion
+  availability), and physics (light spectrum, fluid dynamics). Present results
+  and the harvested crop to the class.
 - **Capstone Project Option F — Local Food System Design:** Design a realistic
   farm-to-table food system for your school or neighborhood. Start with a
   food-shed audit: map food producers within 50 miles, identify distribution

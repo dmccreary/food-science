@@ -1,0 +1,16 @@
+{
+  "FOUND": "Foundational Science Skills",
+  "CHEM": "Food Chemistry",
+  "COOK": "Cooking Science and Heat Transfer",
+  "BAKE": "Baking Science",
+  "MICR": "Food Microbiology",
+  "SAFE": "Food Safety and Sanitation",
+  "NUTR": "Nutrition Science",
+  "PRES": "Food Preservation",
+  "SENS": "Sensory Science",
+  "PROC": "Food Technology and Processing",
+  "AGRI": "Agricultural Systems and Sustainability",
+  "LOCL": "Local Food Systems and Farm-to-Table",
+  "GLOB": "Global Food Cultures",
+  "INNO": "Food Engineering and Innovation"
+}
