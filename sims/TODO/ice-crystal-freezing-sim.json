@@ -1,0 +1,14 @@
+{
+  "sim_id": "ice-crystal-freezing-sim",
+  "diagram_name": "Freezing Rate and Ice Crystal Size MicroSim",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Food Preservation — Extending Shelf Life Through Science\"",
+  "chapter_dir": "09-food-preservation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will explain (L2 — Understand) why faster freezing produces smaller ice crystals and evaluate (L5 — Evaluate) the tradeoff between freezing speed and food texture quality.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** ice-crystal-freezing-sim<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will explain (L2 — Understand) why faster freezing produces smaller ice crystals and evaluate (L5 — Evaluate) the tradeoff between freezing speed and food texture quality.\n\n**Canvas size:** 740 × 460 px, responsive.\n\n**Layout:** Two side-by-side panels, each showing a cross-section of a strawberry cell (200 × 300 px).\n\n**Freezing rate controls (top):**\n- Left panel: Slider set to \"Slow freeze (home freezer, 0°F)\"\n- Right panel: Slider set to \"Fast freeze (commercial blast, −40°F)\"\n- Both panels animate simultaneously when \"Freeze\" button is clicked\n\n**Animation:**\n- Ice crystals nucleate and grow as temperature drops; slow freeze produces ~10 large crystals (200–300 px diameter) that pierce the cell wall in multiple places; fast freeze produces ~50 small crystals (20–40 px) that cause minimal cell wall damage\n- Cell wall damage shown as red highlighted rupture points\n- Water loss on thaw: slow freeze panel shows large \"drip loss\" puddle; fast freeze shows minimal drip\n\n**Texture quality score bar:** Updates after freezing completes — slow freeze scores 45/100, fast freeze scores 88/100.\n\n**Tooltip:** Clicking any ice crystal shows its simulated diameter in microns and explains why larger crystals cause more mechanical damage.\n\n**Responsive:** Redraws on window resize."
+}

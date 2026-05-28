@@ -1,0 +1,14 @@
+{
+  "sim_id": "molecule-builder",
+  "diagram_name": "Interactive Molecule Builder",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will be able to identify (Bloom L1 — Remember) the atoms that make up key food molecules and explain (Bloom L2 — Understand) how bonding creates compounds with different properties than the individual elements.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: MicroSim\n**sim-id:** molecule-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Students will be able to identify (Bloom L1 — Remember) the atoms that make up key food molecules and explain (Bloom L2 — Understand) how bonding creates compounds with different properties than the individual elements.\n\n**Canvas size:** 760 × 500 px, responsive.\n\n**Layout:** Left sidebar shows a palette of colored atom \"beads\": Carbon (gray, C), Hydrogen (white/light blue, H), Oxygen (red, O), Nitrogen (blue, N). Right main area is the build canvas. A bottom toolbar shows: \"Water (H₂O),\" \"Carbon Dioxide (CO₂),\" \"Glucose (C₆H₁₂O₆, simplified),\" and \"Clear\" buttons.\n\n**Interaction — Load preset molecules:**\nClicking \"Water (H₂O)\" animates two Hydrogen beads and one Oxygen bead onto the canvas, snaps them together at the correct bond angle (~104.5°), and displays a side panel with:\n- The molecular formula\n- The full name\n- A 2-sentence description of its role in food (\"Water is the universal solvent. It dissolves sugars, salts, and acids, making most chemical reactions in cooking possible.\")\n- The approximate bond angle\n\nClicking \"Carbon Dioxide (CO₂)\" shows one carbon flanked by two oxygens with double bonds, and explains: \"Yeast and baking powder both produce CO₂ gas. This gas gets trapped in dough, making it rise.\"\n\nClicking \"Glucose (simplified)\" shows a ring of 6 carbons with hydrogens and oxygens attached, and explains: \"Glucose is a simple sugar. It is the main food source for yeast and the source of energy for your body cells.\"\n\n**Freeform drag mode:** Students can also drag individual atom beads onto the canvas and click two adjacent beads to draw a bond between them. A counter shows \"You've built: C0 H0 O0 N0.\"\n\n**Hover interaction:** Hovering over any atom bead in the palette shows a tooltip with the element name, symbol, and a one-line fact (\"Carbon forms the backbone of almost every organic molecule in food.\").\n\n**Color scheme:** Atom colors follow the standard CPK color convention (gray C, white H, red O, blue N), with book-palette green/orange used for UI buttons."
+}

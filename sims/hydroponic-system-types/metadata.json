@@ -1,0 +1,21 @@
+{
+  "title": "Hydroponic System Types Comparison",
+  "description": "Students will identify (L1 — Remember) the four main hydroponic system types and evaluate (L5 — Evaluate) which system best suits a given set of constraints (budget, space, power availability, crop type).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "hydroponic-system-types",
+  "library": "p5.js",
+  "bloomLevel": "L1-Remember, L5-Evaluate",
+  "bloomVerb": "Identify, Evaluate",
+  "completion_status": "completed",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Food Engineering, Hydroponics, and Innovation\"",
+  "chapter_dir": "15-food-engineering-innovation"
+}

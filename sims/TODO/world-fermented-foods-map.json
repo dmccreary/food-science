@@ -1,0 +1,14 @@
+{
+  "sim_id": "world-fermented-foods-map",
+  "diagram_name": "World Map of Fermented Foods",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Global Food Cultures and Food Futures\"",
+  "chapter_dir": "14-global-food-cultures",
+  "library": "Leaflet",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify (L1 — Remember) fermented food traditions from at least six world regions and classify (L2 — Understand) each by its fermentation pathway (lactic acid, alcoholic, acetic acid, or mold-based).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** world-fermented-foods-map<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify (L1 — Remember) fermented food traditions from at least six world regions and classify (L2 — Understand) each by its fermentation pathway (lactic acid, alcoholic, acetic acid, or mold-based).\n\n**Canvas size:** 760 × 500 px, responsive.\n\n**Base map:** World map centered on 20°N, 0°E at zoom level 2. Tile layer: OpenStreetMap or equivalent.\n\n**Markers:** 20 location markers, color-coded by fermentation type:\n- Green = Lactic acid fermentation (yogurt/Georgia, kimchi/Korea, sauerkraut/Germany, injera/Ethiopia, kefir/Caucasus, lassi/India)\n- Orange = Alcoholic fermentation (sake/Japan, beer/Belgium, wine/France, chicha/Peru, tej/Ethiopia)\n- Blue = Acetic acid / kombucha / vinegar fermentation (kombucha/China-Russia, coconut vinegar/Philippines)\n- Purple = Mold-based fermentation (miso/Japan, tempeh/Indonesia, Roquefort/France, koji-rice wine/China)\n\n**Clicking a marker:**\n- Opens a popup with the food name, country, fermentation type, primary microorganism, key flavor characteristics, and one sentence on how the science from this course explains it\n- Example popup for Kimchi: \"Kimchi — Korea. Fermentation type: Lactic acid. Key microorganisms: *Leuconostoc mesenteroides*, *Lactobacillus plantarum*. Flavor: tangy, spicy, savory. Science connection: salt draws water from cabbage by osmosis, creating brine that LAB ferment to lactic acid — the same process as sauerkraut but with chili and garlic influencing the microbial community.\"\n\n**Filter buttons:** Toggle markers by fermentation type to see geographic patterns.\n\n**Responsive:** Redraws on window resize."
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Protein Source Comparison — Environmental vs. Nutritional Tradeoffs</title>
+    <!-- CANVAS_HEIGHT: 980 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f1f8e9;
+            color: #212529;
+            padding: 12px;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            padding: 14px 18px 18px 18px;
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 4px;
+            color: #2e7d32;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #chart-wrap {
+            position: relative;
+            width: 100%;
+            height: 420px;
+            margin: 0 auto;
+        }
+        #toggles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 12px;
+            justify-content: center;
+            margin: 10px 0 6px 0;
+            padding: 8px;
+            background: #f7faf2;
+            border-radius: 6px;
+            border: 1px solid #e3ebd5;
+        }
+        .toggle-label {
+            display: inline-flex;
+            align-items: center;
+            font-size: 12px;
+            cursor: pointer;
+            user-select: none;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .toggle-label:hover { background: #eef3e2; }
+        .toggle-label input { margin-right: 4px; cursor: pointer; }
+        .swatch {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            margin-right: 4px;
+            border: 1px solid rgba(0,0,0,0.15);
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .btn {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 12px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .btn.secondary { background: #f57c00; }
+        .btn:hover { opacity: 0.9; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        caption {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2e7d32;
+            text-align: left;
+            padding: 6px 0 4px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 5px 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background: #2e7d32;
+            color: white;
+            font-weight: 600;
+            font-size: 11px;
+        }
+        tr:nth-child(even) td { background: #f7faf2; }
+        .src-name {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 500;
+        }
+        .footnote {
+            font-size: 10px;
+            color: #777;
+            margin-top: 6px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div id="container">
+        <h1>Protein Source Comparison</h1>
+        <div class="subtitle">Six dimensions, ten protein sources — higher is better on every axis (environmental metrics inverted)</div>
+
+        <div class="button-row">
+            <button class="btn" id="btn-all">Show all</button>
+            <button class="btn secondary" id="btn-none">Hide all</button>
+            <button class="btn" id="btn-default">Reset</button>
+        </div>
+
+        <div id="toggles"></div>
+
+        <div id="chart-wrap">
+            <canvas id="radar"></canvas>
+        </div>
+
+        <table>
+            <caption>Headline metrics per protein source</caption>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Protein (g / 100g)</th>
+                    <th>GHG (kg CO2e / kg)</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody id="summary-tbody"></tbody>
+        </table>
+        <div class="footnote">Values estimated from published FAO and Poore &amp; Nemecek (2018) data; consumer-acceptance figures from Western consumer surveys. Projected values shown for cultured meat.</div>
+    </div>
+    </main>
+
+<script>
+// Data: each source rated 0-100 on six axes (higher = better on every axis).
+// Environmental impact, water use, land use, and cost are INVERTED so that
+// 100 always represents the desirable end of the scale.
+const AXES = [
+    'Protein quality (PDCAAS)',
+    'Low environmental impact',
+    'Low water use',
+    'Low land use',
+    'Low cost / gram protein',
+    'Consumer acceptance'
+];
+
+const SOURCES = [
+    { id: 'beef',     name: 'Conventional beef',    color: '#e53935',
+      scores: [92, 8,  10, 8,  30, 88],
+      proteinPer100g: '26 g', ghg: '~60 kg CO2e/kg',
+      note: 'Highly acceptable, very high environmental footprint.', defaultOn: true },
+    { id: 'chicken',  name: 'Chicken',              color: '#f57c00',
+      scores: [95, 55, 60, 55, 60, 90],
+      proteinPer100g: '27 g', ghg: '~6 kg CO2e/kg',
+      note: 'Lean, popular, moderate footprint.', defaultOn: false },
+    { id: 'salmon',   name: 'Farmed salmon',        color: '#1e88e5',
+      scores: [98, 50, 45, 70, 30, 70],
+      proteinPer100g: '20 g', ghg: '~12 kg CO2e/kg',
+      note: 'Excellent protein, feed and habitat concerns.', defaultOn: false },
+    { id: 'eggs',     name: 'Eggs',                 color: '#fdd835',
+      scores: [100, 60, 55, 65, 80, 95],
+      proteinPer100g: '13 g', ghg: '~4.5 kg CO2e/kg',
+      note: 'Reference protein (PDCAAS = 1.0), low cost.', defaultOn: false },
+    { id: 'lentils',  name: 'Lentils',              color: '#2e7d32',
+      scores: [52, 95, 90, 85, 95, 65],
+      proteinPer100g: '9 g (cooked)', ghg: '~0.9 kg CO2e/kg',
+      note: 'Low footprint, cheap, lower amino-acid score.', defaultOn: true },
+    { id: 'tofu',     name: 'Tofu / soy',           color: '#81c784',
+      scores: [91, 88, 85, 80, 75, 60],
+      proteinPer100g: '8 g', ghg: '~2 kg CO2e/kg',
+      note: 'Complete plant protein with low footprint.', defaultOn: false },
+    { id: 'pea',      name: 'Pea protein isolate',  color: '#26a69a',
+      scores: [78, 85, 88, 82, 55, 55],
+      proteinPer100g: '80 g (isolate)', ghg: '~1.5 kg CO2e/kg',
+      note: 'Common in plant milks and meat alternatives.', defaultOn: false },
+    { id: 'pbburger', name: 'Plant-based burger',   color: '#7e57c2',
+      scores: [80, 75, 78, 80, 45, 50],
+      proteinPer100g: '20 g', ghg: '~3.5 kg CO2e/kg',
+      note: '~10× lower footprint than beef burger.', defaultOn: false },
+    { id: 'cultured', name: 'Cultured meat (proj.)',color: '#9e9e9e',
+      scores: [90, 65, 50, 90, 10, 35],
+      proteinPer100g: '~26 g (proj.)', ghg: '~5–15 kg CO2e/kg (proj.)',
+      note: 'Projected; cost falling, acceptance uncertain.', defaultOn: false },
+    { id: 'insects',  name: 'Insects / cricket flour', color: '#795548',
+      scores: [88, 92, 95, 90, 70, 15],
+      proteinPer100g: '60 g (dry flour)', ghg: '~1 kg CO2e/kg',
+      note: 'Tiny footprint, very low Western acceptance.', defaultOn: false }
+];
+
+function hexToRgba(hex, a) {
+    const m = hex.replace('#','');
+    const r = parseInt(m.substring(0,2), 16);
+    const g = parseInt(m.substring(2,4), 16);
+    const b = parseInt(m.substring(4,6), 16);
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
+}
+
+function buildDataset(src) {
+    return {
+        label: src.name,
+        _srcId: src.id,
+        data: src.scores,
+        backgroundColor: hexToRgba(src.color, 0.18),
+        borderColor: src.color,
+        borderWidth: 2,
+        pointBackgroundColor: src.color,
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: src.color,
+        pointRadius: 3,
+        pointHoverRadius: 5,
+        hidden: !src.defaultOn
+    };
+}
+
+const ctx = document.getElementById('radar').getContext('2d');
+const chart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: AXES,
+        datasets: SOURCES.map(buildDataset)
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                    label: function(ctx) {
+                        const src = SOURCES.find(s => s.id === ctx.dataset._srcId);
+                        const axis = AXES[ctx.dataIndex];
+                        return `${ctx.dataset.label}: ${ctx.formattedValue}/100 — ${axis}`;
+                    },
+                    afterLabel: function(ctx) {
+                        const src = SOURCES.find(s => s.id === ctx.dataset._srcId);
+                        return src ? src.note : '';
+                    }
+                }
+            }
+        },
+        scales: {
+            r: {
+                min: 0,
+                max: 100,
+                ticks: {
+                    stepSize: 20,
+                    backdropColor: 'rgba(255,255,255,0.7)',
+                    color: '#666',
+                    font: { size: 10 }
+                },
+                pointLabels: {
+                    color: '#2e7d32',
+                    font: { size: 11, weight: '600' }
+                },
+                grid: { color: '#d8e4c8' },
+                angleLines: { color: '#d8e4c8' }
+            }
+        }
+    }
+});
+
+// Toggle UI
+const togglesDiv = document.getElementById('toggles');
+SOURCES.forEach((src, i) => {
+    const label = document.createElement('label');
+    label.className = 'toggle-label';
+    label.innerHTML =
+        `<input type="checkbox" data-idx="${i}" ${src.defaultOn ? 'checked' : ''}>` +
+        `<span class="swatch" style="background:${src.color}"></span>` +
+        `${src.name}`;
+    togglesDiv.appendChild(label);
+});
+
+togglesDiv.addEventListener('change', (e) => {
+    if (e.target && e.target.matches('input[type=checkbox]')) {
+        const idx = parseInt(e.target.dataset.idx, 10);
+        chart.data.datasets[idx].hidden = !e.target.checked;
+        chart.update();
+    }
+});
+
+function setAll(state) {
+    SOURCES.forEach((src, i) => {
+        chart.data.datasets[i].hidden = !state;
+    });
+    togglesDiv.querySelectorAll('input[type=checkbox]').forEach(cb => {
+        cb.checked = state;
+    });
+    chart.update();
+}
+
+document.getElementById('btn-all').addEventListener('click', () => setAll(true));
+document.getElementById('btn-none').addEventListener('click', () => setAll(false));
+document.getElementById('btn-default').addEventListener('click', () => {
+    SOURCES.forEach((src, i) => {
+        chart.data.datasets[i].hidden = !src.defaultOn;
+    });
+    togglesDiv.querySelectorAll('input[type=checkbox]').forEach(cb => {
+        const idx = parseInt(cb.dataset.idx, 10);
+        cb.checked = SOURCES[idx].defaultOn;
+    });
+    chart.update();
+});
+
+// Summary table
+const tbody = document.getElementById('summary-tbody');
+SOURCES.forEach(src => {
+    const tr = document.createElement('tr');
+    tr.innerHTML =
+        `<td><span class="src-name"><span class="swatch" style="background:${src.color}"></span>${src.name}</span></td>` +
+        `<td>${src.proteinPer100g}</td>` +
+        `<td>${src.ghg}</td>` +
+        `<td>${src.note}</td>`;
+    tbody.appendChild(tr);
+});
+</script>
+</body>
+</html>

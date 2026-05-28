@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map of Fermented Foods</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f1f8e9;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 12px;
+            background: #f1f8e9;
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 6px;
+            color: #2e7d32;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 13px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .filter-btn {
+            border: 2px solid #ccc;
+            background: white;
+            padding: 6px 12px;
+            border-radius: 18px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .filter-btn .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .filter-btn.active {
+            color: white;
+        }
+        .filter-btn.lactic.active   { background: #2e7d32; border-color: #2e7d32; }
+        .filter-btn.alcohol.active  { background: #f57c00; border-color: #f57c00; }
+        .filter-btn.acetic.active   { background: #1e88e5; border-color: #1e88e5; }
+        .filter-btn.mold.active     { background: #7e57c2; border-color: #7e57c2; }
+        .filter-btn.all.active      { background: #424242; border-color: #424242; }
+        #map {
+            width: 100%;
+            height: 500px;
+            border-radius: 8px;
+            border: 2px solid #2e7d32;
+        }
+        .legend {
+            background: white;
+            padding: 8px 10px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .legend h4 {
+            font-size: 12px;
+            margin-bottom: 4px;
+            color: #333;
+        }
+        .legend .row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.3);
+        }
+        .leaflet-popup-content {
+            font-size: 13px;
+            line-height: 1.45;
+            margin: 10px 12px;
+            max-width: 260px;
+        }
+        .popup-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #2e7d32;
+        }
+        .popup-type {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 10px;
+            margin-bottom: 6px;
+        }
+        .popup-row { margin-bottom: 4px; }
+        .popup-row b { color: #444; }
+        .popup-science {
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid #eee;
+            font-style: italic;
+            color: #333;
+        }
+        .footer {
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>World Map of Fermented Foods</h1>
+        <div class="subtitle">Click any marker to learn the science. Use the buttons to filter by fermentation type.</div>
+        <div id="filters">
+            <button class="filter-btn all active" data-type="all">
+                <span class="dot" style="background:#424242"></span>Show All
+            </button>
+            <button class="filter-btn lactic active" data-type="lactic">
+                <span class="dot" style="background:#2e7d32"></span>Lactic Acid
+            </button>
+            <button class="filter-btn alcohol active" data-type="alcohol">
+                <span class="dot" style="background:#f57c00"></span>Alcoholic
+            </button>
+            <button class="filter-btn acetic active" data-type="acetic">
+                <span class="dot" style="background:#1e88e5"></span>Acetic / Kombucha
+            </button>
+            <button class="filter-btn mold active" data-type="mold">
+                <span class="dot" style="background:#7e57c2"></span>Mold-Based
+            </button>
+        </div>
+        <div id="map"></div>
+        <div class="footer">Map tiles &copy; OpenStreetMap contributors. Marker positions approximate.</div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script>
+        // Fermentation type colors
+        const TYPE_COLORS = {
+            lactic:  '#2e7d32',
+            alcohol: '#f57c00',
+            acetic:  '#1e88e5',
+            mold:    '#7e57c2'
+        };
+        const TYPE_LABELS = {
+            lactic:  'Lactic Acid',
+            alcohol: 'Alcoholic',
+            acetic:  'Acetic / Kombucha',
+            mold:    'Mold-Based'
+        };
+
+        // 20 fermented foods
+        const foods = [
+            // LACTIC ACID (green)
+            { name: 'Yogurt', country: 'Georgia (Caucasus)', lat: 42.0, lng: 43.5, type: 'lactic',
+              microbe: '<i>Lactobacillus bulgaricus</i>, <i>Streptococcus thermophilus</i>',
+              flavor: 'Tangy, creamy, mildly sour',
+              science: 'LAB ferment milk lactose into lactic acid, lowering pH so casein proteins coagulate into a thick gel.' },
+            { name: 'Kimchi', country: 'Korea', lat: 37.5, lng: 127.0, type: 'lactic',
+              microbe: '<i>Leuconostoc mesenteroides</i>, <i>Lactobacillus plantarum</i>',
+              flavor: 'Tangy, spicy, savory',
+              science: 'Salt draws water from cabbage by osmosis, creating brine that LAB ferment to lactic acid — chili and garlic shape the microbial community.' },
+            { name: 'Sauerkraut', country: 'Germany', lat: 51.0, lng: 10.0, type: 'lactic',
+              microbe: '<i>Leuconostoc mesenteroides</i>, <i>Lactobacillus plantarum</i>',
+              flavor: 'Sour, crunchy, salty',
+              science: 'Shredded cabbage + salt creates a low-oxygen brine where LAB outcompete spoilage bacteria and produce lactic acid.' },
+            { name: 'Injera', country: 'Ethiopia', lat: 9.0, lng: 39.0, type: 'lactic',
+              microbe: '<i>Lactobacillus</i> spp. + wild yeasts',
+              flavor: 'Sour, spongy flatbread',
+              science: 'Teff flour batter ferments for days — LAB acidify it while yeasts produce CO2 that creates the signature "eyes".' },
+            { name: 'Kefir', country: 'North Caucasus', lat: 43.0, lng: 44.0, type: 'lactic',
+              microbe: '<i>Lactobacillus kefiri</i> + kefir yeast grains',
+              flavor: 'Tart, fizzy, slightly alcoholic',
+              science: 'Kefir "grains" are a symbiotic SCOBY of LAB and yeasts that ferment milk into a probiotic-rich beverage.' },
+            { name: 'Lassi', country: 'India', lat: 28.6, lng: 77.2, type: 'lactic',
+              microbe: '<i>Lactobacillus</i> spp. (from yogurt culture)',
+              flavor: 'Tangy, refreshing, creamy',
+              science: 'Yogurt blended with water and spices — the lactic acid cools the palate and aids digestion of rich foods.' },
+
+            // ALCOHOLIC (orange)
+            { name: 'Sake', country: 'Japan', lat: 36.0, lng: 138.0, type: 'alcohol',
+              microbe: '<i>Aspergillus oryzae</i> (koji) + <i>Saccharomyces cerevisiae</i>',
+              flavor: 'Smooth, rice-sweet, warming',
+              science: 'Koji mold first breaks rice starch into sugars, then yeast ferments those sugars into alcohol — a two-step "parallel fermentation".' },
+            { name: 'Belgian Beer', country: 'Belgium', lat: 50.8, lng: 4.4, type: 'alcohol',
+              microbe: '<i>Saccharomyces cerevisiae</i>, wild <i>Brettanomyces</i>',
+              flavor: 'Bitter, fruity, effervescent',
+              science: 'Malted barley enzymes release sugars; yeast ferments them into ethanol and CO2 — hops add bitterness and natural preservation.' },
+            { name: 'Wine', country: 'France', lat: 46.5, lng: 2.5, type: 'alcohol',
+              microbe: '<i>Saccharomyces cerevisiae</i>',
+              flavor: 'Fruity, acidic, complex',
+              science: 'Wild and added yeasts convert grape glucose into ethanol and CO2; tannins and acids shape mouthfeel and aging potential.' },
+            { name: 'Chicha', country: 'Peru', lat: -9.0, lng: -75.0, type: 'alcohol',
+              microbe: 'Wild yeasts + human salivary amylase (traditional)',
+              flavor: 'Cloudy, slightly sour, corn-sweet',
+              science: 'Traditional chicha uses chewed corn — saliva enzymes (amylase) break starch into sugars that wild yeasts then ferment.' },
+            { name: 'Tej', country: 'Ethiopia', lat: 9.0, lng: 38.7, type: 'alcohol',
+              microbe: 'Wild <i>Saccharomyces</i> yeasts',
+              flavor: 'Honey-sweet, herbal, lightly bitter',
+              science: 'A honey wine flavored with gesho leaves — wild yeasts ferment diluted honey sugars into alcohol over days.' },
+
+            // ACETIC (blue)
+            { name: 'Kombucha', country: 'China / Russia border region', lat: 50.0, lng: 110.0, type: 'acetic',
+              microbe: '<i>Acetobacter</i> + <i>Saccharomyces</i> (SCOBY)',
+              flavor: 'Tart, fizzy, vinegar-like',
+              science: 'Yeasts first ferment sugar into alcohol; then <i>Acetobacter</i> oxidizes that alcohol into acetic acid — giving the sharp tang.' },
+            { name: 'Coconut Vinegar', country: 'Philippines', lat: 13.0, lng: 122.0, type: 'acetic',
+              microbe: '<i>Acetobacter aceti</i>',
+              flavor: 'Sharp, sour, slightly sweet',
+              science: 'Coconut sap is first fermented to alcohol by yeast, then <i>Acetobacter</i> converts the ethanol into acetic acid.' },
+            { name: 'Apple Cider Vinegar', country: 'USA', lat: 41.0, lng: -85.0, type: 'acetic',
+              microbe: '<i>Saccharomyces</i> + <i>Acetobacter</i>',
+              flavor: 'Bright, sour, fruity',
+              science: 'Apple juice ferments to hard cider, then acetic acid bacteria oxidize the ethanol to acetic acid in the presence of oxygen.' },
+
+            // MOLD-BASED (purple)
+            { name: 'Miso', country: 'Japan', lat: 35.7, lng: 139.7, type: 'mold',
+              microbe: '<i>Aspergillus oryzae</i> (koji)',
+              flavor: 'Salty, umami, deep savory',
+              science: 'Koji mold secretes proteases and amylases that break soybean proteins into amino acids — the source of intense umami.' },
+            { name: 'Tempeh', country: 'Indonesia', lat: -7.5, lng: 110.0, type: 'mold',
+              microbe: '<i>Rhizopus oligosporus</i>',
+              flavor: 'Nutty, firm, mushroomy',
+              science: 'Rhizopus mold knits soybeans together with white mycelium, making proteins more digestible and producing B-vitamins.' },
+            { name: 'Roquefort Cheese', country: 'France', lat: 44.0, lng: 3.0, type: 'mold',
+              microbe: '<i>Penicillium roqueforti</i>',
+              flavor: 'Pungent, sharp, salty-blue',
+              science: 'Blue mold spores grow through cheese curd, breaking down fats into spicy methyl ketones for its bold flavor.' },
+            { name: 'Koji Rice Wine', country: 'China', lat: 30.0, lng: 115.0, type: 'mold',
+              microbe: '<i>Aspergillus oryzae</i> + yeast',
+              flavor: 'Sweet, mellow, warming',
+              science: 'Koji mold breaks rice starch into glucose, which yeasts then ferment to alcohol — saccharification and fermentation in one vessel.' },
+
+            // EXTRAS to reach 20
+            { name: 'Natto', country: 'Japan', lat: 36.3, lng: 140.4, type: 'lactic',
+              microbe: '<i>Bacillus subtilis</i> var. <i>natto</i>',
+              flavor: 'Sticky, stringy, pungent, earthy',
+              science: 'Steamed soybeans inoculated with Bacillus produce sticky polyglutamic acid strings and vitamin K2.' },
+            { name: 'Fish Sauce (Nuoc Mam)', country: 'Vietnam', lat: 14.0, lng: 108.0, type: 'lactic',
+              microbe: 'Halophilic bacteria + fish enzymes',
+              flavor: 'Salty, umami, deeply savory',
+              science: 'Salt-tolerant microbes and fish enzymes slowly break fish proteins into free amino acids — peak umami over months.' },
+            { name: 'Pulque', country: 'Mexico', lat: 19.4, lng: -99.1, type: 'alcohol',
+              microbe: '<i>Zymomonas mobilis</i> + wild yeasts',
+              flavor: 'Milky, sour, slightly viscous',
+              science: 'Sap from the agave plant ferments rapidly with a mix of bacteria and yeasts into a low-alcohol cloudy drink.' }
+        ];
+
+        // Initialize map
+        const map = L.map('map', {
+            center: [20, 0],
+            zoom: 2,
+            minZoom: 2,
+            worldCopyJump: true
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            maxZoom: 10
+        }).addTo(map);
+
+        // Store markers by type for filtering
+        const markersByType = { lactic: [], alcohol: [], acetic: [], mold: [] };
+
+        foods.forEach(f => {
+            const color = TYPE_COLORS[f.type];
+            const marker = L.circleMarker([f.lat, f.lng], {
+                radius: 9,
+                fillColor: color,
+                color: '#ffffff',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.9
+            });
+
+            const popupHtml = `
+                <div>
+                    <div class="popup-title">${f.name}</div>
+                    <span class="popup-type" style="background:${color}">${TYPE_LABELS[f.type]}</span>
+                    <div class="popup-row"><b>Region:</b> ${f.country}</div>
+                    <div class="popup-row"><b>Microbe:</b> ${f.microbe}</div>
+                    <div class="popup-row"><b>Flavor:</b> ${f.flavor}</div>
+                    <div class="popup-science">${f.science}</div>
+                </div>
+            `;
+            marker.bindPopup(popupHtml, { maxWidth: 280 });
+            marker.addTo(map);
+            markersByType[f.type].push(marker);
+        });
+
+        // Filter buttons
+        const activeTypes = new Set(['lactic', 'alcohol', 'acetic', 'mold']);
+
+        function refreshMarkers() {
+            Object.keys(markersByType).forEach(type => {
+                markersByType[type].forEach(m => {
+                    if (activeTypes.has(type)) {
+                        if (!map.hasLayer(m)) m.addTo(map);
+                    } else {
+                        if (map.hasLayer(m)) map.removeLayer(m);
+                    }
+                });
+            });
+            // Update "Show All" button state
+            const allBtn = document.querySelector('.filter-btn.all');
+            if (activeTypes.size === 4) allBtn.classList.add('active');
+            else allBtn.classList.remove('active');
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const t = btn.dataset.type;
+                if (t === 'all') {
+                    // Toggle all on
+                    ['lactic','alcohol','acetic','mold'].forEach(k => activeTypes.add(k));
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.add('active'));
+                } else {
+                    if (activeTypes.has(t)) {
+                        activeTypes.delete(t);
+                        btn.classList.remove('active');
+                    } else {
+                        activeTypes.add(t);
+                        btn.classList.add('active');
+                    }
+                }
+                refreshMarkers();
+            });
+        });
+
+        // Legend (bottom-right)
+        const legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function() {
+            const div = L.DomUtil.create('div', 'legend');
+            div.innerHTML = `
+                <h4>Fermentation Type</h4>
+                <div class="row"><span class="dot" style="background:#2e7d32"></span>Lactic Acid</div>
+                <div class="row"><span class="dot" style="background:#f57c00"></span>Alcoholic</div>
+                <div class="row"><span class="dot" style="background:#1e88e5"></span>Acetic / Kombucha</div>
+                <div class="row"><span class="dot" style="background:#7e57c2"></span>Mold-Based</div>
+            `;
+            return div;
+        };
+        legend.addTo(map);
+
+        // Responsive: invalidate size on resize
+        window.addEventListener('resize', () => {
+            map.invalidateSize();
+        });
+    </script>
+</body>
+</html>

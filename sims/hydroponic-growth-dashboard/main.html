@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponic Project Data Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f1f8e9;
+            color: #212529;
+            padding: 10px;
+        }
+        #container {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 12px 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 17px;
+            color: #2e7d32;
+            margin-bottom: 2px;
+        }
+        .subtitle {
+            font-size: 11.5px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        #layout {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        #form-panel {
+            flex: 0 0 250px;
+            background: #f1f8e9;
+            border: 1px solid #c5e1a5;
+            border-radius: 6px;
+            padding: 10px 11px;
+        }
+        #chart-panel {
+            flex: 1;
+            min-width: 0;
+            border: 1px solid #c5e1a5;
+            border-radius: 6px;
+            padding: 8px 10px;
+            background: white;
+        }
+        #form-panel h2, #chart-panel h2 {
+            font-size: 13px;
+            color: #2e7d32;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #c5e1a5;
+            padding-bottom: 4px;
+        }
+        .field {
+            margin-bottom: 7px;
+        }
+        .field label {
+            display: block;
+            font-size: 11.5px;
+            font-weight: 600;
+            color: #33691e;
+            margin-bottom: 2px;
+        }
+        .field input, .field select {
+            width: 100%;
+            padding: 4px 6px;
+            font-size: 12px;
+            border: 1px solid #aed581;
+            border-radius: 3px;
+            font-family: inherit;
+            background: white;
+        }
+        .field input:focus, .field select:focus {
+            outline: none;
+            border-color: #2e7d32;
+            box-shadow: 0 0 0 2px rgba(46,125,50,0.15);
+        }
+        .button-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 6px 10px;
+            font-size: 12px;
+            font-family: inherit;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        button.primary {
+            background: #2e7d32;
+            color: white;
+        }
+        button.primary:hover { background: #1b5e20; }
+        button.accent {
+            background: #f57c00;
+            color: white;
+        }
+        button.accent:hover { background: #e65100; }
+        button.secondary {
+            background: #eeeeee;
+            color: #333;
+            border: 1px solid #bdbdbd;
+        }
+        button.secondary:hover { background: #e0e0e0; }
+        .tabs {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #c5e1a5;
+        }
+        .tab {
+            background: #f1f8e9;
+            color: #33691e;
+            border: 1px solid #c5e1a5;
+            border-bottom: none;
+            padding: 5px 10px;
+            font-size: 11.5px;
+            cursor: pointer;
+            border-radius: 4px 4px 0 0;
+            font-weight: 600;
+        }
+        .tab.active {
+            background: #2e7d32;
+            color: white;
+            border-color: #2e7d32;
+        }
+        .chart-wrap {
+            position: relative;
+            height: 340px;
+            width: 100%;
+        }
+        .chart-wrap canvas { width: 100% !important; height: 100% !important; }
+        #data-count {
+            font-size: 11px;
+            color: #555;
+            margin-top: 6px;
+            text-align: center;
+            font-style: italic;
+        }
+        .status-msg {
+            font-size: 11px;
+            color: #2e7d32;
+            margin-top: 4px;
+            min-height: 14px;
+            text-align: center;
+        }
+        .status-msg.error { color: #c62828; }
+        .legend-note {
+            font-size: 10.5px;
+            color: #666;
+            margin-top: 6px;
+            padding: 4px 6px;
+            background: #f9fbe7;
+            border-left: 3px solid #2e7d32;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Hydroponic Project Data Dashboard</h1>
+        <p class="subtitle">Track weekly plant measurements and analyze how nutrient solution conditions affect growth.</p>
+
+        <div id="layout">
+            <div id="form-panel">
+                <h2>Add Weekly Reading</h2>
+                <div class="field">
+                    <label for="week">Week (1-8)</label>
+                    <input type="number" id="week" min="1" max="8" step="1" value="3">
+                </div>
+                <div class="field">
+                    <label for="height">Plant Height (cm)</label>
+                    <input type="number" id="height" min="0" max="100" step="0.1" value="12">
+                </div>
+                <div class="field">
+                    <label for="leaves">Leaf Count</label>
+                    <input type="number" id="leaves" min="0" max="200" step="1" value="9">
+                </div>
+                <div class="field">
+                    <label for="ph">pH Reading</label>
+                    <input type="number" id="ph" min="3" max="9" step="0.1" value="6.0">
+                </div>
+                <div class="field">
+                    <label for="ec">EC (mS/cm)</label>
+                    <input type="number" id="ec" min="0" max="5" step="0.1" value="1.9">
+                </div>
+                <div class="field">
+                    <label for="obs">Observation</label>
+                    <select id="obs">
+                        <option value="excellent">Excellent</option>
+                        <option value="healthy" selected>Healthy</option>
+                        <option value="slight yellowing">Slight yellowing</option>
+                        <option value="wilting">Wilting</option>
+                    </select>
+                </div>
+                <div class="button-row">
+                    <button class="primary" id="add-btn">Add Data Point</button>
+                    <button class="accent" id="export-btn">Export CSV</button>
+                    <button class="secondary" id="reset-btn">Reset Data</button>
+                </div>
+                <div class="status-msg" id="status"></div>
+                <div id="data-count">0 readings recorded</div>
+            </div>
+
+            <div id="chart-panel">
+                <h2>Growth Analytics</h2>
+                <div class="tabs">
+                    <button class="tab active" data-tab="height">Height</button>
+                    <button class="tab" data-tab="ph">pH</button>
+                    <button class="tab" data-tab="ec">EC</button>
+                    <button class="tab" data-tab="scatter">Growth vs pH</button>
+                </div>
+                <div class="chart-wrap">
+                    <canvas id="chart"></canvas>
+                </div>
+                <div class="legend-note" id="note">Line shows plant height measured each week. Healthy lettuce roughly doubles in height every 1-2 weeks under good conditions.</div>
+            </div>
+        </div>
+    </div>
+
+<script>
+// ---------- Data ----------
+const data = [
+    { week: 1, height: 5,  leaves: 4,  ph: 6.0, ec: 1.8, obs: 'healthy' },
+    { week: 2, height: 9,  leaves: 7,  ph: 6.1, ec: 2.0, obs: 'healthy' }
+];
+
+let activeTab = 'height';
+let chart = null;
+
+// ---------- Shaded target-range plugin ----------
+const targetBandPlugin = {
+    id: 'targetBand',
+    beforeDraw(chart, args, opts) {
+        if (!opts || !opts.bands) return;
+        const { ctx, chartArea, scales } = chart;
+        const yScale = scales.y;
+        if (!yScale || !chartArea) return;
+        ctx.save();
+        opts.bands.forEach(band => {
+            const yTop = yScale.getPixelForValue(band.max);
+            const yBot = yScale.getPixelForValue(band.min);
+            const top = Math.min(yTop, yBot);
+            const height = Math.abs(yBot - yTop);
+            ctx.fillStyle = band.color;
+            ctx.fillRect(chartArea.left, top, chartArea.right - chartArea.left, height);
+            if (band.label) {
+                ctx.fillStyle = band.labelColor || '#33691e';
+                ctx.font = 'bold 10px Segoe UI, sans-serif';
+                ctx.textAlign = 'right';
+                ctx.fillText(band.label, chartArea.right - 6, top + 12);
+            }
+        });
+        ctx.restore();
+    }
+};
+Chart.register(targetBandPlugin);
+
+// ---------- Chart builders ----------
+function sorted() {
+    return [...data].sort((a, b) => a.week - b.week);
+}
+
+function buildHeightConfig() {
+    const d = sorted();
+    return {
+        type: 'line',
+        data: {
+            labels: d.map(p => 'Week ' + p.week),
+            datasets: [{
+                label: 'Plant height (cm)',
+                data: d.map(p => p.height),
+                borderColor: '#2e7d32',
+                backgroundColor: 'rgba(46,125,50,0.15)',
+                borderWidth: 2.5,
+                pointRadius: 5,
+                pointBackgroundColor: '#2e7d32',
+                tension: 0.25,
+                fill: true
+            }]
+        },
+        options: commonOpts({
+            yTitle: 'Height (cm)',
+            xTitle: 'Week',
+            yMin: 0
+        })
+    };
+}
+
+function buildPhConfig() {
+    const d = sorted();
+    return {
+        type: 'line',
+        data: {
+            labels: d.map(p => 'Week ' + p.week),
+            datasets: [{
+                label: 'pH reading',
+                data: d.map(p => p.ph),
+                borderColor: '#1b5e20',
+                backgroundColor: '#2e7d32',
+                borderWidth: 2.5,
+                pointRadius: 5,
+                pointBackgroundColor: d.map(p => (p.ph >= 5.5 && p.ph <= 6.5) ? '#2e7d32' : '#f57c00'),
+                tension: 0.15,
+                fill: false
+            }]
+        },
+        options: commonOpts({
+            yTitle: 'pH',
+            xTitle: 'Week',
+            yMin: 4, yMax: 8,
+            bands: [
+                { min: 5.5, max: 6.5, color: 'rgba(46,125,50,0.18)', label: 'Target 5.5-6.5' },
+                { min: 4,   max: 5.5, color: 'rgba(253,216,53,0.25)' },
+                { min: 6.5, max: 8,   color: 'rgba(253,216,53,0.25)' }
+            ]
+        })
+    };
+}
+
+function buildEcConfig() {
+    const d = sorted();
+    return {
+        type: 'line',
+        data: {
+            labels: d.map(p => 'Week ' + p.week),
+            datasets: [{
+                label: 'EC (mS/cm)',
+                data: d.map(p => p.ec),
+                borderColor: '#1b5e20',
+                backgroundColor: '#2e7d32',
+                borderWidth: 2.5,
+                pointRadius: 5,
+                pointBackgroundColor: d.map(p => (p.ec >= 1.2 && p.ec <= 2.5) ? '#2e7d32' : '#f57c00'),
+                tension: 0.15,
+                fill: false
+            }]
+        },
+        options: commonOpts({
+            yTitle: 'EC (mS/cm)',
+            xTitle: 'Week',
+            yMin: 0, yMax: 4,
+            bands: [
+                { min: 1.2, max: 2.5, color: 'rgba(46,125,50,0.18)', label: 'Target 1.2-2.5' },
+                { min: 0,   max: 1.2, color: 'rgba(253,216,53,0.25)' },
+                { min: 2.5, max: 4,   color: 'rgba(253,216,53,0.25)' }
+            ]
+        })
+    };
+}
+
+function buildScatterConfig() {
+    // Growth rate = (height[i] - height[i-1]) / (week[i] - week[i-1])
+    const d = sorted();
+    const pts = [];
+    for (let i = 1; i < d.length; i++) {
+        const dw = d[i].week - d[i-1].week;
+        if (dw <= 0) continue;
+        const rate = (d[i].height - d[i-1].height) / dw;
+        pts.push({ x: d[i].ph, y: rate });
+    }
+    return {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Weekly growth rate vs pH',
+                data: pts,
+                backgroundColor: '#f57c00',
+                borderColor: '#e65100',
+                pointRadius: 7,
+                pointHoverRadius: 9
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: true, position: 'top', labels: { font: { size: 11 } } },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => `pH ${ctx.parsed.x.toFixed(2)} -> ${ctx.parsed.y.toFixed(2)} cm/week`
+                    }
+                },
+                targetBand: { bands: [
+                    { min: -100, max: 100, color: 'rgba(0,0,0,0)' } // dummy
+                ]}
+            },
+            scales: {
+                x: {
+                    type: 'linear',
+                    min: 4, max: 8,
+                    title: { display: true, text: 'pH reading', font: { size: 11 } },
+                    grid: { color: '#e8f5e9' }
+                },
+                y: {
+                    min: 0,
+                    title: { display: true, text: 'Growth rate (cm/week)', font: { size: 11 } },
+                    grid: { color: '#e8f5e9' }
+                }
+            }
+        }
+    };
+}
+
+function commonOpts({ yTitle, xTitle, yMin, yMax, bands }) {
+    const opts = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: true, position: 'top', labels: { font: { size: 11 } } },
+            tooltip: { intersect: false, mode: 'index' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: xTitle, font: { size: 11 } },
+                grid: { color: '#e8f5e9' }
+            },
+            y: {
+                title: { display: true, text: yTitle, font: { size: 11 } },
+                grid: { color: '#e8f5e9' }
+            }
+        }
+    };
+    if (yMin !== undefined) opts.scales.y.min = yMin;
+    if (yMax !== undefined) opts.scales.y.max = yMax;
+    if (bands) opts.plugins.targetBand = { bands };
+    return opts;
+}
+
+const NOTES = {
+    height: 'Line shows plant height each week. Healthy lettuce roughly doubles in height every 1-2 weeks under good conditions.',
+    ph:     'Green band = target pH range (5.5-6.5). Orange dots mark readings outside the safe zone where nutrients lock out.',
+    ec:     'Green band = target EC range (1.2-2.5 mS/cm) for leafy greens. Too low = starvation; too high = salt stress.',
+    scatter:'Each dot = one weekly growth rate plotted against the pH that week. Look for a cluster of fast growth near pH 6.'
+};
+
+// ---------- Render ----------
+function render() {
+    const ctx = document.getElementById('chart').getContext('2d');
+    if (chart) { chart.destroy(); chart = null; }
+    let cfg;
+    if (activeTab === 'height') cfg = buildHeightConfig();
+    else if (activeTab === 'ph') cfg = buildPhConfig();
+    else if (activeTab === 'ec') cfg = buildEcConfig();
+    else cfg = buildScatterConfig();
+    chart = new Chart(ctx, cfg);
+    document.getElementById('note').textContent = NOTES[activeTab];
+    document.getElementById('data-count').textContent =
+        data.length + ' reading' + (data.length === 1 ? '' : 's') + ' recorded';
+}
+
+// ---------- Form ----------
+function showStatus(msg, isError) {
+    const el = document.getElementById('status');
+    el.textContent = msg;
+    el.className = 'status-msg' + (isError ? ' error' : '');
+    if (msg) setTimeout(() => { if (el.textContent === msg) { el.textContent = ''; } }, 2500);
+}
+
+function addPoint() {
+    const week   = parseInt(document.getElementById('week').value, 10);
+    const height = parseFloat(document.getElementById('height').value);
+    const leaves = parseInt(document.getElementById('leaves').value, 10);
+    const ph     = parseFloat(document.getElementById('ph').value);
+    const ec     = parseFloat(document.getElementById('ec').value);
+    const obs    = document.getElementById('obs').value;
+
+    if (isNaN(week) || week < 1 || week > 8) { showStatus('Week must be 1-8', true); return; }
+    if (isNaN(height) || height < 0) { showStatus('Enter a valid height', true); return; }
+    if (isNaN(leaves) || leaves < 0) { showStatus('Enter a valid leaf count', true); return; }
+    if (isNaN(ph) || ph < 0 || ph > 14) { showStatus('Enter a valid pH', true); return; }
+    if (isNaN(ec) || ec < 0) { showStatus('Enter a valid EC', true); return; }
+
+    // Replace existing reading for that week, else append
+    const idx = data.findIndex(d => d.week === week);
+    const entry = { week, height, leaves, ph, ec, obs };
+    if (idx >= 0) { data[idx] = entry; showStatus('Updated Week ' + week); }
+    else { data.push(entry); showStatus('Added Week ' + week); }
+
+    // Auto-advance week
+    const nextWeek = Math.min(8, week + 1);
+    document.getElementById('week').value = nextWeek;
+
+    render();
+}
+
+function exportCsv() {
+    if (data.length === 0) { showStatus('No data to export', true); return; }
+    const header = 'week,height_cm,leaves,pH,EC_mS_per_cm,observation';
+    const rows = sorted().map(d =>
+        `${d.week},${d.height},${d.leaves},${d.ph},${d.ec},${d.obs}`
+    );
+    const csv = header + '\n' + rows.join('\n') + '\n';
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'hydroponic-data.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showStatus('CSV downloaded');
+}
+
+function resetData() {
+    if (!confirm('Clear all data points?')) return;
+    data.length = 0;
+    showStatus('Data cleared');
+    render();
+}
+
+// ---------- Tabs ----------
+document.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeTab = btn.dataset.tab;
+        render();
+    });
+});
+
+document.getElementById('add-btn').addEventListener('click', addPoint);
+document.getElementById('export-btn').addEventListener('click', exportCsv);
+document.getElementById('reset-btn').addEventListener('click', resetData);
+
+window.addEventListener('resize', () => { if (chart) chart.resize(); });
+
+render();
+</script>
+</body>
+</html>

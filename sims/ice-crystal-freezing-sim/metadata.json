@@ -1,0 +1,23 @@
+{
+  "title": "Freezing Rate and Ice Crystal Size MicroSim",
+  "description": "Students will explain (L2 — Understand) why faster freezing produces smaller ice crystals and evaluate (L5 — Evaluate) the tradeoff between freezing speed and food texture quality.",
+  "creator": "Food Science for 9th Grade",
+  "date": "2026-05-28",
+  "subject": [
+    "food-science",
+    "food-preservation",
+    "freezing"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "ice-crystal-freezing-sim",
+  "library": "p5.js",
+  "bloomLevel": "L2/L5",
+  "bloomVerb": "Understand/Evaluate",
+  "completion_status": "completed",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Food Preservation — Extending Shelf Life Through Science\"",
+  "chapter_dir": "09-food-preservation"
+}

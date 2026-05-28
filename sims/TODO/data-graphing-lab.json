@@ -1,0 +1,14 @@
+{
+  "sim_id": "data-graphing-lab",
+  "diagram_name": "Data Graphing Lab",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will be able to construct and interpret (Bloom L3 — Apply) a bar graph and a line graph from a provided food science data set.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: MicroSim\n**sim-id:** data-graphing-lab<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Learning objective:** Students will be able to construct and interpret (Bloom L3 — Apply) a bar graph and a line graph from a provided food science data set.\n\n**Canvas size:** 760 × 540 px, responsive.\n\n**Layout:** Left panel: a small editable data table with 4 rows × 2 columns. Column headers can be renamed by the student. Right panel: a rendered chart (Chart.js) that updates in real time as the student edits the data table.\n\n**Controls:**\n- A toggle at the top of the chart panel selects \"Bar Graph\" or \"Line Graph.\"\n- A \"Chart Title\" text field above the chart.\n- An \"X-axis Label\" and \"Y-axis Label\" text field below/beside the chart axes.\n\n**Preloaded data set 1 (bar graph scenario):** \"Rise height of bread dough after 60 minutes\"\n| Recipe | Rise Height (cm) |\n| No yeast (control) | 1.2 |\n| 1 tsp yeast | 7.4 |\n| 2 tsp yeast | 10.1 |\n| 3 tsp yeast | 11.8 |\n\n**Preloaded data set 2 (line graph scenario):** \"Sourdough starter rise over 24 hours\"\n| Hour | Height (cm) |\n| 0 | 3.0 |\n| 4 | 3.5 |\n| 8 | 6.2 |\n| 12 | 10.4 |\n| 16 | 8.1 |\n| 20 | 5.3 |\n| 24 | 3.8 |\n\n**A \"Load Dataset 1\" and \"Load Dataset 2\" button** pre-fills the table and sets appropriate labels.\n\n**Interaction — hover over bars/points:** Tooltip shows exact value with unit.\n\n**Question overlay (optional, teacher-toggled):** After 30 seconds of activity, a question box appears asking \"What trend do you see in this graph?\" with a free-text field. This supports classroom discussion, not automatic grading.\n\n**Color scheme:** Book palette; green bars/line, orange hover highlight."
+}

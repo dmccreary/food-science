@@ -1,0 +1,21 @@
+{
+  "title": "Data Graphing Lab",
+  "description": "Students will be able to construct and interpret (Bloom L3 — Apply) a bar graph and a line graph from a provided food science data set.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "data-graphing-lab",
+  "library": "Chart.js",
+  "bloomLevel": "3",
+  "bloomVerb": "Apply",
+  "completion_status": "completed",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen"
+}

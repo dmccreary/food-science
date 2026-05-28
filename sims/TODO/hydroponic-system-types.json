@@ -1,0 +1,14 @@
+{
+  "sim_id": "hydroponic-system-types",
+  "diagram_name": "Hydroponic System Types Comparison",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Food Engineering, Hydroponics, and Innovation\"",
+  "chapter_dir": "15-food-engineering-innovation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify (L1 — Remember) the four main hydroponic system types and evaluate (L5 — Evaluate) which system best suits a given set of constraints (budget, space, power availability, crop type).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** hydroponic-system-types<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify (L1 — Remember) the four main hydroponic system types and evaluate (L5 — Evaluate) which system best suits a given set of constraints (budget, space, power availability, crop type).\n\n**Canvas size:** 740 × 480 px, responsive.\n\n**Layout:** Four system cards displayed horizontally, each 170 × 350 px. Each card shows a cross-section diagram of the system with animated water flow (where applicable), labeled components, and a summary panel.\n\n**DWC card:** Shows a container with plant roots submerged in blue solution, air bubbles rising from a stone at the bottom. Click reveals: required equipment (container, net cups, air pump, air stone, nutrient solution), best crops (lettuce, herbs, basil), pros (high yields, fast growth), cons (needs electricity, pump failure is catastrophic).\n\n**NFT card:** Shows sloped PVC channels with a thin blue film flowing along the bottom of roots. Click reveals: required equipment (pump, channels, reservoir, timer), best crops (lettuce, strawberries, herbs), pros (highly water-efficient), cons (pump-dependent, roots dry out in power failure).\n\n**Kratky card:** Shows container with air gap between solution surface and net cup; submerged roots in blue, aerial roots in white. Click reveals: required equipment (opaque container, net cups, nutrient solution — NO PUMP), best crops (leafy greens, herbs), pros (no electricity, very low cost, minimal maintenance), cons (not suitable for long-season or large crops, water not recirculated).\n\n**Wick card:** Shows container with wick leading from reservoir to growing medium. Click reveals: required equipment (container, wick material, growing medium, nutrient solution), best crops (herbs, small lettuces), pros (zero moving parts, lowest cost), cons (slow delivery, limited to small crops).\n\n**Constraint Matcher (below cards):** Three sliders — Budget (low/high), Power Available (yes/no), Crop Size (small/large). Adjusting sliders highlights the recommended system with a green glow.\n\n**Responsive:** Redraws on window resize."
+}

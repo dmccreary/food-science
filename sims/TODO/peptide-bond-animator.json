@@ -1,0 +1,14 @@
+{
+  "sim_id": "peptide-bond-animator",
+  "diagram_name": "Peptide Bond Formation — Step-by-Step Animator",
+  "chapter_number": 2,
+  "chapter_title": "\"Chapter 2: The Molecules of Food\"",
+  "chapter_dir": "02-molecules-of-food",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will *explain* how amino acids link via peptide bonds and *describe* the condensation reaction that forms them (Bloom L2 — Understand); students will *demonstrate* the step-by-step sequence (Bloom L3 — Apply).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: MicroSim\n**sim-id:** peptide-bond-animator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will *explain* how amino acids link via peptide bonds and *describe* the condensation reaction that forms them (Bloom L2 — Understand); students will *demonstrate* the step-by-step sequence (Bloom L3 — Apply).\n\n**Canvas size:** 700 × 420 px, responsive to window resize.\n\n**Layout:**\nTwo amino acid molecule diagrams sit side-by-side in the center. Each shows:\n- Amino group (–NH₂, blue rectangle on left)\n- Central carbon (gray circle) with attached side chain (R, small colored oval, color varies by amino acid type)\n- Carboxyl group (–COOH, orange rectangle on right)\n\nA \"Step\" button and a step counter (\"Step 1 of 4\") sit below the molecules. A text explanation box below the step counter updates with each step.\n\n**Interaction (4 steps):**\n- Step 1: Static starting display; text: \"Meet two amino acids. Each has an amino group (blue) and a carboxyl group (orange).\"\n- Step 2: Animated arrows show the –NH₂ of the right amino acid approaching the –COOH of the left amino acid. Text: \"The amino group of one amino acid approaches the carboxyl group of the other.\"\n- Step 3: A water molecule (H₂O, shown in light blue) detaches and moves to the corner. Text: \"One water molecule is released — this is called a condensation reaction.\"\n- Step 4: A red bond line forms between the two amino acids, labeled \"Peptide Bond\". Text: \"The peptide bond (–CO–NH–) links the two amino acids into a dipeptide.\"\n\nAfter Step 4: A \"Extend the Chain\" button appears. Clicking it adds a third amino acid and replays Steps 2–4 to form a tripeptide, demonstrating the repeating nature of the process.\n\n**Controls:** \"Reset\" returns to Step 1; a dropdown lets students choose different amino acid pairs (Glycine–Alanine, Lysine–Glutamate, etc.) to see how different R-groups affect the visualization.\n\n**Responsive design:** On resize, molecule spacing adjusts proportionally to keep both molecules and the bond animation visible."
+}

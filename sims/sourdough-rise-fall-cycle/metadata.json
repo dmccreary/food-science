@@ -1,0 +1,21 @@
+{
+  "title": "Sourdough Rise-and-Fall Cycle Simulation",
+  "description": "Students will identify (L1 — Remember) when a sourdough starter is at peak activity and apply (L3 — Apply) that knowledge to time their baking correctly.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "sourdough-rise-fall-cycle",
+  "library": "p5.js",
+  "bloomLevel": "L1 Remember, L3 Apply",
+  "bloomVerb": "Identify, Apply",
+  "completion_status": "completed",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Sourdough and Wild Fermentation\"",
+  "chapter_dir": "06-sourdough-wild-fermentation"
+}

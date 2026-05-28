@@ -1,0 +1,21 @@
+{
+  "title": "Hydroponic Project Data Dashboard",
+  "description": "Students will apply (L3 — Apply) data collection and graphing skills to track hydroponic plant growth and analyze (L4 — Analyze) the relationship between nutrient solution parameters and plant growth rate.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "hydroponic-growth-dashboard",
+  "library": "Chart.js",
+  "bloomLevel": "L3-L4",
+  "bloomVerb": "Apply / Analyze",
+  "completion_status": "completed",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Food Engineering, Hydroponics, and Innovation\"",
+  "chapter_dir": "15-food-engineering-innovation"
+}

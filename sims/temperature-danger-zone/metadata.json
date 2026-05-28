@@ -1,0 +1,21 @@
+{
+  "title": "Temperature Danger Zone Interactive Visualizer",
+  "description": "Students will identify (L1 — Remember) the temperature danger zone boundaries and apply (L3 — Apply) this knowledge to evaluate food storage scenarios.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "temperature-danger-zone",
+  "library": "p5.js",
+  "bloomLevel": "L1/L3",
+  "bloomVerb": "Identify / Apply",
+  "completion_status": "completed",
+  "chapter_number": 7,
+  "chapter_title": "\"Chapter 7: Food Safety and Sanitation\"",
+  "chapter_dir": "07-food-safety-sanitation"
+}

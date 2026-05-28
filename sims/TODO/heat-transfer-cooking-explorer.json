@@ -1,0 +1,14 @@
+{
+  "sim_id": "heat-transfer-cooking-explorer",
+  "diagram_name": "Three Modes of Heat Transfer in Cooking",
+  "chapter_number": 3,
+  "chapter_title": "\"Chapter 3: Heat, Cooking Science, and Chemical Reactions\"",
+  "chapter_dir": "03-heat-and-cooking-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify (L1 — Remember) which mode of heat transfer is operating in a given cooking scenario and explain (L2 — Understand) how each mode works at the molecular level.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** heat-transfer-cooking-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify (L1 — Remember) which mode of heat transfer is operating in a given cooking scenario and explain (L2 — Understand) how each mode works at the molecular level.\n\n**Canvas size:** 750 × 420 px, responsive to window resize.\n\n**Layout:** Three side-by-side panels (Conduction | Convection | Radiation), each 230 px wide with a title bar. A cooking scenario selector at the top lets students choose a scenario (pan-frying, boiling soup, broiling chicken, microwave reheating, campfire roasting).\n\n**Conduction panel:** Animated molecules in a metal pan vibrating and transferring energy to food molecules via direct contact. Arrows show direction of heat flow. Clicking a molecule shows a tooltip: \"Energy passes from hot molecules to cooler neighbors — like a crowd doing the wave.\"\n\n**Convection panel:** Animated fluid currents (blue = cool, red = warm) circulating in a pot of boiling water or soup. Arrows show the convection loop. Clicking a current shows: \"Warm fluid rises, cool fluid sinks — heat circulates through movement.\"\n\n**Radiation panel:** Animated red wavy lines (infrared radiation) traveling from a glowing heating element to a piece of chicken. Clicking a wave shows: \"Infrared waves carry energy through empty space — no contact needed, just like sunlight warming your face.\"\n\n**Scenario selector:** When a scenario is selected, the relevant panel(s) highlight in gold and a text box below explains which mode(s) dominate in that scenario (e.g., pan-frying highlights Conduction and briefly Convection from oil; broiling highlights Radiation).\n\n**Color palette:** Consistent with book palette — warm orange for heat energy, cool blue for low-temperature areas, green highlights for active mode."
+}

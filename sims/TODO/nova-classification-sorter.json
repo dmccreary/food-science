@@ -1,0 +1,14 @@
+{
+  "sim_id": "nova-classification-sorter",
+  "diagram_name": "NOVA Classification Interactive Explorer",
+  "chapter_number": 11,
+  "chapter_title": "\"Chapter 11: Food Technology and Industrial Processing\"",
+  "chapter_dir": "11-food-technology-processing",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will classify (L1 — Remember) foods into NOVA groups and analyze (L4 — Analyze) what characteristics distinguish Group 4 ultra-processed foods from Groups 1–3.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** nova-classification-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will classify (L1 — Remember) foods into NOVA groups and analyze (L4 — Analyze) what characteristics distinguish Group 4 ultra-processed foods from Groups 1–3.\n\n**Canvas size:** 740 × 500 px, responsive.\n\n**Layout:** Four colored columns (NOVA 1 = green, NOVA 2 = yellow-green, NOVA 3 = orange, NOVA 4 = red) with labels and short descriptions at the top. A pool of 20 food card icons at the bottom.\n\n**Food cards include:** apple, white sugar, canned tomatoes, soda, raw chicken breast, butter, smoked salmon, instant noodles, plain oats, table salt, artisan cheese, breakfast cereal, fresh spinach, olive oil, processed cheese slices, plain yogurt, flavored chips, sourdough bread (homemade), packaged frozen pizza, honey.\n\n**Drag-and-drop interaction:** Students drag each food card into the correct NOVA group column. Color flash feedback: green = correct, red = incorrect with explanation.\n\n**\"Inspect Ingredients\" button on each card:** Reveals the ingredient list for that food, highlighting additives in red (Group 4 indicator), basic preserving agents in yellow (Group 3 indicator), and whole food components in green.\n\n**Score tracker:** Shows X/20 correct, updating in real time.\n\n**Responsive:** Redraws on window resize."
+}

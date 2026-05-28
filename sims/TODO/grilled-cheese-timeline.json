@@ -1,0 +1,14 @@
+{
+  "sim_id": "grilled-cheese-timeline",
+  "diagram_name": "Grilled Cheese Science Timeline",
+  "chapter_number": 3,
+  "chapter_title": "\"Chapter 3: Heat, Cooking Science, and Chemical Reactions\"",
+  "chapter_dir": "03-heat-and-cooking-science",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** grilled-cheese-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.\n\n**Canvas size:** 760 × 320 px, responsive.\n\n**Timeline range:** 0 to 8 minutes of cooking time.\n\n**Events (each is a clickable node):**\n- 0:00 — \"Butter melts in pan\" → tooltip: \"Fat molecules gain enough kinetic energy to break free of the crystal lattice. This is a physical change — the butter can re-solidify.\"\n- 0:30 — \"Conduction heats bread surface\" → tooltip: \"Heat transfers from hot metal → fat layer → bread surface. Thermal conductivity of bread is low, so the center stays cool.\"\n- 1:00 — \"Surface reaches 280°F: Maillard begins\" → tooltip: \"Amino acids from bread proteins react with reducing sugars. Hundreds of flavor compounds form. Golden color appears.\"\n- 2:30 — \"Cheese proteins begin to melt\" → tooltip: \"Calcium bridges between casein proteins weaken with heat, allowing the network to flow. This is why cheese stretches.\"\n- 3:30 — \"Flip! Second side begins browning\" → tooltip: \"The same Maillard and conduction processes begin on side 2.\"\n- 5:00 — \"Internal temperature of cheese peaks\" → tooltip: \"Convection of melted fat carries heat through the cheese layer. No Maillard here — cheese surface is protected by bread.\"\n- 7:00 — \"Remove from heat. Reaction stops.\" → tooltip: \"Below 280°F, Maillard reaction rate drops sharply. Crust is set. Cheese is molten. Science is delicious!\"\n\n**Color coding:** Blue events = heat transfer; Orange events = chemical reactions; Green events = physical changes.\n\n**Responsive:** Redraws on resize."
+}

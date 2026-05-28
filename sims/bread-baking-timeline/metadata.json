@@ -1,0 +1,21 @@
+{
+  "title": "What Happens Inside a Loaf as It Bakes",
+  "description": "Students will sequence (L1 — Remember) baking events and explain (L2 — Understand) the temperature-driven chemical and physical changes at each stage.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "bread-baking-timeline",
+  "library": "p5.js",
+  "bloomLevel": "L1-L2",
+  "bloomVerb": "Sequence / Explain",
+  "completion_status": "completed",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Baking Science — Gluten, Leavening, and Bread\"",
+  "chapter_dir": "05-baking-science"
+}

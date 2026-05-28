@@ -1,0 +1,14 @@
+{
+  "sim_id": "sourdough-rise-fall-cycle",
+  "diagram_name": "Sourdough Rise-and-Fall Cycle Simulation",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Sourdough and Wild Fermentation\"",
+  "chapter_dir": "06-sourdough-wild-fermentation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify (L1 — Remember) when a sourdough starter is at peak activity and apply (L3 — Apply) that knowledge to time their baking correctly.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** sourdough-rise-fall-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify (L1 — Remember) when a sourdough starter is at peak activity and apply (L3 — Apply) that knowledge to time their baking correctly.\n\n**Canvas size:** 740 × 480 px, responsive.\n\n**Layout:** Three sections stacked vertically.\n\n**Top section (200 px) — Jar Visualizer:**\nA cross-section of a glass jar (200 px wide) showing the starter level as a colored liquid. The level rises and falls in real time matching the simulation. A small floating spoonful next to the jar simulates the float test — it floats when starter is at peak activity.\n\n**Middle section — Controls:**\n- Temperature slider: 60°F – 90°F (warmer = faster cycle)\n- Flour type selector: Whole wheat (faster, more microbial activity) vs. White flour (slower)\n- \"Feed Starter\" button — resets the cycle\n\n**Bottom section (240 px) — Activity Graph:**\n- X-axis: Time since last feeding (0–24 hours)\n- Y-axis: Starter height (arbitrary units, 0–100%)\n- Animated line showing the rise-and-fall curve\n- Colored zones: red = too early (fails float test), green = peak window (passes float test), yellow = falling (still usable but declining)\n- Yeast population and acid level bars update alongside the graph\n\n**Tooltips:** Clicking any point on the curve shows: simulated starter height, yeast activity level, pH estimate, and float test result.\n\n**Responsive:** Redraws on window resize."
+}

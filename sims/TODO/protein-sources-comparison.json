@@ -1,0 +1,14 @@
+{
+  "sim_id": "protein-sources-comparison",
+  "diagram_name": "Protein Source Comparison — Environmental vs. Nutritional Tradeoffs",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Global Food Cultures and Food Futures\"",
+  "chapter_dir": "14-global-food-cultures",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will compare (L4 — Analyze) protein sources across multiple dimensions and evaluate (L5 — Evaluate) which sources offer the best balance of nutrition, environmental impact, and feasibility.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** protein-sources-comparison<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will compare (L4 — Analyze) protein sources across multiple dimensions and evaluate (L5 — Evaluate) which sources offer the best balance of nutrition, environmental impact, and feasibility.\n\n**Canvas size:** 740 × 480 px, responsive.\n\n**Layout:** A radar (spider) chart with six axes:\n1. Protein quality (PDCAAS score — digestibility-corrected amino acid score; 0–100)\n2. Environmental impact (inverted: 100 = lowest impact, 0 = highest)\n3. Water use (inverted: 100 = least water, 0 = most water)\n4. Land use (inverted)\n5. Cost per gram of protein (inverted: 100 = cheapest, 0 = most expensive)\n6. Consumer acceptance (survey-based; 0–100)\n\n**Protein sources displayed (each as a separate overlay on the radar):**\n- Conventional beef (red)\n- Chicken (orange)\n- Farmed salmon (blue)\n- Eggs (yellow)\n- Lentils (green)\n- Tofu/soy (light green)\n- Pea protein isolate (teal)\n- Plant-based burger (purple)\n- Cultured meat (gray — projected values)\n- Insects/cricket flour (brown)\n\n**Interaction:** Each source has a checkbox; checking/unchecking toggles its overlay on the radar. Hovering a data point shows the actual numerical value and its source citation.\n\n**Summary table below chart:** Lists all sources with their protein score per serving and headline environmental metric.\n\n**Responsive:** Redraws on window resize."
+}

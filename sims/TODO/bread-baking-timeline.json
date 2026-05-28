@@ -1,0 +1,14 @@
+{
+  "sim_id": "bread-baking-timeline",
+  "diagram_name": "What Happens Inside a Loaf as It Bakes",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Baking Science — Gluten, Leavening, and Bread\"",
+  "chapter_dir": "05-baking-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will sequence (L1 — Remember) baking events and explain (L2 — Understand) the temperature-driven chemical and physical changes at each stage.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** bread-baking-timeline<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will sequence (L1 — Remember) baking events and explain (L2 — Understand) the temperature-driven chemical and physical changes at each stage.\n\n**Canvas size:** 760 × 460 px, responsive.\n\n**Layout:** Left panel (200 px): cross-section of a bread loaf, color-coded by temperature gradient (blue center → orange/red outside). Right panel (560 px): dual animated graph — internal temperature vs. time AND loaf volume vs. time.\n\n**Timeline events (annotated points on graph):**\n- 0 min: \"Dough enters oven. Surface: 75°F. Center: 75°F.\"\n- 3 min: \"Oven spring begins. Yeast activated. CO₂ expands. Volume rises 20%.\"\n- 7 min: \"Yeast die at 140°F. Surface reaches 250°F. Maillard begins.\"\n- 10 min: \"Gluten sets at 160°F. Starches gelatinize. Structure permanent. Volume stabilizes.\"\n- 15 min: \"Crust reaches 350°F. Deep Maillard browning and caramelization.\"\n- 25 min: \"Center reaches 205°F. Fully baked. Remove from oven.\"\n\n**Tooltip:** Hovering any region of the loaf shows local temperature and what is happening chemically at that temperature.\n\n**Responsive:** Redraws on window resize."
+}

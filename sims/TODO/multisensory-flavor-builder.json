@@ -1,0 +1,14 @@
+{
+  "sim_id": "multisensory-flavor-builder",
+  "diagram_name": "Multisensory Flavor Perception Map",
+  "chapter_number": 10,
+  "chapter_title": "\"Chapter 10: Sensory Science — Taste, Flavor, and Food Perception\"",
+  "chapter_dir": "10-sensory-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will analyze (L4 — Analyze) how multiple sensory inputs combine to create the unified experience of flavor, and evaluate (L5 — Evaluate) which senses contribute most to overall flavor perception.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** multisensory-flavor-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will analyze (L4 — Analyze) how multiple sensory inputs combine to create the unified experience of flavor, and evaluate (L5 — Evaluate) which senses contribute most to overall flavor perception.\n\n**Canvas size:** 740 × 460 px, responsive.\n\n**Layout:** A brain silhouette in the center. Six sensory input channels radiate from the edges toward the brain — labeled: Taste (tongue), Orthonasal Smell (nose, inhale), Retronasal Smell (nose, from throat), Texture/Touch, Temperature, Vision.\n\n**Food selector:** Eight food cards at the bottom: strawberry, coffee, potato chip, sushi, vanilla ice cream, hot sauce, aged Parmesan, sparkling water.\n\n**Interaction:** Clicking a food card activates the sensory channels with color-coded intensity (green = low, yellow = medium, red = high):\n- For vanilla ice cream: Taste = medium (sweet, slight cream), Retronasal Smell = very high (vanilla aroma compounds), Texture = high (creamy, cold), Temperature = high (cold), Vision = medium (white color cues expectations)\n- For coffee: Orthonasal = very high (volatile aromatics), Retronasal = very high, Taste = medium (bitter), Temperature = high (hot), Texture = low\n\n**Toggle buttons:** \"Block Smell,\" \"Block Taste,\" \"Block Texture\" — when clicked, they turn off the relevant channel and display a new \"Perceived Flavor Intensity\" score to show how much that channel contributes.\n\n**Result text:** \"With all senses: 95% flavor richness. Block smell: 25% flavor richness. Block taste: 70% flavor richness.\"\n\n**Responsive:** Redraws on window resize."
+}

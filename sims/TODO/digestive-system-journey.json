@@ -1,0 +1,14 @@
+{
+  "sim_id": "digestive-system-journey",
+  "diagram_name": "Digestive System Nutrient Journey",
+  "chapter_number": 8,
+  "chapter_title": "\"Chapter 8: Nutrition Science — What Food Does for Your Body\"",
+  "chapter_dir": "08-nutrition-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will trace (L1 — Remember) each major organ's role in digestion and explain (L2 — Understand) how nutrients are absorbed into the body.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** digestive-system-journey<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will trace (L1 — Remember) each major organ's role in digestion and explain (L2 — Understand) how nutrients are absorbed into the body.\n\n**Canvas size:** 720 × 520 px, responsive.\n\n**Visual:** A simplified but accurate anatomical silhouette of the human torso showing the digestive tract. Each major organ is a clickable hot spot with a pulsing highlight ring.\n\n**Clickable organs and tooltips:**\n- Mouth → \"Salivary amylase begins starch digestion. Chewing increases surface area for enzymes.\"\n- Esophagus → \"No digestion here — just transport via peristalsis. Food takes 2–3 seconds to travel from mouth to stomach.\"\n- Stomach → \"pH 1.5–3.5. Pepsin digests protein. Strong churning turns food into chyme. Gastric emptying takes 2–6 hours.\"\n- Small intestine → \"The powerhouse of digestion. 20 feet of tubing lined with villi. Fats, proteins, and carbohydrates are all fully digested and absorbed here. Bile from the liver emulsifies fat.\"\n- Liver → \"All absorbed nutrients from the small intestine arrive here first. The liver packages fats, converts fructose, detoxifies, and regulates blood glucose.\"\n- Gallbladder → \"Stores and concentrates bile produced by the liver. Releases bile into the small intestine when fat is present.\"\n- Pancreas → \"Secretes digestive enzymes (amylase, lipase, trypsin) into the small intestine, plus hormones (insulin, glucagon) directly into the blood.\"\n- Large intestine → \"Absorbs water and electrolytes. Gut microbiome ferments fiber here. Waste transit takes 24–72 hours.\"\n\n**Food journey animation:** A \"Send Food\" button drops a stylized food particle into the mouth and animates it traveling through each organ, with explanatory text appearing at each stop.\n\n**Responsive:** Redraws on window resize."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "food-carbon-footprint-chart",
+  "diagram_name": "Carbon Footprint of Common Foods",
+  "chapter_number": 12,
+  "chapter_title": "\"Chapter 12: Agricultural Systems and Sustainability\"",
+  "chapter_dir": "12-agricultural-systems",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will analyze (L4 — Analyze) the relative carbon footprints of different foods and evaluate (L5 — Evaluate) which food choices have the greatest environmental impact.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** food-carbon-footprint-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will analyze (L4 — Analyze) the relative carbon footprints of different foods and evaluate (L5 — Evaluate) which food choices have the greatest environmental impact.\n\n**Canvas size:** 720 × 480 px, responsive.\n\n**Chart type:** Horizontal grouped bar chart with two bars per food: (1) kg CO₂-equivalent per kg of food, (2) liters of water per kg of food.\n\n**Foods listed (approximate values, organized by food type):**\n- Beef (grass-fed): 60 kg CO₂e/kg; 15,000 L/kg water\n- Beef (feedlot): 27 kg CO₂e/kg; 15,400 L/kg water\n- Lamb: 24 kg CO₂e/kg; 10,400 L/kg water\n- Cheese: 13 kg CO₂e/kg; 5,000 L/kg water\n- Chicken: 6 kg CO₂e/kg; 4,300 L/kg water\n- Eggs: 4.5 kg CO₂e/kg; 3,300 L/kg water\n- Farmed salmon: 6 kg CO₂e/kg; 2,500 L/kg water\n- Rice: 3.5 kg CO₂e/kg; 1,670 L/kg water\n- Tofu: 2 kg CO₂e/kg; 2,200 L/kg water\n- Lentils: 0.9 kg CO₂e/kg; 1,250 L/kg water\n- Vegetables (avg): 0.4 kg CO₂e/kg; 300 L/kg water\n\n**Toggle:** A dropdown allows switching between \"per kg of food,\" \"per 100g protein,\" and \"per 100 Calories\" views.\n\n**Clicking a bar:** Opens a breakdown popup showing the proportion of emissions from land use change, farm practices, processing, transportation, and retail for that food.\n\n**Responsive:** Redraws on window resize."
+}

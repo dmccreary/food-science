@@ -1,0 +1,14 @@
+{
+  "sim_id": "hydroponic-growth-dashboard",
+  "diagram_name": "Hydroponic Project Data Dashboard",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Food Engineering, Hydroponics, and Innovation\"",
+  "chapter_dir": "15-food-engineering-innovation",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will apply (L3 — Apply) data collection and graphing skills to track hydroponic plant growth and analyze (L4 — Analyze) the relationship between nutrient solution parameters and plant growth rate.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** hydroponic-growth-dashboard<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will apply (L3 — Apply) data collection and graphing skills to track hydroponic plant growth and analyze (L4 — Analyze) the relationship between nutrient solution parameters and plant growth rate.\n\n**Canvas size:** 760 × 500 px, responsive.\n\n**Layout:** A data entry form on the left (250 px) and a multi-line graph panel on the right (510 px).\n\n**Data entry fields (updated weekly for each plant):**\n- Week number (1–8)\n- Plant height (cm)\n- Leaf count\n- pH reading\n- EC reading (mS/cm)\n- Qualitative observation (dropdown: healthy / slight yellowing / wilting / excellent)\n\n**\"Add Data Point\" button:** Adds the entry to all relevant graphs.\n\n**Graph panel — four linked charts (tabbed):**\nTab 1: Plant height over time (line graph, y-axis cm, x-axis week)\nTab 2: pH over time with target range shaded (5.5–6.5 green zone; outside = yellow warning)\nTab 3: EC over time with target range shaded\nTab 4: Growth rate (cm/week) vs. pH reading — scatter plot; students identify whether there is a correlation between pH staying in range and faster growth\n\n**Export button:** Downloads the entered data as a CSV file for further analysis in a spreadsheet.\n\n**Responsive:** Redraws on window resize."
+}

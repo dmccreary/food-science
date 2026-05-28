@@ -1,0 +1,14 @@
+{
+  "sim_id": "bacteria-cell-anatomy",
+  "diagram_name": "Bacteria Cell Structure Explorer",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Food Microbiology — Microbes, Fermentation, and Cultured Foods\"",
+  "chapter_dir": "04-food-microbiology",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify and name (L1 — Remember) the key structures of a bacterial cell and explain (L2 — Understand) the function of each structure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: interactive-infographic\n**sim-id:** bacteria-cell-anatomy<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify and name (L1 — Remember) the key structures of a bacterial cell and explain (L2 — Understand) the function of each structure.\n\n**Canvas size:** 720 × 420 px, responsive.\n\n**Visual:** A large, detailed cross-section of a rod-shaped bacterium (like E. coli) centered on the canvas. Each labeled structure is a clickable hot spot with a pulsing highlight ring.\n\n**Clickable structures and tooltips:**\n- Cell wall → \"The cell wall gives the bacterium its shape. Many antibiotics work by destroying the cell wall.\"\n- Cell membrane → \"The lipid bilayer is a selective gatekeeper — nutrients enter, waste products exit.\"\n- Cytoplasm → \"The cell's interior is 70% water and packed with enzymes and chemical reactions.\"\n- Nucleoid region (DNA) → \"Bacteria have no nucleus. Their circular chromosome floats freely. A bacterium can copy it in about 20 minutes!\"\n- Ribosomes → \"Ribosomes read the DNA code and build proteins. Bacteria have thousands of them.\"\n- Flagellum → \"Some bacteria swim using their flagellum, spinning it like a propeller.\"\n- Pili → \"Pili anchor bacteria to surfaces — the first step in forming a biofilm.\"\n\n**Color palette:** Blue-green cell interior, darker blue cell wall, gold flagellum, orange pili.\n\n**Responsive:** Redraws on window resize."
+}

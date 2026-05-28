@@ -1,0 +1,14 @@
+{
+  "sim_id": "bacterial-growth-curve",
+  "diagram_name": "Bacterial Growth Curve Simulation",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Food Microbiology — Microbes, Fermentation, and Cultured Foods\"",
+  "chapter_dir": "04-food-microbiology",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify (L1 — Remember) the four phases of bacterial growth and apply (L3 — Apply) knowledge by adjusting temperature and nutrients to predict growth rate changes.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** bacterial-growth-curve<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify (L1 — Remember) the four phases of bacterial growth and apply (L3 — Apply) knowledge by adjusting temperature and nutrients to predict growth rate changes.\n\n**Canvas size:** 760 × 480 px, responsive.\n\n**Controls (left panel, 200 px wide):**\n- Temperature slider: 32°F – 120°F\n- Nutrient slider: 0%–100%\n- \"Start Simulation\" button\n- Species selector: Salmonella (fast grower), Listeria (cold-tolerant), Lactobacillus (slower, beneficial)\n\n**Graph panel (right, 560 px wide):**\n- X-axis: Time (0–24 hours)\n- Y-axis: log₁₀(population), 1 to 1,000,000,000\n- Animated curve plotted in real time\n- Four phases labeled with colored background bands: Lag (gray), Log (orange), Stationary (yellow), Death (blue)\n\n**Behavior:**\n- Danger zone temperatures (40°F–140°F): log phase steepens dramatically\n- Refrigerator temp (38°F): growth is slow but still occurs\n- Above 165°F or below 32°F: rapid death phase\n- Tooltips on hover show simulated population count and phase description\n\n**Responsive:** Redraws on window resize."
+}

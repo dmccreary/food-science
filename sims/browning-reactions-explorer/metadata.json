@@ -1,0 +1,21 @@
+{
+  "title": "Maillard Reaction vs. Caramelization Step-by-Step",
+  "description": "Students will distinguish (L4 — Analyze) the Maillard reaction from caramelization by comparing their reactants, temperature requirements, and flavor products.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "browning-reactions-explorer",
+  "library": "p5.js",
+  "bloomLevel": "4",
+  "bloomVerb": "Analyze",
+  "completion_status": "completed",
+  "chapter_number": 3,
+  "chapter_title": "\"Chapter 3: Heat, Cooking Science, and Chemical Reactions\"",
+  "chapter_dir": "03-heat-and-cooking-science"
+}

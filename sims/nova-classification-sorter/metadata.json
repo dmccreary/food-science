@@ -1,0 +1,21 @@
+{
+  "title": "NOVA Classification Interactive Explorer",
+  "description": "Students will classify (L1 — Remember) foods into NOVA groups and analyze (L4 — Analyze) what characteristics distinguish Group 4 ultra-processed foods from Groups 1–3.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "nova-classification-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Analyze",
+  "bloomVerb": "classify",
+  "completion_status": "completed",
+  "chapter_number": 11,
+  "chapter_title": "\"Chapter 11: Food Technology and Industrial Processing\"",
+  "chapter_dir": "11-food-technology-processing"
+}

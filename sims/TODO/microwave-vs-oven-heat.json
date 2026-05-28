@@ -1,0 +1,14 @@
+{
+  "sim_id": "microwave-vs-oven-heat",
+  "diagram_name": "Microwave Heating vs. Conventional Oven Heating",
+  "chapter_number": 3,
+  "chapter_title": "\"Chapter 3: Heat, Cooking Science, and Chemical Reactions\"",
+  "chapter_dir": "03-heat-and-cooking-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will compare (L4 — Analyze) how microwave and conventional oven heating differ in where and how heat is generated inside food.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** microwave-vs-oven-heat<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will compare (L4 — Analyze) how microwave and conventional oven heating differ in where and how heat is generated inside food.\n\n**Canvas size:** 740 × 380 px, responsive.\n\n**Layout:** Two equal panels side by side. Each shows a cross-section view of a round food item (potato, 200 px diameter). A \"Start Cooking\" button below each panel triggers an animated heat simulation. A time display (0:00 to 5:00) advances simultaneously for both.\n\n**Conventional oven panel:**\n- Heat starts at the outer edge of the potato (red ring appears)\n- Over time, the red zone moves inward, with a thermal gradient from red (hot outside) to blue (cool center)\n- At 5 minutes, only the outer 30% has turned red; center is still cool blue\n\n**Microwave panel:**\n- Heat appears distributed throughout the potato simultaneously (whole potato turns orange-yellow uniformly)\n- At 30 seconds, the entire cross-section is warm; at 2 minutes it is fully heated\n- Small \"cool spots\" appear randomly where water content is lower\n\n**Color scale legend:** blue = 40°F, green = 100°F, yellow = 150°F, orange = 180°F, red = 200°F+\n\n**Clicking any spot** on either panel shows the simulated temperature at that point and a brief explanation.\n\n**Responsive:** Recalculates grid on window resize."
+}

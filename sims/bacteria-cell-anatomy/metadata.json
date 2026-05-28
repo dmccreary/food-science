@@ -1,0 +1,21 @@
+{
+  "title": "Bacteria Cell Structure Explorer",
+  "description": "Students will identify and name (L1 — Remember) the key structures of a bacterial cell and explain (L2 — Understand) the function of each structure.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "bacteria-cell-anatomy",
+  "library": "p5.js",
+  "bloomLevel": "Remember + Understand (L1+L2)",
+  "bloomVerb": "identify, explain",
+  "completion_status": "completed",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Food Microbiology — Microbes, Fermentation, and Cultured Foods\"",
+  "chapter_dir": "04-food-microbiology"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Interactive Molecule Builder",
+  "description": "Students will be able to identify (Bloom L1 — Remember) the atoms that make up key food molecules and explain (Bloom L2 — Understand) how bonding creates compounds with different properties than the individual elements.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "molecule-builder",
+  "library": "p5.js",
+  "bloomLevel": "Understand",
+  "bloomVerb": "Explain",
+  "completion_status": "completed",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen"
+}
