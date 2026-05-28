@@ -107,10 +107,37 @@ nav:
 
   - MicroSims:
       - List of MicroSims: sims/index.md
+      - Bacteria Cell Structure Explorer: sims/bacteria-cell-anatomy/index.md
+      - Bacterial Growth Curve Simulation: sims/bacterial-growth-curve/index.md
+      - Carbohydrate Size Ladder: sims/carbohydrate-size-ladder/index.md
+      - Carbon Footprint of Common Foods: sims/food-carbon-footprint-chart/index.md
+      - Data Graphing Lab: sims/data-graphing-lab/index.md
+      - Digestive System Nutrient Journey: sims/digestive-system-journey/index.md
+      - Experimental Variables Identifier: sims/variables-identifier/index.md
+      - Freezing Rate and Ice Crystal Size: sims/ice-crystal-freezing-sim/index.md
+      - Gluten Network Development: sims/gluten-network-formation/index.md
+      - Grilled Cheese Science Timeline: sims/grilled-cheese-timeline/index.md
+      - Hydroponic Project Data Dashboard: sims/hydroponic-growth-dashboard/index.md
+      - Hydroponic System Types Comparison: sims/hydroponic-system-types/index.md
+      - Interactive Molecule Builder: sims/molecule-builder/index.md
+      - Interactive pH Food Scale: sims/ph-food-scale/index.md
       - Learning Graph Viewer: sims/graph-viewer/index.md
-      - Bacteria Cell Anatomy: sims/bacteria-cell-anatomy/index.md
-      - Bacteria Growth Curve: sims/bacteria-growth-curve/index.md
-      - Bread Baking Timline: sims/bread-baking-timeline/index.md
+      - Maillard Reaction vs. Caramelization: sims/browning-reactions-explorer/index.md
+      - Microwave vs. Conventional Oven Heating: sims/microwave-vs-oven-heat/index.md
+      - Multisensory Flavor Perception Map: sims/multisensory-flavor-builder/index.md
+      - NOVA Classification Sorter: sims/nova-classification-sorter/index.md
+      - Nutrient Deficiency Explorer: sims/nutrient-deficiency-map/index.md
+      - Peptide Bond Formation Animator: sims/peptide-bond-animator/index.md
+      - pH Scale Explorer: sims/ph-scale-explorer/index.md
+      - Protein Source Comparison: sims/protein-sources-comparison/index.md
+      - Saturated vs. Unsaturated Fat Explorer: sims/fat-molecule-explorer/index.md
+      - Scientific Method Steps Explorer: sims/scientific-method-explorer/index.md
+      - Sourdough Rise-and-Fall Cycle: sims/sourdough-rise-fall-cycle/index.md
+      - Temperature Danger Zone Visualizer: sims/temperature-danger-zone/index.md
+      - Three Modes of Heat Transfer: sims/heat-transfer-cooking-explorer/index.md
+      - Water as Universal Solvent: sims/water-solvent-explorer/index.md
+      - What Happens Inside a Loaf as It Bakes: sims/bread-baking-timeline/index.md
+      - World Map of Fermented Foods: sims/world-fermented-foods-map/index.md
 
 
   - Stories:
