@@ -1,16 +1,16 @@
 ---
 title: Interactive pH Food Scale
 description: Students will *identify* the pH range of common foods (Bloom L1 — Remember) and *explain* the relationship between pH, taste, and food safety (Bloom L2 — Understand).
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1-L2
 ---
 
 # Interactive pH Food Scale
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="780"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

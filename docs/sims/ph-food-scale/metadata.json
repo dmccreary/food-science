@@ -12,9 +12,9 @@
   "rights": "CC BY 4.0",
   "identifier": "ph-food-scale",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "L1-L2",
+  "bloomVerb": "Identify, Explain",
+  "completion_status": "completed",
   "chapter_number": 2,
   "chapter_title": "\"Chapter 2: The Molecules of Food\"",
   "chapter_dir": "02-molecules-of-food"

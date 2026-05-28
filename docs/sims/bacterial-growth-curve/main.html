@@ -3,117 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bacterial Growth Curve Simulation</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Bacterial Growth Curve Simulator MicroSim using P5.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="bacterial-growth-curve.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Bacterial Growth Curve Simulation</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> bacterial-growth-curve</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Students will identify (L1 — Remember) the four phases of bacterial growth and apply (L3 — Apply) knowledge by adjusting temperature and nutrients to predict growth rate changes.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** bacterial-growth-curve<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    **Learning Objective:** Students will identify (L1 — Remember) the four phases of bacterial growth and apply (L3 — Apply) knowledge by adjusting temperature and nutrients to predict growth rate changes.
-    
-    **Canvas size:** 760 × 480 px, responsive.
-    
-    **Controls (left panel, 200 px wide):**
-    - Temperature slider: 32°F – 120°F
-    - Nutrient slider: 0%–100%
-    - "Start Simulation" button
-    - Species selector: Salmonella (fast grower), Listeria (cold-tolerant), Lactobacillus (slower, beneficial)
-    
-    **Graph panel (right, 560 px wide):**
-    - X-axis: Time (0–24 hours)
-    - Y-axis: log₁₀(population), 1 to 1,000,000,000
-    - Animated curve plotted in real time
-    - Four phases labeled with colored background bands: Lag (gray), Log (orange), Stationary (yellow), Death (blue)
-    
-    **Behavior:**
-    - Danger zone temperatures (40°F–140°F): log phase steepens dramatically
-    - Refrigerator temp (38°F): growth is slow but still occurs
-    - Above 165°F or below 32°F: rapid death phase
-    - Tooltips on hover show simulated population count and phase description
-    
-    **Responsive:** Redraws on window resize.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Documentation</a>
 </body>
 </html>

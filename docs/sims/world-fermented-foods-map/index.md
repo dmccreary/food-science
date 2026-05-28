@@ -1,16 +1,16 @@
 ---
 title: World Map of Fermented Foods
 description: Students will identify (L1 — Remember) fermented food traditions from at least six world regions and classify (L2 — Understand) each by its fermentation pathway (lactic acid, alcoholic, acetic acid, or mold-based).
-status: scaffold
+status: completed
 library: Leaflet
-bloom_level: TBD
+bloom_level: L1-L2
 ---
 
 # World Map of Fermented Foods
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="680"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

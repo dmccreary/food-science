@@ -3,111 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multisensory Flavor Perception Map</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Multisensory Flavor Perception Map MicroSim using P5.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="multisensory-flavor-builder.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Multisensory Flavor Perception Map</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> multisensory-flavor-builder</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Students will analyze (L4 — Analyze) how multiple sensory inputs combine to create the unified experience of flavor, and evaluate (L5 — Evaluate) which senses contribute most to overall flavor perception.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** multisensory-flavor-builder<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    **Learning Objective:** Students will analyze (L4 — Analyze) how multiple sensory inputs combine to create the unified experience of flavor, and evaluate (L5 — Evaluate) which senses contribute most to overall flavor perception.
-    
-    **Canvas size:** 740 × 460 px, responsive.
-    
-    **Layout:** A brain silhouette in the center. Six sensory input channels radiate from the edges toward the brain — labeled: Taste (tongue), Orthonasal Smell (nose, inhale), Retronasal Smell (nose, from throat), Texture/Touch, Temperature, Vision.
-    
-    **Food selector:** Eight food cards at the bottom: strawberry, coffee, potato chip, sushi, vanilla ice cream, hot sauce, aged Parmesan, sparkling water.
-    
-    **Interaction:** Clicking a food card activates the sensory channels with color-coded intensity (green = low, yellow = medium, red = high):
-    - For vanilla ice cream: Taste = medium (sweet, slight cream), Retronasal Smell = very high (vanilla aroma compounds), Texture = high (creamy, cold), Temperature = high (cold), Vision = medium (white color cues expectations)
-    - For coffee: Orthonasal = very high (volatile aromatics), Retronasal = very high, Taste = medium (bitter), Temperature = high (hot), Texture = low
-    
-    **Toggle buttons:** "Block Smell," "Block Taste," "Block Texture" — when clicked, they turn off the relevant channel and display a new "Perceived Flavor Intensity" score to show how much that channel contributes.
-    
-    **Result text:** "With all senses: 95% flavor richness. Block smell: 25% flavor richness. Block taste: 70% flavor richness."
-    
-    **Responsive:** Redraws on window resize.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Documentation</a>
 </body>
 </html>

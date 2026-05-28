@@ -1,16 +1,16 @@
 ---
 title: Gluten Network Development
 description: Students will explain (L2 — Understand) how mixing and kneading develop the gluten network, and analyze (L4 — Analyze) how protein content affects gluten strength.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L2-L4
 ---
 
 # Gluten Network Development
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="780"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

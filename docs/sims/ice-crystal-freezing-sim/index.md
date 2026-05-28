@@ -1,18 +1,28 @@
 ---
 title: Freezing Rate and Ice Crystal Size MicroSim
 description: Students will explain (L2 — Understand) why faster freezing produces smaller ice crystals and evaluate (L5 — Evaluate) the tradeoff between freezing speed and food texture quality.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L2/L5
 ---
 
 # Freezing Rate and Ice Crystal Size MicroSim
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="680"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+
+## How to Use
+
+1. Click **Freeze Both** to start freezing both strawberry cells at the same time.
+2. Watch the left panel (slow home freezer) grow a few large, jagged ice crystals that pierce the cell wall.
+3. Watch the right panel (commercial blast freezer) grow many tiny crystals that leave the cell wall intact.
+4. After freezing finishes, the cells thaw and a **drip-loss puddle** appears beneath each one.
+5. Compare the **texture quality scores** at the bottom of each panel.
+6. **Click any ice crystal** to see its simulated diameter in microns and an explanation.
+7. Click **Reset** to return to the liquid state.
 
 ## Specification
 

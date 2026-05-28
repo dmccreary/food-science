@@ -12,9 +12,9 @@
   "rights": "CC BY 4.0",
   "identifier": "sourdough-rise-fall-cycle",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "L1 Remember, L3 Apply",
+  "bloomVerb": "Identify, Apply",
+  "completion_status": "completed",
   "chapter_number": 6,
   "chapter_title": "\"Chapter 6: Sourdough and Wild Fermentation\"",
   "chapter_dir": "06-sourdough-wild-fermentation"

@@ -1,16 +1,16 @@
 ---
 title: Microwave Heating vs. Conventional Oven Heating
 description: Students will compare (L4 — Analyze) how microwave and conventional oven heating differ in where and how heat is generated inside food.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L4
 ---
 
 # Microwave Heating vs. Conventional Oven Heating
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

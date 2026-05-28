@@ -12,9 +12,9 @@
   "rights": "CC BY 4.0",
   "identifier": "nova-classification-sorter",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "Analyze",
+  "bloomVerb": "classify",
+  "completion_status": "completed",
   "chapter_number": 11,
   "chapter_title": "\"Chapter 11: Food Technology and Industrial Processing\"",
   "chapter_dir": "11-food-technology-processing"

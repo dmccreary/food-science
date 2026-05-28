@@ -108,6 +108,10 @@ nav:
   - MicroSims:
       - List of MicroSims: sims/index.md
       - Learning Graph Viewer: sims/graph-viewer/index.md
+      - Bacteria Cell Anatomy: sims/bacteria-cell-anatomy/index.md
+      - Bacteria Growth Curve: sims/bacteria-growth-curve/index.md
+      - Bread Baking Timline: sims/bread-baking-timeline/index.md
+
 
   - Stories:
       - Overview: stories/index.md
@@ -133,8 +137,8 @@ nav:
 theme:
   name: material
   # Once a logo is generated, point this at docs/img/logo.png or a mascot pose:
-  # logo: img/logo.png
-  # favicon: img/favicon.ico
+  logo: img/mascot/neutral.png
+  favicon: img/favicon.ico
   palette:
     primary: 'green'
     accent: 'orange'

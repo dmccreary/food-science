@@ -12,9 +12,9 @@
   "rights": "CC BY 4.0",
   "identifier": "bacteria-cell-anatomy",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "Remember + Understand (L1+L2)",
+  "bloomVerb": "identify, explain",
+  "completion_status": "completed",
   "chapter_number": 4,
   "chapter_title": "\"Chapter 4: Food Microbiology — Microbes, Fermentation, and Cultured Foods\"",
   "chapter_dir": "04-food-microbiology"

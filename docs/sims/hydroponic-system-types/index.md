@@ -1,16 +1,16 @@
 ---
 title: Hydroponic System Types Comparison
 description: Students will identify (L1 — Remember) the four main hydroponic system types and evaluate (L5 — Evaluate) which system best suits a given set of constraints (budget, space, power availability, crop type).
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1-Remember, L5-Evaluate
 ---
 
 # Hydroponic System Types Comparison
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="660"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

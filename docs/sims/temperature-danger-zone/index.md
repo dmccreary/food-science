@@ -1,16 +1,16 @@
 ---
 title: Temperature Danger Zone Interactive Visualizer
 description: Students will identify (L1 — Remember) the temperature danger zone boundaries and apply (L3 — Apply) this knowledge to evaluate food storage scenarios.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1/L3
 ---
 
 # Temperature Danger Zone Interactive Visualizer
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="820"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

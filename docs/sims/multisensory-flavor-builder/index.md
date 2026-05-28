@@ -1,16 +1,16 @@
 ---
 title: Multisensory Flavor Perception Map
 description: Students will analyze (L4 — Analyze) how multiple sensory inputs combine to create the unified experience of flavor, and evaluate (L5 — Evaluate) which senses contribute most to overall flavor perception.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L4-L5
 ---
 
 # Multisensory Flavor Perception Map
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="642"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

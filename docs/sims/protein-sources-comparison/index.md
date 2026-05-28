@@ -1,16 +1,16 @@
 ---
 title: Protein Source Comparison — Environmental vs. Nutritional Tradeoffs
 description: Students will compare (L4 — Analyze) protein sources across multiple dimensions and evaluate (L5 — Evaluate) which sources offer the best balance of nutrition, environmental impact, and feasibility.
-status: scaffold
+status: completed
 library: Chart.js
-bloom_level: TBD
+bloom_level: Analyze/Evaluate
 ---
 
 # Protein Source Comparison — Environmental vs. Nutritional Tradeoffs
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="982" scrolling="no" frameborder="0"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

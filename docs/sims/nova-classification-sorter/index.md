@@ -1,16 +1,16 @@
 ---
 title: NOVA Classification Interactive Explorer
 description: Students will classify (L1 — Remember) foods into NOVA groups and analyze (L4 — Analyze) what characteristics distinguish Group 4 ultra-processed foods from Groups 1–3.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: Analyze
 ---
 
 # NOVA Classification Interactive Explorer
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="740" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

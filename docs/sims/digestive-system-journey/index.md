@@ -1,16 +1,16 @@
 ---
 title: Digestive System Nutrient Journey
 description: Students will trace (L1 — Remember) each major organ's role in digestion and explain (L2 — Understand) how nutrients are absorbed into the body.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1-L2
 ---
 
 # Digestive System Nutrient Journey
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="780"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

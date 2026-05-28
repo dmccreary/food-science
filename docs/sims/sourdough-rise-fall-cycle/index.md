@@ -1,16 +1,16 @@
 ---
 title: Sourdough Rise-and-Fall Cycle Simulation
 description: Students will identify (L1 — Remember) when a sourdough starter is at peak activity and apply (L3 — Apply) that knowledge to time their baking correctly.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1 Remember, L3 Apply
 ---
 
 # Sourdough Rise-and-Fall Cycle Simulation
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="780"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

@@ -1,16 +1,16 @@
 ---
 title: Bacterial Growth Curve Simulation
 description: Students will identify (L1 — Remember) the four phases of bacterial growth and apply (L3 — Apply) knowledge by adjusting temperature and nutrients to predict growth rate changes.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: Remember + Apply (L1+L3)
 ---
 
 # Bacterial Growth Curve Simulation
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="522" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

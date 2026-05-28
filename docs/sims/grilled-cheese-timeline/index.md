@@ -1,16 +1,16 @@
 ---
 title: Grilled Cheese Science Timeline
 description: Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.
-status: scaffold
+status: completed
 library: vis-timeline
-bloom_level: TBD
+bloom_level: Understand
 ---
 
 # Grilled Cheese Science Timeline
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

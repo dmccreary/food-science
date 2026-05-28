@@ -3,118 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourdough Rise-and-Fall Cycle Simulation</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Sourdough Rise-and-Fall Cycle MicroSim using P5.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="sourdough-rise-fall-cycle.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Sourdough Rise-and-Fall Cycle Simulation</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> sourdough-rise-fall-cycle</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Students will identify (L1 — Remember) when a sourdough starter is at peak activity and apply (L3 — Apply) that knowledge to time their baking correctly.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** sourdough-rise-fall-cycle<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    **Learning Objective:** Students will identify (L1 — Remember) when a sourdough starter is at peak activity and apply (L3 — Apply) that knowledge to time their baking correctly.
-    
-    **Canvas size:** 740 × 480 px, responsive.
-    
-    **Layout:** Three sections stacked vertically.
-    
-    **Top section (200 px) — Jar Visualizer:**
-    A cross-section of a glass jar (200 px wide) showing the starter level as a colored liquid. The level rises and falls in real time matching the simulation. A small floating spoonful next to the jar simulates the float test — it floats when starter is at peak activity.
-    
-    **Middle section — Controls:**
-    - Temperature slider: 60°F – 90°F (warmer = faster cycle)
-    - Flour type selector: Whole wheat (faster, more microbial activity) vs. White flour (slower)
-    - "Feed Starter" button — resets the cycle
-    
-    **Bottom section (240 px) — Activity Graph:**
-    - X-axis: Time since last feeding (0–24 hours)
-    - Y-axis: Starter height (arbitrary units, 0–100%)
-    - Animated line showing the rise-and-fall curve
-    - Colored zones: red = too early (fails float test), green = peak window (passes float test), yellow = falling (still usable but declining)
-    - Yeast population and acid level bars update alongside the graph
-    
-    **Tooltips:** Clicking any point on the curve shows: simulated starter height, yeast activity level, pH estimate, and float test result.
-    
-    **Responsive:** Redraws on window resize.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Documentation</a>
 </body>
 </html>

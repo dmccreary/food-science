@@ -1,16 +1,15 @@
 ---
 title: Maillard Reaction vs. Caramelization Step-by-Step
 description: Students will distinguish (L4 — Analyze) the Maillard reaction from caramelization by comparing their reactants, temperature requirements, and flavor products.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: 4
+bloom_verb: Analyze
 ---
 
 # Maillard Reaction vs. Caramelization Step-by-Step
 
-
-
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="720"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

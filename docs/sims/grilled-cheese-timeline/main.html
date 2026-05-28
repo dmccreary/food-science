@@ -3,112 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Grilled Cheese Science Timeline</title>
+    <!-- CANVAS_HEIGHT: 560 -->
+    <link rel="stylesheet" href="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.css">
+    <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
+        html, body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
+            background: #f1f8e9;
             color: #212529;
+            min-height: 100vh;
         }
         #container {
             width: 100%;
-            max-width: 900px;
+            max-width: 960px;
             margin: 0 auto;
-            padding: 20px;
-            background: white;
+            padding: 12px 16px 16px 16px;
         }
         h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
             font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
+            color: #2e7d32;
+            margin-bottom: 4px;
         }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
+        .subtitle {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
         }
-        .meta {
-            margin-top: 20px;
+        #timeline {
+            background: white;
+            border: 1px solid #c8e6c9;
+            border-radius: 6px;
+            padding: 6px 6px 6px 80px;  /* extra left padding so items at 0:00 are not clipped */
+        }
+        /* Allow item boxes to overflow the center panel boundary so left-edge
+           items (anchored at 0:00) render fully into the padded gutter. */
+        .vis-timeline { overflow: visible !important; }
+        .vis-panel.vis-center { overflow: visible !important; }
+        .vis-item .vis-item-overflow { overflow: visible !important; }
+        /* Color classes for items */
+        .vis-item.heat {
+            background-color: #1e88e5;
+            border-color: #1565c0;
+            color: white;
+            font-weight: 600;
+        }
+        .vis-item.chemical {
+            background-color: #f57c00;
+            border-color: #e65100;
+            color: white;
+            font-weight: 600;
+        }
+        .vis-item.physical {
+            background-color: #2e7d32;
+            border-color: #1b5e20;
+            color: white;
+            font-weight: 600;
+        }
+        .vis-item.vis-selected {
+            box-shadow: 0 0 0 3px #ffeb3b;
+        }
+        .vis-item .vis-item-content {
+            white-space: nowrap !important;
+            padding: 4px 8px !important;
+        }
+        .vis-item.vis-box,
+        .vis-item.vis-range {
+            min-width: fit-content !important;
+        }
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin: 10px 0 8px 0;
+            padding: 8px 10px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #c8e6c9;
             font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
         }
-        .meta strong { color: #495057; }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .swatch {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 1px solid rgba(0,0,0,0.2);
+        }
+        .swatch.heat { background: #1e88e5; }
+        .swatch.chemical { background: #f57c00; }
+        .swatch.physical { background: #2e7d32; }
+        /* Detail panel */
+        #detail {
+            margin-top: 10px;
+            background: white;
+            border: 1px solid #c8e6c9;
+            border-radius: 6px;
+            padding: 12px 14px;
+            min-height: 110px;
+        }
+        #detail .time-tag {
+            display: inline-block;
+            background: #2e7d32;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+        #detail .cat-tag {
+            display: inline-block;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        #detail .cat-tag.heat { background: #1e88e5; }
+        #detail .cat-tag.chemical { background: #f57c00; }
+        #detail .cat-tag.physical { background: #2e7d32; }
+        #detail h2 {
+            font-size: 15px;
+            margin: 8px 0 6px 0;
+            color: #1b5e20;
+        }
+        #detail p {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .hint {
+            margin-top: 6px;
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Grilled Cheese Science Timeline</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> grilled-cheese-timeline</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> TBD</p>
-            <p><strong>Learning Objective:</strong> Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.</p>
-        </div>
+<main>
+<div id="container">
+    <h1>Grilled Cheese Science Timeline</h1>
+    <div class="subtitle">Click any event on the 0–8 minute cooking timeline to see the science behind it.</div>
+
+    <div class="legend">
+        <div class="legend-item"><span class="swatch heat"></span> Heat transfer</div>
+        <div class="legend-item"><span class="swatch chemical"></span> Chemical reaction</div>
+        <div class="legend-item"><span class="swatch physical"></span> Physical change</div>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div id="timeline"></div>
 
-    Type: interactive-infographic
-    **sim-id:** grilled-cheese-timeline<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    **Learning Objective:** Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.
-    
-    **Canvas size:** 760 × 320 px, responsive.
-    
-    **Timeline range:** 0 to 8 minutes of cooking time.
-    
-    **Events (each is a clickable node):**
-    - 0:00 — "Butter melts in pan" → tooltip: "Fat molecules gain enough kinetic energy to break free of the crystal lattice. This is a physical change — the butter can re-solidify."
-    - 0:30 — "Conduction heats bread surface" → tooltip: "Heat transfers from hot metal → fat layer → bread surface. Thermal conductivity of bread is low, so the center stays cool."
-    - 1:00 — "Surface reaches 280°F: Maillard begins" → tooltip: "Amino acids from bread proteins react with reducing sugars. Hundreds of flavor compounds form. Golden color appears."
-    - 2:30 — "Cheese proteins begin to melt" → tooltip: "Calcium bridges between casein proteins weaken with heat, allowing the network to flow. This is why cheese stretches."
-    - 3:30 — "Flip! Second side begins browning" → tooltip: "The same Maillard and conduction processes begin on side 2."
-    - 5:00 — "Internal temperature of cheese peaks" → tooltip: "Convection of melted fat carries heat through the cheese layer. No Maillard here — cheese surface is protected by bread."
-    - 7:00 — "Remove from heat. Reaction stops." → tooltip: "Below 280°F, Maillard reaction rate drops sharply. Crust is set. Cheese is molten. Science is delicious!"
-    
-    **Color coding:** Blue events = heat transfer; Orange events = chemical reactions; Green events = physical changes.
-    
-    **Responsive:** Redraws on resize.
-    -->
+    <div id="detail">
+        <span class="time-tag" id="d-time">0:00</span>
+        <span class="cat-tag physical" id="d-cat">Physical change</span>
+        <h2 id="d-title">Click an event above to begin</h2>
+        <p id="d-body">Each colored marker on the timeline is one science event in the life of a grilled cheese sandwich. Click a marker to read what is happening at the molecular level.</p>
+        <div class="hint">Tip: drag the timeline to pan, or use the buttons in the corner to zoom.</div>
+    </div>
+</div>
+</main>
+
+<script>
+// CANVAS_HEIGHT: 560
+// Cooking time = minutes from start. We model each event as a Date offset from
+// an arbitrary epoch (year 2000) so vis-timeline can render it on its time axis.
+// We then format the axis labels to show m:ss instead of clock time.
+const EPOCH = new Date(2000, 0, 1, 0, 0, 0).getTime();
+function tAt(minutes) {
+    return new Date(EPOCH + minutes * 60 * 1000);
+}
+
+const CATEGORIES = {
+    physical: { label: 'Physical change', color: '#2e7d32' },
+    heat:     { label: 'Heat transfer',   color: '#1e88e5' },
+    chemical: { label: 'Chemical reaction', color: '#f57c00' }
+};
+
+const events = [
+    {
+        id: 1, minute: 0.0, category: 'physical',
+        title: 'Butter melts in pan',
+        body: 'Fat molecules gain enough kinetic energy to break free of the crystal lattice. This is a physical change — the butter can re-solidify.'
+    },
+    {
+        id: 2, minute: 0.5, category: 'heat',
+        title: 'Conduction heats bread surface',
+        body: 'Heat transfers from hot metal → fat layer → bread surface. Thermal conductivity of bread is low, so the center stays cool.'
+    },
+    {
+        id: 3, minute: 1.0, category: 'chemical',
+        title: 'Surface reaches 280°F: Maillard begins',
+        body: 'Amino acids from bread proteins react with reducing sugars. Hundreds of flavor compounds form. Golden color appears.'
+    },
+    {
+        id: 4, minute: 2.5, category: 'physical',
+        title: 'Cheese proteins begin to melt',
+        body: 'Calcium bridges between casein proteins weaken with heat, allowing the network to flow. This is why cheese stretches.'
+    },
+    {
+        id: 5, minute: 3.5, category: 'chemical',
+        title: 'Flip! Second side begins browning',
+        body: 'The same Maillard and conduction processes begin on side 2.'
+    },
+    {
+        id: 6, minute: 5.0, category: 'heat',
+        title: 'Internal temperature of cheese peaks',
+        body: 'Convection of melted fat carries heat through the cheese layer. No Maillard here — cheese surface is protected by bread.'
+    },
+    {
+        id: 7, minute: 7.0, category: 'physical',
+        title: 'Remove from heat. Reaction stops.',
+        body: 'Below 280°F, Maillard reaction rate drops sharply. Crust is set. Cheese is molten. Science is delicious!'
+    }
+];
+
+function fmtMinSec(minutes) {
+    const m = Math.floor(minutes);
+    const s = Math.round((minutes - m) * 60);
+    return m + ':' + (s < 10 ? '0' + s : s);
+}
+
+// Short labels in the timeline boxes (≤ 22 chars) keep every item from
+// overflowing horizontally on an 8-minute axis. Full text shows in the
+// detail panel below when clicked.
+const SHORT_LABELS = {
+    1: 'Butter melts',
+    2: 'Conduction → bread',
+    3: 'Maillard begins (280°F)',
+    4: 'Cheese melts',
+    5: 'Flip!',
+    6: 'Cheese temp peaks',
+    7: 'Remove from heat'
+};
+
+const items = events.map(e => ({
+    id: e.id,
+    start: tAt(e.minute),
+    content: fmtMinSec(e.minute) + ' — ' + SHORT_LABELS[e.id],
+    className: e.category,
+    type: 'box',
+    title: '' // disable native tooltip; we use the detail panel
+}));
+
+const container = document.getElementById('timeline');
+const dataset = new vis.DataSet(items);
+
+const options = {
+    width: '100%',
+    height: '260px',
+    min: tAt(-1.0),
+    max: tAt(9.5),
+    start: tAt(-0.5),
+    end: tAt(8.8),
+    zoomMin: 1000 * 60 * 2,    // 2 minutes minimum visible range
+    zoomMax: 1000 * 60 * 12,   // 12 minutes maximum visible range
+    stack: true,
+    selectable: true,
+    showCurrentTime: false,
+    moveable: true,
+    zoomable: true,
+    orientation: 'top',
+    margin: { item: { horizontal: 20, vertical: 8 }, axis: 30 },
+    // Format the axis to show m:ss elapsed cooking time instead of clock time.
+    // vis-timeline passes a moment.js object here, not a native Date — use
+    // .valueOf() (works for both moment objects and native Dates) to get ms.
+    format: {
+        minorLabels: function(date) {
+            const ms = (date && typeof date.valueOf === 'function') ? date.valueOf() : +date;
+            const elapsedMin = (ms - EPOCH) / 60000;
+            if (elapsedMin < -0.05 || elapsedMin > 8.55) return '';
+            // Snap to nearest 30 seconds for clean labels.
+            const snapped = Math.round(elapsedMin * 2) / 2;
+            return fmtMinSec(snapped);
+        },
+        majorLabels: function() { return ''; }
+    },
+    showMajorLabels: false
+};
+
+const timeline = new vis.Timeline(container, dataset, options);
+
+// Prevent vis-timeline from hijacking vertical page scroll when embedded.
+container.addEventListener('wheel', function(e) {
+    const isHorizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY);
+    if (!isHorizontal) {
+        e.stopImmediatePropagation();
+    }
+}, true);
+
+const dTime = document.getElementById('d-time');
+const dCat = document.getElementById('d-cat');
+const dTitle = document.getElementById('d-title');
+const dBody = document.getElementById('d-body');
+
+function showEvent(ev) {
+    dTime.textContent = fmtMinSec(ev.minute);
+    dCat.className = 'cat-tag ' + ev.category;
+    dCat.textContent = CATEGORIES[ev.category].label;
+    dTitle.textContent = ev.title;
+    dBody.textContent = ev.body;
+}
+
+timeline.on('select', function(props) {
+    if (props.items && props.items.length > 0) {
+        const id = props.items[0];
+        const ev = events.find(e => e.id === id);
+        if (ev) showEvent(ev);
+    }
+});
+
+// Also handle direct clicks (in case of empty selection)
+timeline.on('click', function(props) {
+    if (props.item != null) {
+        const ev = events.find(e => e.id === props.item);
+        if (ev) showEvent(ev);
+    }
+});
+
+// Show the first event by default so the panel is not empty on load.
+window.addEventListener('load', function() {
+    timeline.setSelection([1]);
+    showEvent(events[0]);
+});
+</script>
 </body>
 </html>

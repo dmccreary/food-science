@@ -1,16 +1,16 @@
 ---
 title: Hydroponic Project Data Dashboard
 description: Students will apply (L3 — Apply) data collection and graphing skills to track hydroponic plant growth and analyze (L4 — Analyze) the relationship between nutrient solution parameters and plant growth rate.
-status: scaffold
+status: completed
 library: Chart.js
-bloom_level: TBD
+bloom_level: L3-L4
 ---
 
 # Hydroponic Project Data Dashboard
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="560"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

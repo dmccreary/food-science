@@ -1,16 +1,16 @@
 ---
 title: Carbon Footprint of Common Foods
 description: Students will analyze (L4 — Analyze) the relative carbon footprints of different foods and evaluate (L5 — Evaluate) which food choices have the greatest environmental impact.
-status: scaffold
+status: completed
 library: Chart.js
-bloom_level: TBD
+bloom_level: L4/L5 Analyze/Evaluate
 ---
 
 # Carbon Footprint of Common Foods
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="880" scrolling="no" style="border:none;"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

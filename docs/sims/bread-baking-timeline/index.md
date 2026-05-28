@@ -1,16 +1,16 @@
 ---
 title: What Happens Inside a Loaf as It Bakes
 description: Students will sequence (L1 — Remember) baking events and explain (L2 — Understand) the temperature-driven chemical and physical changes at each stage.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1-L2
 ---
 
 # What Happens Inside a Loaf as It Bakes
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="640"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
