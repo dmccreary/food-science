@@ -1,16 +1,16 @@
 ---
 title: Three Modes of Heat Transfer in Cooking
 description: Students will identify (L1 — Remember) which mode of heat transfer is operating in a given cooking scenario and explain (L2 — Understand) how each mode works at the molecular level.
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: L1-L2
 ---
 
 # Three Modes of Heat Transfer in Cooking
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="640"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

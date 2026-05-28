@@ -1,16 +1,16 @@
 ---
 title: Saturated vs. Unsaturated Fat Molecule Explorer
 description: Students will *differentiate* saturated, monounsaturated, and polyunsaturated fatty acids by molecular structure (Bloom L4 — Analyze) and *explain* how chain structure determines physical state at room temperature (Bloom L2 — Understand).
-status: scaffold
+status: completed
 library: p5.js
-bloom_level: TBD
+bloom_level: Analyze
 ---
 
 # Saturated vs. Unsaturated Fat Molecule Explorer
 
 
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
