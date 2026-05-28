@@ -53,6 +53,8 @@ This chapter builds on concepts from:
 
 ## From Farm to Fork: What a Supply Chain Actually Looks Like
 
+![](../../img/)
+
 When you eat a tomato from a typical US supermarket in January, that tomato has likely traveled through this chain:
 
 1. Grown on a large farm in Florida, California, or Mexico
