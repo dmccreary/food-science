@@ -74,6 +74,10 @@ to see over 87 textbooks that Dan has created or co-created with other authors.
 
 ---
 
+## Acknowledgement
+
+This course was suggested by, Laura Kimball who is a science teacher at the [Minnetonka Middle School East](https://www.minnetonkaschools.org/schools/middle-schools/mme/about/staff-directory).  She teaches this course for in her junior high school in Minnesota.
+
 ## How to Cite This Book
 
 If you reference this textbook in academic work, curriculum proposals, lesson plans, or other publications, please use one of the following citation formats.
