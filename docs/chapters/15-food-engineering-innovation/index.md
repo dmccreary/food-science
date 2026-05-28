@@ -397,3 +397,5 @@ Tab 4: Growth rate (cm/week) vs. pH reading — scatter plot; students identify 
 !!! mascot-celebration "Zyme's Final Celebration — You Did It!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     Look how far you've traveled this year! You started with atoms and molecules and ended with LED grow lights, precision fermentation bioreactors, and smart packaging sensors. You've grown food without soil, decoded ingredient lists, traced nutrients through the digestive system, and understood why a farmers market strawberry tastes different from a supermarket one. You've earned your lab goggles. You are a food scientist. Science is delicious — and so is everything you'll eat for the rest of your life knowing what you now know. Thank you for a wonderful year of discovery!
+
+[See Annotated References](./references.md)

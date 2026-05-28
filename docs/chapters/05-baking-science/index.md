@@ -256,3 +256,5 @@ Well-whipped egg whites expand 6–8 times their original volume. When gently fo
 !!! mascot-celebration "Zyme Celebrates Your Baking Chemistry Mastery!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You just decoded the science inside every loaf of bread, every batch of muffins, and every fluffy cake. You know why bread recipes call for warm water, why extra flour ruins a cake, and why cold butter makes flakier pie crust. Next chapter, we dive deep into sourdough — the oldest and most fascinating fermented food in the world. Science is delicious!
+
+[See Annotated References](./references.md)

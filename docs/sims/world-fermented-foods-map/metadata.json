@@ -1,0 +1,21 @@
+{
+  "title": "World Map of Fermented Foods",
+  "description": "Students will identify (L1 — Remember) fermented food traditions from at least six world regions and classify (L2 — Understand) each by its fermentation pathway (lactic acid, alcoholic, acetic acid, or mold-based).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "world-fermented-foods-map",
+  "library": "Leaflet",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Global Food Cultures and Food Futures\"",
+  "chapter_dir": "14-global-food-cultures"
+}

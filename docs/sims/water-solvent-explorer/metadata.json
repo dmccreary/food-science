@@ -1,0 +1,21 @@
+{
+  "title": "Water as Universal Solvent — Interactive Explorer",
+  "description": "Students will *classify* common food substances as polar, ionic, or nonpolar (Bloom L1 — Remember) and *explain* why each does or does not dissolve in water (Bloom L2 — Understand).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "water-solvent-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand",
+  "bloomVerb": "classify",
+  "completion_status": "completed",
+  "chapter_number": 2,
+  "chapter_title": "\"Chapter 2: The Molecules of Food\"",
+  "chapter_dir": "02-molecules-of-food"
+}

@@ -8,7 +8,7 @@ description: "About Food Science for 9th Grade — its purpose, audience, design
 ## Welcome from Zyme
 
 !!! mascot-welcome "Welcome!"
-    <img src="./img/mascot/welcome.png" class="mascot-admonition-img" alt="Zyme waving welcome">
+    ![Zyme waving welcome](./img/mascot/welcome.png){ .mascot-admonition-img }
     Science is delicious! Every meal you eat is a chemistry experiment, a biology lab, and a physics demo all at once. This book exists because you deserve to know *why* your toast turns brown, *why* yogurt is tangy, and *why* the food on your plate traveled thousands of miles before landing there. Welcome — let's bubble up some answers together!
 
 ---

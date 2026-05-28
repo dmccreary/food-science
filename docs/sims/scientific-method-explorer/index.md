@@ -1,0 +1,61 @@
+---
+title: Scientific Method Steps Explorer
+description: Students will be able to recall (Bloom L1 — Remember) the seven steps of the scientific method and recognize how each step connects to the next in a food science context.
+status: completed
+library: p5.js
+bloom_level: Remember
+---
+
+# Scientific Method Steps Explorer
+
+
+
+<iframe src="main.html" width="100%" height="660" scrolling="no"></iframe>
+
+[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+
+## Specification
+
+The full specification below is extracted from
+[Chapter 1: "Chapter 1: Science in the Kitchen"](../../chapters/01-science-in-the-kitchen/index.md).
+
+```text
+Type: MicroSim
+**sim-id:** scientific-method-explorer<br/>
+**Library:** p5.js<br/>
+**Status:** Specified
+
+**Learning objective:** Students will be able to recall (Bloom L1 — Remember) the seven steps of the scientific method and recognize how each step connects to the next in a food science context.
+
+**Canvas size:** 760 × 520 px, responsive to window width.
+
+**Layout:** Seven rounded rectangular boxes arranged in a vertical flowchart with downward arrows between each step. Each box is labeled with the step name and a short subtitle (e.g., "Ask a question / What do I want to know?"). A circular "repeat" arrow on the right side connects "Draw a conclusion" back up to "Ask a question" to show that science is a cycle.
+
+**Default state:** All boxes are displayed in a neutral light-gray color. Arrows are dark gray.
+
+**Interaction — click a step box:**
+When the user clicks any step box:
+- The clicked box highlights in green (#2e7d32).
+- A side panel (or overlay below the chart) expands showing:
+  - The step name in bold.
+  - A 2–3 sentence explanation of what happens at that step.
+  - A concrete food science example (e.g., for "Form a hypothesis": "A food scientist might hypothesize: 'Bread baked at 375°F will rise higher than bread baked at 325°F.' This prediction is testable and specific.").
+- Clicking elsewhere or clicking the same box again collapses the panel.
+
+**Color scheme:** Green primary (#2e7d32), orange accent (#f57c00), light background (#f1f8e9).
+
+**Food science examples for each step:**
+1. Ask a question: "Why does bread rise when it is baked?"
+2. Background research: "Bakers have known for centuries that yeast produces gas. Scientists discovered the gas is carbon dioxide."
+3. Form a hypothesis: "If yeast has more sugar to eat, then the bread will rise higher."
+4. Design an experiment: "Bake three loaves with 0 g, 5 g, and 10 g of added sugar. Keep everything else the same."
+5. Collect data: "Measure the rise height of each loaf after 60 minutes of baking."
+6. Analyze data: "Loaf with 10 g sugar rose 12 cm; 5 g rose 9 cm; 0 g rose 5 cm."
+7. Draw a conclusion: "More sugar increased rise height. Hypothesis supported. Publish and share results."
+
+**Responsive behavior:** On narrow screens, the flowchart stacks steps vertically in a scrollable column. Side panel appears below the chart.
+```
+
+## Related Resources
+
+- [Chapter 1: "Chapter 1: Science in the Kitchen"](../../chapters/01-science-in-the-kitchen/index.md)

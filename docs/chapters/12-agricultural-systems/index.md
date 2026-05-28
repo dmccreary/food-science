@@ -282,3 +282,5 @@ A midsummer local tomato and a January supermarket tomato (shipped from Mexico o
 !!! mascot-celebration "Zyme Celebrates Your Agricultural Systems Knowledge!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You just followed food from the soil microbiome through the farm, the warehouse, the controlled atmosphere storage facility, and the distribution truck — and you now understand how each step shapes what ends up on your plate. The science of agriculture is the science of life itself: soil organisms, plant hormones, microbial ecology, and atmospheric chemistry all working together to grow the food that feeds the world. Science is delicious — right from the ground up!
+
+[See Annotated References](./references.md)

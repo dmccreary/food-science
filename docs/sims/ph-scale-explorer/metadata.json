@@ -1,0 +1,21 @@
+{
+  "title": "pH Scale Explorer",
+  "description": "Students will be able to identify (Bloom L1 — Remember) where common foods fall on the pH scale and explain (Bloom L2 — Understand) the relationship between pH and flavor (sour = acidic, bitter = often basic).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "ph-scale-explorer",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen"
+}

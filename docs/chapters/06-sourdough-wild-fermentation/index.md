@@ -252,3 +252,5 @@ Signs of trouble:
 !!! mascot-celebration "Zyme is Bubbling With Pride!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You have just learned to understand and manage a living microbial ecosystem — something bakers have been doing for 6,000 years without knowing the science behind it. Now you know the science AND the craft. Your starter is not just a jar of goo. It's a community of organisms that you are nurturing, feeding, and guiding toward producing one of the most complex and ancient foods in human history. Time to rise to the occasion — science is delicious!
+
+[See Annotated References](./references.md)

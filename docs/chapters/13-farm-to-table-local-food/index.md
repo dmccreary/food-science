@@ -293,3 +293,5 @@ Farm-to-school programs generate additional economic multiplier effects: local f
 !!! mascot-celebration "Zyme Celebrates Your Local Food Systems Knowledge!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You now understand why a farmers market strawberry is scientifically different from a supermarket strawberry, why a local farm and a local school might be unable to do business with each other even though they're 10 miles apart, and what a food desert actually means in structural economic terms. Food systems are science, economics, and social justice all woven together — and now you can see all three threads clearly. Science is delicious — and it's most delicious when it's accessible to everyone!
+
+[See Annotated References](./references.md)

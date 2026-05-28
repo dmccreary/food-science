@@ -532,3 +532,5 @@ With these tools in hand, you are ready to start investigating the fascinating s
 - **pH** — A logarithmic scale (0–14) measuring the concentration of hydrogen ions in a solution; lower values are more acidic, higher values are more basic.
 - **Acidic** — Having a pH below 7.0; contains more H⁺ ions than pure water.
 - **Basic (alkaline)** — Having a pH above 7.0; contains fewer H⁺ ions than pure water.
+
+[See Annotated References](./references.md)

@@ -1,0 +1,14 @@
+{
+  "sim_id": "water-solvent-explorer",
+  "diagram_name": "Water as Universal Solvent — Interactive Explorer",
+  "chapter_number": 2,
+  "chapter_title": "\"Chapter 2: The Molecules of Food\"",
+  "chapter_dir": "02-molecules-of-food",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will *classify* common food substances as polar, ionic, or nonpolar (Bloom L1 — Remember) and *explain* why each does or does not dissolve in water (Bloom L2 — Understand).",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: MicroSim\n**sim-id:** water-solvent-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will *classify* common food substances as polar, ionic, or nonpolar (Bloom L1 — Remember) and *explain* why each does or does not dissolve in water (Bloom L2 — Understand).\n\n**Canvas size:** 700 × 450 px, responsive to window resize.\n\n**Layout:**\n- Left panel (300 px): a \"water tank\" animation showing animated water molecules as blue bent shapes with δ– and δ+ labels on each end, gently drifting around.\n- Center panel (100 px): a vertical drag tray with five draggable substance cards: Salt, Sugar, Olive Oil, Vitamin C, Butter.\n- Right panel: a results area split into two zones: \"Dissolves ✓\" (blue background) and \"Does Not Dissolve ✗\" (orange background).\n\n**Interaction:**\n- User drags a substance card from the center tray and drops it into either the \"Dissolves\" or \"Does Not Dissolve\" zone.\n- Correct drop: an animated sequence shows the substance card breaking apart into labeled ions/molecules that get surrounded by water molecule animations; a green checkmark and brief text explanation appear (\"Salt is ionic — water molecules pull Na⁺ and Cl⁻ apart!\")\n- Incorrect drop: a gentle red shake animation and a one-sentence hint (\"Olive oil is nonpolar — its molecules can't interact with polar water.\")\n- After all five substances are correctly sorted, a summary panel appears showing the \"like dissolves like\" rule with color-coded examples.\n\n**Controls:** A \"Reset\" button clears all placements and reshuffles the substance cards.\n\n**Responsive design:** On resize, panels scale proportionally; minimum width 400 px triggers a stacked vertical layout."
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponic System Types Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Hydroponic System Types Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> hydroponic-system-types</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> TBD</p>
+            <p><strong>Learning Objective:</strong> Students will identify (L1 — Remember) the four main hydroponic system types and evaluate (L5 — Evaluate) which system best suits a given set of constraints (budget, space, power availability, crop type).</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: interactive-infographic
+    **sim-id:** hydroponic-system-types<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    **Learning Objective:** Students will identify (L1 — Remember) the four main hydroponic system types and evaluate (L5 — Evaluate) which system best suits a given set of constraints (budget, space, power availability, crop type).
+    
+    **Canvas size:** 740 × 480 px, responsive.
+    
+    **Layout:** Four system cards displayed horizontally, each 170 × 350 px. Each card shows a cross-section diagram of the system with animated water flow (where applicable), labeled components, and a summary panel.
+    
+    **DWC card:** Shows a container with plant roots submerged in blue solution, air bubbles rising from a stone at the bottom. Click reveals: required equipment (container, net cups, air pump, air stone, nutrient solution), best crops (lettuce, herbs, basil), pros (high yields, fast growth), cons (needs electricity, pump failure is catastrophic).
+    
+    **NFT card:** Shows sloped PVC channels with a thin blue film flowing along the bottom of roots. Click reveals: required equipment (pump, channels, reservoir, timer), best crops (lettuce, strawberries, herbs), pros (highly water-efficient), cons (pump-dependent, roots dry out in power failure).
+    
+    **Kratky card:** Shows container with air gap between solution surface and net cup; submerged roots in blue, aerial roots in white. Click reveals: required equipment (opaque container, net cups, nutrient solution — NO PUMP), best crops (leafy greens, herbs), pros (no electricity, very low cost, minimal maintenance), cons (not suitable for long-season or large crops, water not recirculated).
+    
+    **Wick card:** Shows container with wick leading from reservoir to growing medium. Click reveals: required equipment (container, wick material, growing medium, nutrient solution), best crops (herbs, small lettuces), pros (zero moving parts, lowest cost), cons (slow delivery, limited to small crops).
+    
+    **Constraint Matcher (below cards):** Three sliders — Budget (low/high), Power Available (yes/no), Crop Size (small/large). Adjusting sliders highlights the recommended system with a green glow.
+    
+    **Responsive:** Redraws on window resize.
+    -->
+</body>
+</html>

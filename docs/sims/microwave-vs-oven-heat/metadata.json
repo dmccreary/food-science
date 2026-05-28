@@ -1,0 +1,21 @@
+{
+  "title": "Microwave Heating vs. Conventional Oven Heating",
+  "description": "Students will compare (L4 — Analyze) how microwave and conventional oven heating differ in where and how heat is generated inside food.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "microwave-vs-oven-heat",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "\"Chapter 3: Heat, Cooking Science, and Chemical Reactions\"",
+  "chapter_dir": "03-heat-and-cooking-science"
+}

@@ -343,3 +343,5 @@ Type: interactive-infographic
 !!! mascot-celebration "Zyme Celebrates Your Nutrition Science Breakthrough!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You have just traced food from the chemistry of macromolecules all the way through the 30-foot digestive system into the mitochondria of your cells — and then out into the gut microbiome, the antioxidant defenses, and the dietary guidelines that shape public health policy. That's the full arc of nutrition science, and you now understand it from molecules to meals. Science is delicious — and your body is the proof!
+
+[See Annotated References](./references.md)

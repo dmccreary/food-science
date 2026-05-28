@@ -1,0 +1,21 @@
+{
+  "title": "Scientific Method Steps Explorer",
+  "description": "Students will be able to recall (Bloom L1 — Remember) the seven steps of the scientific method and recognize how each step connects to the next in a food science context.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "scientific-method-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Remember",
+  "bloomVerb": "Recall",
+  "completion_status": "completed",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen"
+}

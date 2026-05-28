@@ -1,0 +1,14 @@
+{
+  "sim_id": "temperature-danger-zone",
+  "diagram_name": "Temperature Danger Zone Interactive Visualizer",
+  "chapter_number": 7,
+  "chapter_title": "\"Chapter 7: Food Safety and Sanitation\"",
+  "chapter_dir": "07-food-safety-sanitation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will identify (L1 — Remember) the temperature danger zone boundaries and apply (L3 — Apply) this knowledge to evaluate food storage scenarios.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** temperature-danger-zone<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will identify (L1 — Remember) the temperature danger zone boundaries and apply (L3 — Apply) this knowledge to evaluate food storage scenarios.\n\n**Canvas size:** 720 × 500 px, responsive.\n\n**Layout:** A vertical thermometer (400 px tall) in the center, spanning −20°F to 250°F. Color-coded temperature zones:\n- Dark blue (−20°F to 32°F): Frozen — bacteria dormant, no growth\n- Medium blue (32°F to 40°F): Refrigerator safe — growth very slow\n- Red (40°F to 140°F): DANGER ZONE — bacterial growth zone; pulsing red glow\n- Orange (140°F to 165°F): Hot holding safe zone\n- Dark orange (165°F to 212°F): Cooking temperatures; colored bands show safe minimums\n- Red (212°F+): Boiling and high-heat cooking\n\n**Food scenario selector (right panel):**\nSix clickable food cards: Chicken breast, sliced deli meat, potato salad, leftover rice, fresh berries, cream soup. Clicking a card shows:\n- The food's current simulated temperature on the thermometer (drag a slider to change it)\n- Whether it is in a danger zone (red warning) or safe zone (green check)\n- How long it can safely remain at that temperature\n- The correct storage and serving temperature for that food\n\n**Two-hour rule timer:** A clock animation shows how bacterial population grows over 2 hours in the danger zone, doubling every 20 minutes.\n\n**Responsive:** Redraws on window resize."
+}

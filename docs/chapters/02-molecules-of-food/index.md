@@ -483,3 +483,5 @@ Here is what to carry with you from this chapter into every future lab and lesso
 !!! mascot-celebration "Chapter 2 Complete — You're a Molecular Scientist!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with raised arms">
     Look at what you just learned! Chemical bonds, hydrogen bonding, the universal solvent, water activity, acids, bases, buffers, and ALL THREE macromolecule families — in one chapter. Seriously, that is an impressive amount of food science. Every chapter from here builds on exactly what you just mastered. Next time you eat anything, I challenge you to ask: "What macromolecule is doing the work here?" You are going to be absolutely insufferable at dinner — in the best possible way. Science is delicious!
+
+[See Annotated References](./references.md)

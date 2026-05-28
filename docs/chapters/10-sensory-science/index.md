@@ -124,6 +124,17 @@ Pinch your nose and eat a piece of apple. You'll taste sweet and sour (from tast
 
 Smell is the most underestimated of our senses. We tend to think of vision and hearing as the senses that connect us to the world, but smell is the sense that connects us most directly to *memory* and *emotion*. The food writer **Harold McGee** — author of the classic reference *On Food and Cooking* (Scribner, revised edition 2004) and the dedicated aroma encyclopedia *Nose Dive: A Field Guide to the World's Smells* (Penguin Press, 2020) — has spent his career arguing that learning to pay attention to smells is one of the great unused pleasures available to a curious person. He treats aromas the way a musician treats sounds: as a vocabulary worth learning.
 
+In a 2020 interview on *The Splendid Table*, McGee described a Japanese tradition that gave him a new way to think about scent — the **incense ceremony**, parallel to the tea ceremony, in which a single piece of incense wood is placed on a tiny platform and quietly attended to. The Japanese term for this practice translates into English as **"listening to smells."** McGee at first found the phrase awkward, then realized it was exactly right:
+
+> "When we smell things, we're usually not really paying attention. And so listening to smells is like listening to a sound instead of hearing it. Hearing is kind of passive, and by the way; listening, you're paying attention, you're getting information, you're registering it. And we can do the same thing with smells."
+> — Harold McGee, *The Splendid Table*, December 2020
+
+This same interview also produced one of McGee's most quotable lines about why smell matters at all:
+
+> "Smell is the bridge between what we put in our bodies and what is in the world around us."
+
+Every time you breathe in, McGee notes, you take in molecules from the world. Every time you breathe *out* while eating — through retronasal olfaction — you push molecules from your mouth up into your nose to confirm what you have just taken in. Smell is the sense that operates in both directions at the same time.
+
 ### How the Nose Actually Works
 
 Your olfactory system is wired into your brain differently than any other sense. Light, sound, taste, and touch all pass through a relay station called the **thalamus** before reaching the parts of the brain that produce conscious perception. Smell does not. Aroma molecules bind to receptors in the **olfactory epithelium** high in the nasal cavity, and those receptors send signals almost directly into the **limbic system** — the ancient set of brain structures that handle emotion and memory.
@@ -132,9 +143,29 @@ This shortcut explains a familiar experience: a single whiff of something — a 
 
 There are roughly **400 different types of olfactory receptors** in the human nose. That sounds like a small number until you realize they work in combination — each aroma molecule activates a unique *pattern* of receptors, like a chord rather than a single note. That combinatorial code is how the human olfactory system can distinguish an estimated **one trillion different odors** (Bushdid et al., *Science*, 2014) — a number McGee uses as a starting point in *Nose Dive* to argue that smell deserves the same careful attention we give to color or music.
 
+McGee himself describes smells the same way:
+
+> "Even though we think of the smell of incense or the smell of a pine needle or something like that *as* a smell, in fact, all smells are composites. So they're more like chords in music rather than single notes. There's not a single pine note, but there are a number of notes that come together."
+> — Harold McGee, *The Splendid Table*, December 2020
+
+### Why Cooking Releases So Much Aroma
+
+There is a deeper reason a sizzling pan fills a room with smell while a raw cutting board does not. McGee makes the point directly in the *Splendid Table* interview:
+
+> "We eat living things for the most part — plant and animal tissues — and they're built up of very large molecules: proteins, carbohydrates, fats, which in and of themselves don't have smells… In order for something to have a smell, it has to be a small enough molecule that it can escape whatever it's in and fly through the air and end up being inhaled into our nose. And proteins, carbohydrates, fats, they're just way, way too big. But what cooking does, what fermentation does, is break those large molecules down into smaller ones, small enough sometimes that they're actually small enough to leave the material and fly through the air and into our noses."
+> — Harold McGee, *The Splendid Table*, December 2020
+
+McGee goes further. In the same interview, he advances the hypothesis that the **aroma of cooked food was a driving force in human evolution**. Early humans couldn't have known that cooking unlocked nutrients — they were responding to something more immediate:
+
+> "What would have occurred to them was, 'Wow, this smells amazing. I've never smelled anything like this before.' … The sensory appeal of cooked foods had to have played a really important role in the initial adoption of cooking. It just made life much more interesting."
+
+In other words: smell is not a side effect of cooking. According to McGee, it may be one of the *reasons* we cook in the first place.
+
 ### The Chemistry of Garlic in the Air
 
-When you sauté garlic in oil, you are running a small chemistry experiment whose products fill the room. McGee explains in *On Food and Cooking* that an intact garlic clove is almost odorless. The dramatic smell only appears once the cells are crushed or cut — that damage releases an enzyme called **alliinase**, which converts a stored compound (alliin) into **allicin**, the molecule responsible for the sharp, pungent aroma of fresh garlic. When that garlic hits warm oil, allicin and its breakdown products (diallyl disulfide, diallyl trisulfide, and other volatile sulfur compounds) evaporate into the air. Garlic carries roughly **a hundred times the sulfur content of other alliums** — which is why one clove can perfume an entire room.
+Garlic is a particularly dramatic case of this molecule-breaking-down process. An intact garlic clove is almost odorless. The dramatic smell only appears once the cells are crushed or cut — that damage releases an enzyme called **alliinase**, which converts a stored compound (alliin) into **allicin**, the molecule responsible for the sharp, pungent aroma of fresh garlic. When that garlic hits warm oil, allicin and its breakdown products (diallyl disulfide, diallyl trisulfide, and other volatile sulfur compounds) evaporate into the air and travel across the room.
+
+(*This allicin/sulfur chemistry is detailed in McGee's chapter on alliums in* On Food and Cooking *— the* Splendid Table *interview itself does not discuss garlic specifically.*)
 
 Those airborne sulfur compounds are doing more than just signaling "dinner is coming." Because of the limbic shortcut described above, they reach the **amygdala** (emotion) and **hippocampus** (memory) before the conscious brain has even named the smell. By the time you think *"someone is cooking garlic,"* your mood has already shifted.
 
@@ -148,7 +179,7 @@ Are these the same dinner? Common experience says no — and a growing body of r
 - People in public spaces near bakeries and coffee shops are significantly more likely to help a stranger than people standing in odor-neutral zones (Baron, *Personality and Social Psychology Bulletin*, 1997).
 - Ambient food and floral aromas have been shown to improve self-reported mood and prosocial behavior in controlled experiments (see the review by de Groot et al., *Behavioral and Neurobiological Convergence of Odor, Mood and Emotion*, 2020).
 
-McGee does not, to my knowledge, cite a specific study claiming "garlic in the air produces N% more positive comments at the table." That precise claim is folk wisdom, not a published finding. What McGee *does* argue — across both *Nose Dive* and his *Splendid Table* interview — is that the aromas of cooking are part of the meal, not a side effect of it, and that paying attention to them changes the experience of eating.
+McGee does not cite a specific study claiming "garlic in the air produces N% more positive comments at the table" — a full transcript of his *Splendid Table* interview confirms he never mentions garlic, the dinner table, or that particular social effect in the conversation. That precise claim is folk wisdom, not a published finding. What McGee *does* argue — both in *Nose Dive* and across the entire *Splendid Table* hour — is that the aromas of cooking are part of the meal rather than a side effect of it, and that learning to "listen" to those aromas changes the experience of eating.
 
 The takeaway for a home cook is still powerful: *the aroma you create while cooking is part of the meal*. Sautéing garlic with the kitchen door open, simmering a tomato sauce slowly instead of quickly, toasting spices in a dry pan before adding them — these aren't just culinary techniques. They're ways of seasoning the *room*.
 
@@ -190,7 +221,7 @@ A useful classroom exercise: open the spice cabinet, smell each jar with eyes cl
     - Guéguen, N., & Petr, C. (2006). "Odors and consumer behavior in a restaurant." *International Journal of Hospitality Management*, 25(2), 335–339.
     - Baron, R. A. (1997). "The sweet smell of helping: Effects of pleasant ambient fragrance on prosocial behavior in shopping malls." *Personality and Social Psychology Bulletin*, 23(5), 498–503.
 
-    **A note on the "garlic at the table" story:** the specific claim that the smell of garlic in the room increases positive comments at dinner is folk wisdom rather than a peer-reviewed finding. The *mechanism* — olfactory input reaching the limbic system before conscious recognition, and pleasant ambient aromas measurably improving mood and prosocial behavior — is well documented (see sources above). Where this section says "studies show," it is citing those broader findings, not a specific garlic-and-dinner-conversation study.
+    **A note on the "garlic at the table" story:** the specific claim that the smell of garlic in the room increases positive comments at dinner is folk wisdom rather than a peer-reviewed finding. To verify this, we transcribed the full 54-minute *Splendid Table* episode with whisper.cpp and searched the transcript: McGee never uses the word *garlic* and never discusses the social or conversational effect of aromas at a family table. He does discuss the molecular reason cooking releases aroma, the "listening to smells" practice, and the role of aroma in the evolutionary origins of cooking — those quotes appear above. The *mechanism* underlying the garlic-at-the-table story — olfactory input reaching the limbic system before conscious recognition, and pleasant ambient aromas measurably improving mood and prosocial behavior — is well documented in the environmental-psychology sources above. Where this section says "studies show," it is citing those broader findings, not a specific garlic-and-dinner-conversation study.
 
 ## Texture and Mouthfeel
 
@@ -341,3 +372,5 @@ The hedonic scale is the most widely used tool in consumer sensory research. Whe
 !!! mascot-celebration "Zyme Celebrates Your Sensory Science Breakthrough!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You now understand why a cold eliminates flavor, why yogurt tastes sweeter in a white cup, why mint feels cooling at room temperature, and why you should always serve chilled soda cold. Your brain is an extraordinary flavor-construction machine — and now you know how it works. The next time you eat something delicious, you're experiencing neuroscience, chemistry, and psychology all at once. Science is delicious!
+
+[See Annotated References](./references.md)

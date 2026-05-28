@@ -310,3 +310,5 @@ Shelf life is defined by the first failure mode — whether that's microbial spo
 !!! mascot-celebration "Zyme Celebrates Your Preservation Science Mastery!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You now understand why honey never spoils (water activity 0.55), why botulism is a risk only in improperly canned low-acid vegetables, why freeze-dried strawberries taste better than regular frozen ones, and why the nitrogen in your potato chip bag isn't just empty space. Every food on your shelf is a carefully engineered preservation success story. Science is delicious — even months after harvest!
+
+[See Annotated References](./references.md)

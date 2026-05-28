@@ -1,0 +1,14 @@
+{
+  "sim_id": "gluten-network-formation",
+  "diagram_name": "Gluten Network Development",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Baking Science — Gluten, Leavening, and Bread\"",
+  "chapter_dir": "05-baking-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will explain (L2 — Understand) how mixing and kneading develop the gluten network, and analyze (L4 — Analyze) how protein content affects gluten strength.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** gluten-network-formation<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will explain (L2 — Understand) how mixing and kneading develop the gluten network, and analyze (L4 — Analyze) how protein content affects gluten strength.\n\n**Canvas size:** 740 × 440 px, responsive.\n\n**Layout:** Two panels side by side.\n\n**Left panel — Flour Protein Selector:**\n- Three flour cards: Cake Flour (8%), All-Purpose (11%), Bread Flour (13%)\n- Clicking a card sets the protein content for the simulation\n\n**Right panel — Gluten Network Visualizer:**\n- Shows a circular dough ball cross-section (400 px diameter)\n- A \"Knead\" button — each click adds one minute of kneading\n- Protein molecules shown as small worm-like objects (blue = glutenin, yellow = gliadin)\n- Dry: scattered randomly; After water: molecules hydrate; After kneading: progressively stronger aligned network\n- After kneading 5×: organized sheet-like network with trapped gas bubbles\n- Windowpane test button: simulates stretching; low protein = tears quickly, high protein = stretches to translucency\n\n**Bars:** \"Elasticity\" and \"Extensibility\" bars update in real time as kneading progresses.\n\n**Responsive:** Redraws on window resize."
+}

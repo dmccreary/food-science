@@ -1,0 +1,21 @@
+{
+  "title": "Peptide Bond Formation — Step-by-Step Animator",
+  "description": "Students will *explain* how amino acids link via peptide bonds and *describe* the condensation reaction that forms them (Bloom L2 — Understand); students will *demonstrate* the step-by-step sequence (Bloom L3 — Apply).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "peptide-bond-animator",
+  "library": "p5.js",
+  "bloomLevel": "L2-L3",
+  "bloomVerb": "explain, describe, demonstrate",
+  "completion_status": "completed",
+  "chapter_number": 2,
+  "chapter_title": "\"Chapter 2: The Molecules of Food\"",
+  "chapter_dir": "02-molecules-of-food"
+}

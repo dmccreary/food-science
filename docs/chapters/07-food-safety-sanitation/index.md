@@ -298,3 +298,5 @@ Only the "use by" date is a true safety date. Billions of pounds of safe, edible
 !!! mascot-celebration "Zyme Celebrates Your Food Safety Knowledge!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You now know more about food safety than most adults. You understand the temperature danger zone, why handwashing beats hand sanitizer, what HACCP actually means, and the critical difference between a food allergy and a food intolerance. Every time you pick up a thermometer, wash your hands between tasks, or read a food label before serving someone with an allergen, you're applying real food science to protect real people. Science is delicious — and safe!
+
+[See Annotated References](./references.md)

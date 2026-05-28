@@ -279,3 +279,5 @@ The result: shelf-stable products with better flavor and nutritional quality tha
 !!! mascot-celebration "Zyme Celebrates Your Food Technology Knowledge!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You can now read an ingredient list with scientific confidence, explain why UHT milk tastes slightly different from fresh pasteurized milk, understand what extrusion does to a cornstarch blend to make a Cheeto, and classify any food into its NOVA group. Food technology is neither villain nor hero — it's a set of tools, and knowing the science helps you use those tools wisely. Science is delicious, processed or not!
+
+[See Annotated References](./references.md)

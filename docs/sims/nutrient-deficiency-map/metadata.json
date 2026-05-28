@@ -1,0 +1,21 @@
+{
+  "title": "Nutrient Deficiency Explorer",
+  "description": "Students will identify (L1 — Remember) the deficiency disease associated with each key micronutrient and recall (L1) the primary food sources that prevent deficiency.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "nutrient-deficiency-map",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "\"Chapter 8: Nutrition Science — What Food Does for Your Body\"",
+  "chapter_dir": "08-nutrition-science"
+}

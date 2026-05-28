@@ -1,0 +1,21 @@
+{
+  "title": "Multisensory Flavor Perception Map",
+  "description": "Students will analyze (L4 — Analyze) how multiple sensory inputs combine to create the unified experience of flavor, and evaluate (L5 — Evaluate) which senses contribute most to overall flavor perception.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "multisensory-flavor-builder",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 10,
+  "chapter_title": "\"Chapter 10: Sensory Science — Taste, Flavor, and Food Perception\"",
+  "chapter_dir": "10-sensory-science"
+}

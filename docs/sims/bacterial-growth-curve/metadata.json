@@ -1,0 +1,21 @@
+{
+  "title": "Bacterial Growth Curve Simulation",
+  "description": "Students will identify (L1 — Remember) the four phases of bacterial growth and apply (L3 — Apply) knowledge by adjusting temperature and nutrients to predict growth rate changes.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "bacterial-growth-curve",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Food Microbiology — Microbes, Fermentation, and Cultured Foods\"",
+  "chapter_dir": "04-food-microbiology"
+}

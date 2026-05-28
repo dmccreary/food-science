@@ -1,0 +1,14 @@
+{
+  "sim_id": "variables-identifier",
+  "diagram_name": "Experimental Variables Identifier",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will be able to identify (Bloom L1 — Remember) and classify (Bloom L2 — Understand) independent, dependent, and controlled variables in a described food science experiment.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: MicroSim\n**sim-id:** variables-identifier<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning objective:** Students will be able to identify (Bloom L1 — Remember) and classify (Bloom L2 — Understand) independent, dependent, and controlled variables in a described food science experiment.\n\n**Canvas size:** 760 × 480 px, responsive.\n\n**Layout:** Three zones across the top of the canvas, labeled \"Independent Variable,\" \"Dependent Variable,\" and \"Controlled Variables.\" Below the zones, a description box displays a food science experiment scenario. Below the description, a list of labeled tiles (text boxes) shows 5–7 variable names from the scenario.\n\n**Interaction:** The student drags each tile into the correct zone. When a tile is dropped in the correct zone, it turns green and a brief checkmark animation plays. When dropped in the wrong zone, it shakes and returns to its original position with a soft red flash.\n\n**Scenarios (randomly cycle through at least 3):**\n1. \"A student bakes three batches of cookies, each at a different oven temperature (300°F, 325°F, 350°F). All other recipe ingredients are the same. After baking, the student measures the diameter of ten cookies from each batch and records the average.\" Variables: oven temperature (IV), cookie diameter (DV), flour amount, butter amount, baking time, type of oven (CVs).\n2. \"A student makes three cups of hot cocoa with different amounts of sugar (0g, 10g, 20g). All other ingredients are the same. Five classmates taste each cup and rate the sweetness from 1–5.\" Variables: grams of sugar (IV), sweetness rating (DV), amount of cocoa powder, milk volume, milk temperature, cup size (CVs).\n3. \"A student grows basil plants under three different light colors (white, blue, red) using identical LED strips. Plants receive the same amount of water and nutrient solution. After 3 weeks, the student measures the height and leaf count of each plant.\" Variables: light color (IV), plant height + leaf count (DV), water amount, nutrient solution concentration, pot size, room temperature (CVs).\n\n**Scoring panel:** Shows \"X of Y correct\" after each tile placement attempt. A \"Try a new scenario\" button randomizes to the next scenario.\n\n**Color scheme:** Consistent with book palette — green for correct, red-tinted for incorrect."
+}

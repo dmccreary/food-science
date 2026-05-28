@@ -35,48 +35,63 @@ nav:
       - 1. Science in the Kitchen:
           - Content: chapters/01-science-in-the-kitchen/index.md
           - Quiz: chapters/01-science-in-the-kitchen/quiz.md
+          - Annotated References: chapters/01-science-in-the-kitchen/references.md
       - 2. Molecules of Food:
           - Content: chapters/02-molecules-of-food/index.md
           - Quiz: chapters/02-molecules-of-food/quiz.md
+          - Annotated References: chapters/02-molecules-of-food/references.md
       - 3. Heat and Cooking Science:
           - Content: chapters/03-heat-and-cooking-science/index.md
           - Quiz: chapters/03-heat-and-cooking-science/quiz.md
+          - Annotated References: chapters/03-heat-and-cooking-science/references.md
       - 4. Food Microbiology:
           - Content: chapters/04-food-microbiology/index.md
           - Quiz: chapters/04-food-microbiology/quiz.md
+          - Annotated References: chapters/04-food-microbiology/references.md
       - 5. Baking Science:
           - Content: chapters/05-baking-science/index.md
           - Quiz: chapters/05-baking-science/quiz.md
+          - Annotated References: chapters/05-baking-science/references.md
       - 6. Sourdough and Wild Fermentation:
           - Content: chapters/06-sourdough-wild-fermentation/index.md
           - Quiz: chapters/06-sourdough-wild-fermentation/quiz.md
+          - Annotated References: chapters/06-sourdough-wild-fermentation/references.md
       - 7. Food Safety and Sanitation:
           - Content: chapters/07-food-safety-sanitation/index.md
           - Quiz: chapters/07-food-safety-sanitation/quiz.md
+          - Annotated References: chapters/07-food-safety-sanitation/references.md
       - 8. Nutrition Science:
           - Content: chapters/08-nutrition-science/index.md
           - Quiz: chapters/08-nutrition-science/quiz.md
+          - Annotated References: chapters/08-nutrition-science/references.md
       - 9. Food Preservation:
           - Content: chapters/09-food-preservation/index.md
           - Quiz: chapters/09-food-preservation/quiz.md
+          - Annotated References: chapters/09-food-preservation/references.md
       - 10. Sensory Science:
           - Content: chapters/10-sensory-science/index.md
           - Quiz: chapters/10-sensory-science/quiz.md
+          - Annotated References: chapters/10-sensory-science/references.md
       - 11. Food Technology and Processing:
           - Content: chapters/11-food-technology-processing/index.md
           - Quiz: chapters/11-food-technology-processing/quiz.md
+          - Annotated References: chapters/11-food-technology-processing/references.md
       - 12. Agricultural Systems:
           - Content: chapters/12-agricultural-systems/index.md
           - Quiz: chapters/12-agricultural-systems/quiz.md
+          - Annotated References: chapters/12-agricultural-systems/references.md
       - 13. Farm-to-Table and Local Food:
           - Content: chapters/13-farm-to-table-local-food/index.md
           - Quiz: chapters/13-farm-to-table-local-food/quiz.md
+          - Annotated References: chapters/13-farm-to-table-local-food/references.md
       - 14. Global Food Cultures:
           - Content: chapters/14-global-food-cultures/index.md
           - Quiz: chapters/14-global-food-cultures/quiz.md
+          - Annotated References: chapters/14-global-food-cultures/references.md
       - 15. Food Engineering and Innovation:
           - Content: chapters/15-food-engineering-innovation/index.md
           - Quiz: chapters/15-food-engineering-innovation/quiz.md
+          - Annotated References: chapters/15-food-engineering-innovation/references.md
 
   - Learning Graph:
       - Introduction: learning-graph/index.md

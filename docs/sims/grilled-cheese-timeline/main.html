@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilled Cheese Science Timeline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Grilled Cheese Science Timeline</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> grilled-cheese-timeline</p>
+            <p><strong>Library:</strong> vis-timeline</p>
+            <p><strong>Bloom Level:</strong> TBD</p>
+            <p><strong>Learning Objective:</strong> Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: interactive-infographic
+    **sim-id:** grilled-cheese-timeline<br/>
+    **Library:** vis-timeline<br/>
+    **Status:** Specified
+    
+    **Learning Objective:** Students will sequence (L1 — Remember) the cooking events and explain (L2 — Understand) which heat transfer mode and chemical reaction is occurring at each step.
+    
+    **Canvas size:** 760 × 320 px, responsive.
+    
+    **Timeline range:** 0 to 8 minutes of cooking time.
+    
+    **Events (each is a clickable node):**
+    - 0:00 — "Butter melts in pan" → tooltip: "Fat molecules gain enough kinetic energy to break free of the crystal lattice. This is a physical change — the butter can re-solidify."
+    - 0:30 — "Conduction heats bread surface" → tooltip: "Heat transfers from hot metal → fat layer → bread surface. Thermal conductivity of bread is low, so the center stays cool."
+    - 1:00 — "Surface reaches 280°F: Maillard begins" → tooltip: "Amino acids from bread proteins react with reducing sugars. Hundreds of flavor compounds form. Golden color appears."
+    - 2:30 — "Cheese proteins begin to melt" → tooltip: "Calcium bridges between casein proteins weaken with heat, allowing the network to flow. This is why cheese stretches."
+    - 3:30 — "Flip! Second side begins browning" → tooltip: "The same Maillard and conduction processes begin on side 2."
+    - 5:00 — "Internal temperature of cheese peaks" → tooltip: "Convection of melted fat carries heat through the cheese layer. No Maillard here — cheese surface is protected by bread."
+    - 7:00 — "Remove from heat. Reaction stops." → tooltip: "Below 280°F, Maillard reaction rate drops sharply. Crust is set. Cheese is molten. Science is delicious!"
+    
+    **Color coding:** Blue events = heat transfer; Orange events = chemical reactions; Green events = physical changes.
+    
+    **Responsive:** Redraws on resize.
+    -->
+</body>
+</html>

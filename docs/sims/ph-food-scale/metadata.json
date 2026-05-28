@@ -1,0 +1,21 @@
+{
+  "title": "Interactive pH Food Scale",
+  "description": "Students will *identify* the pH range of common foods (Bloom L1 — Remember) and *explain* the relationship between pH, taste, and food safety (Bloom L2 — Understand).",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "ph-food-scale",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "\"Chapter 2: The Molecules of Food\"",
+  "chapter_dir": "02-molecules-of-food"
+}

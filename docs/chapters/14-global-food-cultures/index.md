@@ -301,3 +301,5 @@ The primary barrier to widespread adoption in Western countries is cultural — 
 !!! mascot-celebration "Zyme Celebrates Your Global Food Science Journey!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You've just traveled the world through fermentation science, spice chemistry, cultural food practices, and the cutting-edge biotechnology of cultured meat — all in one chapter. Every traditional food you eat is a product of centuries of scientific experimentation by cultures working with the materials available to them. And the future of food is being shaped right now by food scientists and bioengineers working on the next generation of sustainable protein. Science is delicious — in every language!
+
+[See Annotated References](./references.md)

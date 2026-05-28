@@ -1,0 +1,21 @@
+{
+  "title": "Experimental Variables Identifier",
+  "description": "Students will be able to identify (Bloom L1 — Remember) and classify (Bloom L2 — Understand) independent, dependent, and controlled variables in a described food science experiment.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "variables-identifier",
+  "library": "p5.js",
+  "bloomLevel": "Understand",
+  "bloomVerb": "Classify",
+  "completion_status": "completed",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Science in the Kitchen\"",
+  "chapter_dir": "01-science-in-the-kitchen"
+}

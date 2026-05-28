@@ -1,0 +1,14 @@
+{
+  "sim_id": "browning-reactions-explorer",
+  "diagram_name": "Maillard Reaction vs. Caramelization Step-by-Step",
+  "chapter_number": 3,
+  "chapter_title": "\"Chapter 3: Heat, Cooking Science, and Chemical Reactions\"",
+  "chapter_dir": "03-heat-and-cooking-science",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Students will distinguish (L4 — Analyze) the Maillard reaction from caramelization by comparing their reactants, temperature requirements, and flavor products.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-28",
+  "specification": "Type: microsim\n**sim-id:** browning-reactions-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Students will distinguish (L4 — Analyze) the Maillard reaction from caramelization by comparing their reactants, temperature requirements, and flavor products.\n\n**Canvas size:** 760 × 460 px, responsive.\n\n**Layout:** Two columns, left = Maillard Reaction, right = Caramelization. A temperature slider (shared, range 200°F – 400°F) sits at the bottom. A cooking surface image (pan) appears at the top of each column showing a different food (steak on left, sugar on right).\n\n**Maillard column behavior:**\n- Below 280°F: food appears pale, labeled \"No browning yet\"\n- 280–320°F: golden browning starts, molecule animations show amino acid (blue) + sugar (yellow) combining → brown molecule cluster; aroma labels pop up (\"nutty,\" \"savory,\" \"bready\")\n- Above 320°F: deep brown, \"Caramelization also begins now\" text appears\n- Hovering the brown molecules shows a tooltip: \"These are called melanoidins — hundreds of different aromatic compounds formed at once.\"\n\n**Caramelization column behavior:**\n- Below 320°F: sugar sits unchanged, labeled \"Crystals stable\"\n- 320°F+: sugar molecules animate breaking apart and recombining; color shifts from clear → golden → amber → dark brown\n- Aroma labels: \"butterscotch,\" \"nutty,\" \"slightly bitter\"\n- Hovering shows: \"Caramelization produces fewer compounds than Maillard but creates distinctive sweet-bitter notes.\"\n\n**Summary box** at bottom highlights: Maillard = amino acids + sugars; Caramelization = sugars only.\n\n**Responsive:** Redraws on window resize."
+}

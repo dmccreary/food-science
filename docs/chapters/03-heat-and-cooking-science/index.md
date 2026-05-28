@@ -383,3 +383,5 @@ The science of heat and cooking boils down to these core ideas:
 !!! mascot-celebration "Zyme Celebrates Your Chemistry Win!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You just traced heat from a burner all the way through conduction, convection, and radiation into the molecules of food — watching proteins denature, starches gelatinize, the Maillard reaction paint gold onto a crust, and emulsifiers keep oil and water from breaking up. Every meal you cook from now on is a chemistry experiment you understand. Science is delicious — and so are grilled cheese sandwiches!
+
+[See Annotated References](./references.md)

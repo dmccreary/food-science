@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digestive System Nutrient Journey</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Digestive System Nutrient Journey</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> digestive-system-journey</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> TBD</p>
+            <p><strong>Learning Objective:</strong> Students will trace (L1 — Remember) each major organ's role in digestion and explain (L2 — Understand) how nutrients are absorbed into the body.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: interactive-infographic
+    **sim-id:** digestive-system-journey<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    **Learning Objective:** Students will trace (L1 — Remember) each major organ's role in digestion and explain (L2 — Understand) how nutrients are absorbed into the body.
+    
+    **Canvas size:** 720 × 520 px, responsive.
+    
+    **Visual:** A simplified but accurate anatomical silhouette of the human torso showing the digestive tract. Each major organ is a clickable hot spot with a pulsing highlight ring.
+    
+    **Clickable organs and tooltips:**
+    - Mouth → "Salivary amylase begins starch digestion. Chewing increases surface area for enzymes."
+    - Esophagus → "No digestion here — just transport via peristalsis. Food takes 2–3 seconds to travel from mouth to stomach."
+    - Stomach → "pH 1.5–3.5. Pepsin digests protein. Strong churning turns food into chyme. Gastric emptying takes 2–6 hours."
+    - Small intestine → "The powerhouse of digestion. 20 feet of tubing lined with villi. Fats, proteins, and carbohydrates are all fully digested and absorbed here. Bile from the liver emulsifies fat."
+    - Liver → "All absorbed nutrients from the small intestine arrive here first. The liver packages fats, converts fructose, detoxifies, and regulates blood glucose."
+    - Gallbladder → "Stores and concentrates bile produced by the liver. Releases bile into the small intestine when fat is present."
+    - Pancreas → "Secretes digestive enzymes (amylase, lipase, trypsin) into the small intestine, plus hormones (insulin, glucagon) directly into the blood."
+    - Large intestine → "Absorbs water and electrolytes. Gut microbiome ferments fiber here. Waste transit takes 24–72 hours."
+    
+    **Food journey animation:** A "Send Food" button drops a stylized food particle into the mouth and animates it traveling through each organ, with explanatory text appearing at each stop.
+    
+    **Responsive:** Redraws on window resize.
+    -->
+</body>
+</html>

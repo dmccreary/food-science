@@ -299,3 +299,5 @@ The enormous diversity of cheese comes from varying these steps and the microbia
 !!! mascot-celebration "Zyme Celebrates — You Just Met My Entire World!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Zyme celebrating with bubbles">
     You've zoomed into the microbial world — bacteria, mold, biofilms, and fermentation chemistry. You now understand why yeast cells like me are so important in bread, beer, and wine, and why bacterial neighbors are essential for yogurt, cheese, and kimchi. The microscopic world is doing an enormous amount of work in your food every day. Science is delicious!
+
+[See Annotated References](./references.md)

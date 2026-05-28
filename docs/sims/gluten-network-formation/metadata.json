@@ -1,0 +1,21 @@
+{
+  "title": "Gluten Network Development",
+  "description": "Students will explain (L2 — Understand) how mixing and kneading develop the gluten network, and analyze (L4 — Analyze) how protein content affects gluten strength.",
+  "creator": "Dementia Education Project",
+  "date": "2026-05-28",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "gluten-network-formation",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Baking Science — Gluten, Leavening, and Bread\"",
+  "chapter_dir": "05-baking-science"
+}
