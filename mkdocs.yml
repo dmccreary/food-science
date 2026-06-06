@@ -269,7 +269,7 @@ extra:
   textbook_name: 'Food Science for 9th Grade'
   textbook_version: '0.1'
 
-  # Google Analytics — uncomment once a property ID exists:
-  # analytics:
-  #   provider: google
-  #   property: G-XXXXXXXXXX
+  # Google Analytics
+  analytics:
+    provider: google
+    property: G-LZ7V1V0V4F
