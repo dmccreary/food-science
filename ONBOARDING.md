@@ -24,7 +24,7 @@ Top MCP Servers:
 
 ### Codebases
 - [ ] food-science — github.com/dmccreary/food-science (MkDocs Material intelligent textbook for 9th grade food science)
-- [ ] claude-skills — sibling repo at `../claude-skills` (shared skills and utilities like image-processing scripts used across the textbook projects)
+- [ ] ibook-skills — sibling repo at `../ibook-skills` (shared skills and utilities like image-processing scripts used across the textbook projects)
 
 ### MCP Servers to Activate
 - [ ] Claude_in_Chrome — lets Claude drive a Chrome tab to verify rendered pages, MicroSims, and analytics setups. Install the Claude in Chrome browser extension and connect it from Claude Code.
